@@ -170,12 +170,9 @@
 
                 <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(945%, 0%);" data-index-h="10" hidden="" data-background="#cae4df">
                     <h2>Kubernetes Overview</h2>
-                    <br>
                     <p>
                         Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.
                     </p>
-
-                    <br>
                     <ul>
                         <li>Automatic binpacking.</li>
                         <li>Self-healing.</li>
@@ -206,9 +203,7 @@
 
                 <section class="future" style="top: -340px; display: none; transform: translateZ(-2500px) translate(1155%, 0%);" data-index-h="12" hidden="" data-background="#cae4df">
                     <h2>Pod</h2>
-                    <br>
-                    <p>
-                    </p>
+                    <p>group of one or more containers</p>
                     <ul>
                         <li>One or more Docker containers with:</li>
                         <ul>
@@ -223,24 +218,51 @@
                             <li>share local or persistent disk</li>
                         </ul>
                     </ul>
-                    <p></p>
                 </section>
 
                 <section class="future" style="top: -340px; display: none; transform: translateZ(-2500px) translate(1260%, 0%);" data-index-h="13" hidden="" data-background="#cae4df">
                     <H2>Replication Controller</H2>
-                    <div align="centre">
-                        <img src="./Fabric_files/kuberc.PNG" height="550" width="650">
-                    </div>
+					<p>makes sure that a pod is always up & available</p>      
+					
+<pre><code>
+   apiVersion: v1
+   kind: ReplicationController
+   metadata:
+     name: nginx
+   spec:
+     replicas: 3
+     selector:
+       app: nginx
+       spec:
+         containers:
+          - name: nginx
+            image: nginx
+            ports:
+          - containerPort: 80
+</code></pre>
+					
+					
                 </section>
 
                 <section class="future" style="top: -340px; display: none; transform: translateZ(-2500px) translate(1365%, 0%);" data-index-h="14" hidden="" data-background="#cae4df">
                     <h2>Service</h2>
-                    <ul>
-                        <li>each service has its own unique IP address</li>
-                    </ul>
-                    <div align="centre">
-                        <img src="./Fabric_files/kubservices.png" height="550" width="650">
-                    </div>
+                    <p>each service has its own unique IP addres<p>
+					
+					<pre><code>
+   kind: Service
+   apiVersion: v1
+   metadata:
+      name: myapp-service
+   spec:
+     selector:
+        app: nginx
+     ports:
+        - protocol: TCP
+          port: 80
+          targetPort: 9376
+     type: LoadBalancer //ClusterIp and NodePort
+	  </code></pre>
+					
                 </section>
 
                 <section class="future" style="top: -340px; display: none; transform: translateZ(-2500px) translate(1470%, 0%);" data-index-h="15" hidden="" data-background="#cae4df">
@@ -541,13 +563,16 @@
             <div class="slide-background present"></div>
             <div class="slide-background future"></div>
         </div>
-        <div class="progress" style="display: block;"><span style="width: 51.2px;"></span></div>
-        <aside class="controls" style="display: block;">
+        
+		<div class="progress" style="display: block;"><span style="width: 51.2px;"></span></div>
+        
+		<aside class="controls" style="display: block;">
             <div class="navigate-left enabled"></div>
             <div class="navigate-right enabled"></div>
             <div class="navigate-up"></div>
             <div class="navigate-down"></div>
         </aside>
+		
         <div class="slide-number"></div>
         <div class="state-background"></div>
         <div class="pause-overlay"></div>
