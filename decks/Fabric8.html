@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://fabric8.io/presentations/kubernetes-for-java-developers/#/1 -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Micro services with Fabric8, Docker and Kubernetes</title>
+
+    <meta name="description" content="Micro services with Fabric8, Docker and Kubernetes">
+    <meta name="author" content="Sanjay Rawat">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="./Fabric_files/reveal.min.css">
+    <link rel="stylesheet" href="./Fabric_files/sky.css" id="theme">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/paper/bootstrap.min.css">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="./Fabric_files/zenburn.css">
+
+    <style>
+        .reveal section img {
+            border: 0px;
+            box-shadow: 0 0 0px;
+        }
+        
+        .reveal i {
+            font-family: 'FontAwesome';
+            font-style: normal;
+        }
+		
+		.fa-envelope{
+			color: #4caf50;
+		}
+		.fa-github{
+			color: #000000;
+		}
+		.fa-twitter{
+			color: #2196f3;
+		}
+		.fa-stack-overflow{
+			color: #ff9800;
+		}
+		a:link {
+			color: #9c27b0;
+		}
+		a:visited {
+			color: #9c27b0;
+		}
+    </style>
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+    </script>
+    <link rel="stylesheet" href="./Fabric_files/paper.css" type="text/css" media="print">
+
+    <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body style="transition: -webkit-transform 0.8s ease;">
+
+    <div class="reveal concave center overview" data-transition-speed="default" data-background-transition="default">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides" style="width: 960px; height: 700px; zoom: 1;">
+
+            <section>
+
+                <section class="present" style="top: -340px; display: block; transform: translateZ(-2500px) translate(-105%, 0%);" hidden="" data-index-h="0" data-background="#c9c6e4">
+                    <h1><b>Kubernetes</b></h1>
+
+                    <h2>for Java Developers</h2>
+                    <br>
+                    <br>
+                    <h2><b>fabric8.io</b></h2>
+                    <br>
+                    <h3>Doing Microservices with Fabric8!</h3>
+                </section>
+
+                <section class="future" style="top: -140px; display: block; transform: translateZ(-2500px) translate(115%, 0%);" data-index-h="4" hidden="" data-background="#c9c6e4">
+                    <h2>Docker</h2>
+                    <p>
+                        Package your micro service into a shipping container.
+                    </p>
+                    <div align="centre">
+                        <img src="./Fabric_files/docker.png">
+                    </div>
+                    <p>
+                        <a href="https://www.docker.com/">https://www.docker.com</a>
+                    </p>
+                </section>
+
+                <section class="future" style="top: -140px; display: block; transform: translateZ(-2500px) translate(115%, 0%);" data-index-h="4" hidden="" data-background="#c9c6e4">
+                    <h2>Containers v/s VMs</h2>
+
+                    <div align="centre">
+                        <img src="./Fabric_files/docker-exp.jpg">
+                    </div>
+                    <p>
+                        <a href="https://www.docker.com/">https://www.docker.com</a>
+                    </p>
+                </section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(320%, 0%);" data-index-h="5" hidden="" data-background="#c9c6e4">
+                    <h2>Docker</h2>
+                    <ul>
+                        <li>
+                            Packaging for a linux process:
+                            <ul>
+                                <li>immutable images</li>
+                                <li>run everywhere</li>
+                                <li>images are small and easy to cache</li>
+                            </ul>
+                        </li>
+                        <li class="fragment" data-fragment-index="0">
+                            Isolate processes:
+                            <ul>
+                                <li>each container has its own file system and ports</li>
+                                <ul>
+                                    <li>avoids conflicts between containers</li>
+                                </ul>
+                                <li>set limits: IO, CPU, memory, ...</li>
+                                <ul>
+                                    <li>helps pack containers onto hosts</li>
+                                </ul>
+                                <li>run 1000s of containers per node rather than 10s of VMs</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(630%, 0%);" data-index-h="7" hidden="" data-background="#cae4df">
+                    <h2>Kubernetes</h2>
+                    <p>
+                        orchestrate your containers!
+                    </p>
+                    <div align="centre">
+                        <img src="./Fabric_files/kubernetes.svg" height="450" width="500">
+                    </div>
+                    <p>
+                        <a href="https://kubernetes.io/">https://kubernetes.io</a>
+                    </p>
+                </section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(840%, 0%);" data-index-h="9" hidden="" data-background="#cae4df">
+                    <h2>OpenShift V3</h2>
+                    <p>
+                        Docker / kubernetes based PaaS
+                    </p>
+                    <p>
+                    </p>
+                    <div align="centre">
+                        <img src="./Fabric_files/openshift.png" height="450" width="450">
+                    </div>
+                    <a href="https://openshift.github.io/">openshift.github.io</a>
+                    <p></p>
+                </section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(945%, 0%);" data-index-h="10" hidden="" data-background="#cae4df">
+                    <h2>Kubernetes Overview</h2>
+                    <br>
+                    <p>
+                        Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.
+                    </p>
+
+                    <br>
+                    <ul>
+                        <li>Automatic binpacking.</li>
+                        <li>Self-healing.</li>
+                        <li>Horizontal scaling.</li>
+                        <li>Service discovery and load balancing.</li>
+                        <li>Automated rollouts and rollbacks.</li>
+                        <li>Secret and configuration management.</li>
+                        <li>Storage orchestration.</li>
+                    </ul>
+                    <p>
+                        <br>
+                        <a href="https://kubernetes.io/">https://kubernetes.io</a>
+                    </p>
+                </section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(1050%, 0%);" data-index-h="11" hidden="" data-background="#cae4df">
+                    <h2>Kubernetes: Sub Atomic particles</h2>
+                    <br>
+                    <p>
+                    </p>
+                    <ul>
+                        <li>Pods</li>
+                        <li>Replication Controllers</li>
+                        <li>Services</li>
+                    </ul>
+                    <p></p>
+                </section>
+
+                <section class="future" style="top: -340px; display: none; transform: translateZ(-2500px) translate(1155%, 0%);" data-index-h="12" hidden="" data-background="#cae4df">
+                    <h2>Pod</h2>
+                    <br>
+                    <p>
+                    </p>
+                    <ul>
+                        <li>One or more Docker containers with:</li>
+                        <ul>
+                            <li>environment variables</li>
+                            <li>ports</li>
+                            <li>volumes</li>
+                        </ul>
+                        <li>Pod has its own unique IP address</li>
+                        <li>Containers can work locally together</li>
+                        <ul>
+                            <li>communicate locally on the pod IP and container ports</li>
+                            <li>share local or persistent disk</li>
+                        </ul>
+                    </ul>
+                    <p></p>
+                </section>
+
+                <section class="future" style="top: -340px; display: none; transform: translateZ(-2500px) translate(1260%, 0%);" data-index-h="13" hidden="" data-background="#cae4df">
+                    <H2>Replication Controller</H2>
+                    <div align="centre">
+                        <img src="./Fabric_files/kuberc.PNG" height="550" width="650">
+                    </div>
+                </section>
+
+                <section class="future" style="top: -340px; display: none; transform: translateZ(-2500px) translate(1365%, 0%);" data-index-h="14" hidden="" data-background="#cae4df">
+                    <h2>Service</h2>
+                    <ul>
+                        <li>each service has its own unique IP address</li>
+                    </ul>
+                    <div align="centre">
+                        <img src="./Fabric_files/kubservices.png" height="550" width="650">
+                    </div>
+                </section>
+
+                <section class="future" style="top: -340px; display: none; transform: translateZ(-2500px) translate(1470%, 0%);" data-index-h="15" hidden="" data-background="#cae4df">
+                    <h2>Microservice on Kubernetes?</h2>
+                    <br>
+                    <p>
+                        Each microservice typically has:
+                    </p>
+                    <ul>
+                        <li>Replication Controller</li>
+                        <li>Service</li>
+                    </ul>
+                    <p></p>
+                </section>
+
+                <section class="future" style="top: -340px; display: none; transform: translateZ(-2500px) translate(1575%, 0%);" data-index-h="16" hidden="" data-background="#cae4df">
+                    <h2>Kubernetes service discovery</h2>
+                    <br>
+                    <p>
+                        For a service called <b>foo-bar</b> here is how you discover to it:
+                    </p>
+                    <ul>
+                        <li>$FOO_BAR_SERVICE_HOST</li>
+                        <li>$FOO_BAR_SERVICE_PORT</li>
+                    </ul>
+                    <p></p>
+                    <br>
+                    <small><b> e.g. http://${FOO_BAR_SERVICE_HOST}:${FOO_BAR_SERVICE_PORT} </b></small>
+                </section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(1785%, 0%);" data-index-h="18" hidden="" data-background="#cae4df">
+                    <h2>Develop microservices on Kubernetes</h2>
+                    <br>
+                    <p>
+                    </p>
+                    <ul>
+                        <li>Write some code</li>
+                        <li>Put code into docker image</li>
+                        <li>Create kubernetes metadata</li>
+                        <li>Apply the metadata</li>
+                        <li>Resize and rolling upgrades</li>
+                    </ul>
+                    <p></p>
+                </section>
+
+            </section>
+
+            <section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(1890%, 0%);" data-index-h="19" hidden="" data-background="#e0d0e6">
+                    <h2>Fabric8</h2>
+                    <p>
+                        <a href="https://fabric8.io/">https://fabric8.io</a>
+                    </p>
+                    <div align="centre">
+                        <img src="./Fabric_files/fabric8.svg" height="500" width="500">
+                    </div>
+                </section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(1995%, 0%);" data-index-h="20" hidden="" data-background="#e0d0e6">
+                    <h2>What is Fabric8?</h2>
+                    <br>
+                    <p>
+                    </p>
+                    <ul>
+                        <li>Microservices that run on Kubernetes
+                            <ul>
+                                <li>Management: (Console, Logging, Metrics)</li>
+                                <li>Continuous Delivery</li>
+                                <li>iPaaS</li>
+                            </ul>
+                        </li>
+                        <li>Tools for Java developers</li>
+                    </ul>
+                    <p></p>
+                </section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(2100%, 0%);" data-index-h="21" hidden="" data-background="#e0d0e6">
+                    <h2>Fabric8: Java Tools</h2>
+                    <br>
+                    <p>
+                    </p>
+                    <ul>
+                        <li>Maven plugin</li>
+                        <li>Dependency Injection
+                            <ul>
+                                <li>CDI</li>
+                                <li>Spring</li>
+                            </ul>
+                        </li>
+                        <li>Java Libraries</li>
+                        <li>Integration Testing
+                            <ul>
+                                <li>Arquillian plugin for JUnit</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p></p>
+                </section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(2205%, 0%);" data-index-h="22" hidden="" data-background="#e0d0e6">
+                    <h2>Fabric8: Maven Plugin</h2>
+					<br>
+                    <p>
+                        Build docker image:
+                    </p>
+
+                    <pre><code class="hljs bash">
+   $ mvn docker:build
+					</code></pre>
+
+                    <p>
+                        Generate kubernetes json:
+                    </p>
+					
+					<pre><code class="hljs bash">
+   $ mvn fabric8:json
+					</code></pre>
+
+                    <p>
+                        Apply kubernetes json and image to kubernetes:
+                    </p>
+
+					<pre><code class="hljs bash">
+   $ mvn fabric8:apply
+					</code></pre>
+					
+                </section>
+				
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(2310%, 0%);" hidden="" data-index-h="23" data-background="#e0d0e6">
+                    <h2>CDI / Spring</h2>
+                    <div align="centre">
+                        <img src="./Fabric_files/cdi.png" height="500" width="800">
+                    </div>
+                    <p>
+                        <a href="http://fabric8.io/guide/cdi.html">http://fabric8.io/guide/cdi.html</a>
+                    </p>
+                </section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(2100%, 0%);" data-index-h="21" hidden="" data-background="#e0d0e6">
+                    <h2>Fabric8: Ops Tools</h2>
+                    <br>
+                    <p>
+                    </p>
+                    <ul>
+                        <li>Console</li>
+                        <li>Logging
+                            <ul>
+                                <li>Elasticsearch</li>
+                                <li>Kibana</li>
+                            </ul>
+                        </li>
+                        <li>Metrics
+                            <ul>
+                                <li>Prometheus</li>
+                                <li>Grafana</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p></p>
+                </section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(2100%, 0%);" data-index-h="21" hidden="" data-background="#e0d0e6">
+                    <h2>Fabric8: Team Tools</h2>
+                    <br>
+                    <p>
+                    </p>
+                    <ul>
+                        <li>Chat, Issues & Notification
+                            <ul>
+                                <li>Hubot</li>
+                                <li>Lets Chat</li>
+                                <li>Slack</li>
+                            </ul>
+                        </li>
+                        <li>Issues & Kanban
+                            <ul>
+                                <li>Taiga</li>
+                            </ul>
+                        </li>
+                        <li>Source code
+                            <ul>
+                                <li>Gogs</li>
+                                <li>Gerrit</li>
+                                <li>Gitlab</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p></p>
+                </section>
+
+                <section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(2100%, 0%);" data-index-h="21" hidden="" data-background="#e0d0e6">
+                    <h2>Fabric8: iPaaS</h2>
+                    <br>
+                    <p>
+                    </p>
+                    <ul>
+                        <li>Integration as a Service
+                            <ul>
+                                <li>Apache Camel</li>
+                            </ul>
+                        </li>
+                        <li>Messaging as a Service
+                            <ul>
+                                <li>Apache ActiveMQ</li>
+                            </ul>
+                        </li>
+                        <li>APIs
+                            <ul>
+                                <li>Apiman</li>
+                                <li>API Registry</li>
+                            </ul>
+                        </li>
+                        <li>Console & Web IDE
+                            <ul>
+                                <li>hawtio</li>
+                                <li>Eclipse Orion</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p></p>
+                </section>
+
+            </section>
+
+            <section>
+
+                <section class="future" style="top: -140px; display: block; transform: translateZ(-1500px) translate(2520%, 0%);" hidden="" data-index-h="25" data-index-h="23" data-background="#FFCCBC">
+                    <h2>CI/CD Pipeline in Fabric8</h2>
+                    <div align="centre">
+                        <img src="./Fabric_files/cicd.png" height="600" width="900">
+                    </div>
+                </section>
+
+                <section class="future" style="top: -140px; display: block; transform: translateZ(-1500px) translate(2520%, 0%);" hidden="" data-index-h="25" data-index-h="23" data-background="#FFCCBC">
+                    <h2>Demo</h2>
+                    <br>
+                    <ol>
+                        <li>Aviation Monolith App with CI/CD pipeline.</li>
+                        <li>Deploy it to various Environments.</li>
+                        <li>Make changes in the code and push the changes to see automated build.</li>
+                        <li>MySQL database in Kubernetes.</li>
+                        <li>Other features inside Fabric8 console:
+                            <ul><span style="font-size:25px;">
+				<li>CI/CD - Jenkins, Gogs, Nexus</li>
+				<li>Docker Registry</li>
+				<li>ChatOps</li>
+				<li>Logging & Metrics</li>
+				<li>Messaging</li>
+				<li>Zookeeper</li>
+				<li>Zipkin</li>
+				</span>
+                                <ul>
+                        </li>
+                    </ol>
+                </section>
+
+				<section class="future" style="top: -340px; display: block; transform: translateZ(-2500px) translate(2520%, 0%);" hidden="" data-index-h="25" data-index-h="23" data-background="#FFCCBC">
+					<h1>Questions?</h1>
+                    <br>
+					
+					<div>
+						<p>© 2017. Sanjay Rawat<p>
+					</div>
+					<br><br>
+					
+					<div class="pull-right">
+						<table>
+							<tbody>
+								<tr>
+									<td><i class="fa fa-envelope fa-6x" aria-hidden="true"></i></td>
+									<td><a target="_blank" style="color:#8bcb8e;" href="mailto:sanjayprawat31@gmail.com">E-Mail</a></td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-github fa-6x" aria-hidden="true"></i></td>
+									<td><a target="_blank" style="color:#000000;" href="http://github.com/rawsanj">@RawSanj</a></td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-twitter fa-6x" aria-hidden="true"></i></td>
+									<td><a target="_blank" style="color:#6fbbf7;" href="https://twitter.com/rawsanj31">@RawSanj31</a></td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-stack-overflow fa-6x" aria-hidden="true"></i></td>
+									<td><a target="_blank" style="color:#ffbc5a;" href="https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile">stack<b>overflow</b></a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</section>
+				
+				
+            </section>
+        </div>
+
+        <div class="backgrounds">
+            <div class="slide-background past"></div>
+            <div class="slide-background present"></div>
+            <div class="slide-background future"></div>
+        </div>
+        <div class="progress" style="display: block;"><span style="width: 51.2px;"></span></div>
+        <aside class="controls" style="display: block;">
+            <div class="navigate-left enabled"></div>
+            <div class="navigate-right enabled"></div>
+            <div class="navigate-up"></div>
+            <div class="navigate-down"></div>
+        </aside>
+        <div class="slide-number"></div>
+        <div class="state-background"></div>
+        <div class="pause-overlay"></div>
+    </div>
+
+    <script src="./Fabric_files/head.min.js.download"></script>
+    <script src="./Fabric_files/reveal.min.js.download"></script>
+
+    <script>
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            slideNumber: true,
+            overview: true,
+            //parallaxBackgroundImage: 'http://www.labrujulaverde.com/wp-content/uploads/2011/12/backbru.jpg', 
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            //transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+            transition: 'zoom', // none/fade/slide/convex/concave/zoom
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            //parallaxBackgroundSize: '2100px 1200px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }]
+        });
+    </script>
+    <script type="text/javascript" src="./Fabric_files/highlight.js.download"></script>
+    <script type="text/javascript" src="./Fabric_files/zoom.js.download"></script>
+    <script type="text/javascript" src="./Fabric_files/notes.js.download"></script>
+
+</body>
+
+</html>
