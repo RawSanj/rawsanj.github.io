@@ -4,15 +4,7 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/author/admin/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.github.io/</loc>
-      <priority>0</priority>
+      <loc>https://rawsanj.github.io/author/rawsanj/</loc>
     </url>
     
   
@@ -43,6 +35,14 @@
     
     <url>
     
+      <loc>https://rawsanj.github.io/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://rawsanj.github.io/post/</loc>
     </url>
     
@@ -65,13 +65,6 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/talk/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://rawsanj.github.io/tags/</loc>
       <priority>0</priority>
     </url>
@@ -80,7 +73,7 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/authors/admin/</loc>
+      <loc>https://rawsanj.github.io/authors/rawsanj/</loc>
       <priority>0</priority>
     </url>
     

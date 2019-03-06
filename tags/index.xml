@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on All Things Cloud</title>
+    <title>Tags on Cloud Native Things</title>
     <link>https://rawsanj.github.io/tags/</link>
-    <description>Recent content in Tags on All Things Cloud</description>
+    <description>Recent content in Tags on Cloud Native Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on All Things Cloud</title>
+    <title>Authors on Cloud Native Things</title>
     <link>https://rawsanj.github.io/authors/</link>
-    <description>Recent content in Authors on All Things Cloud</description>
+    <description>Recent content in Authors on Cloud Native Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>admin</title>
-      <link>https://rawsanj.github.io/authors/admin/</link>
+      <title>rawsanj</title>
+      <link>https://rawsanj.github.io/authors/rawsanj/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/authors/admin/</guid>
+      <guid>https://rawsanj.github.io/authors/rawsanj/</guid>
       <description></description>
     </item>
     
