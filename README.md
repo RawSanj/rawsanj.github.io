@@ -4,7 +4,8 @@
 
 A Big Thanks to the below Projects / Technologies:
 
-* [Scoop Themes] - 100% Free Premium Bootstrap HTML Templates & Themes.
+* [Hugo] - Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+* [Academic Theme] - The Best Way to Create the Website You Want from Markdown.
 * [Github Pages] - Websites for you and your projects.Hosted directly from your GitHub repository. Just edit, push, and your changes are live.
 
 
@@ -13,10 +14,11 @@ A Big Thanks to the below Projects / Technologies:
 
 MIT
 
-Copyright (c) 2017 Sanjay Rawat
+Copyright (c) 2019. Sanjay Rawat
 
 [//]: #
 
-   [Scoop Themes]: <http://www.scoopthemes.com/templates/Oleose-Theme/>
+   [Hugo]: <https://gohugo.io/>
+   [Academic Theme]: <https://sourcethemes.com/academic/>
    [Github Pages]:<https://pages.github.com/>
    
