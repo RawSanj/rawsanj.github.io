@@ -11,5 +11,86 @@
 	<atom:link href="https://rawsanj.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>docker</title>
+      <link>https://rawsanj.github.io/tags/docker/</link>
+      <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
+      
+      <guid>https://rawsanj.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker-compose</title>
+      <link>https://rawsanj.github.io/tags/docker-compose/</link>
+      <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
+      
+      <guid>https://rawsanj.github.io/tags/docker-compose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://rawsanj.github.io/tags/kubernetes/</link>
+      <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
+      
+      <guid>https://rawsanj.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ngnix</title>
+      <link>https://rawsanj.github.io/tags/ngnix/</link>
+      <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
+      
+      <guid>https://rawsanj.github.io/tags/ngnix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pub-sub</title>
+      <link>https://rawsanj.github.io/tags/pub-sub/</link>
+      <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
+      
+      <guid>https://rawsanj.github.io/tags/pub-sub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>redis</title>
+      <link>https://rawsanj.github.io/tags/redis/</link>
+      <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
+      
+      <guid>https://rawsanj.github.io/tags/redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spring-boot</title>
+      <link>https://rawsanj.github.io/tags/spring-boot/</link>
+      <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
+      
+      <guid>https://rawsanj.github.io/tags/spring-boot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spring-data-redis</title>
+      <link>https://rawsanj.github.io/tags/spring-data-redis/</link>
+      <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
+      
+      <guid>https://rawsanj.github.io/tags/spring-data-redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>websocket</title>
+      <link>https://rawsanj.github.io/tags/websocket/</link>
+      <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
+      
+      <guid>https://rawsanj.github.io/tags/websocket/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -7,7 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
+    <lastBuildDate>Mon, 18 Mar 2019 01:09:30 +0530</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Spring Redis Websocket</title>
+      <link>https://rawsanj.github.io/project/spring-redis-websocket/</link>
+      <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
+      
+      <guid>https://rawsanj.github.io/project/spring-redis-websocket/</guid>
+      <description>
+
+&lt;h2 id=&#34;multi-instance-websocket-messaging-demo-using-spring-boot-and-redis-pub-sub&#34;&gt;Multi-instance WebSocket messaging demo using Spring Boot and Redis Pub/Sub&lt;/h2&gt;
+
+&lt;p&gt;Scalable Spring Boot Chat Application to demonstrate use of &lt;a href=&#34;https://redis.io&#34; target=&#34;_blank&#34;&gt;Redis&lt;/a&gt; - &lt;a href=&#34;https://redis.io/topics/pubsub&#34; target=&#34;_blank&#34;&gt;Pub/Sub&lt;/a&gt; for &lt;a href=&#34;https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#websocket-stomp&#34; target=&#34;_blank&#34;&gt;WebSocket using STOMP&lt;/a&gt; protocol, without using any external Message Broker like RabbitMQ to sync messages between different instances.&lt;/p&gt;
+
+&lt;h3 id=&#34;deploy-to-play-with-docker&#34;&gt;Deploy to &lt;a href=&#34;https://labs.play-with-docker.com&#34; target=&#34;_blank&#34;&gt;Play with Docker&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Ctrl + Click the below button to deploy multiple instances of the spring-redis-websocket load balanced by NGINX:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/RawSanj/spring-redis-websocket/master/src/main/docker/docker-compose.yml#&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;deploy-to-pwd.png&#34; alt=&#34;Deploy to PWD&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;technology-projects-used&#34;&gt;Technology &amp;amp; Projects used&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;spring-redis-websocket&lt;/strong&gt; uses a number of open source projects:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://projects.spring.io/spring-boot/&#34; target=&#34;_blank&#34;&gt;Spring Boot&lt;/a&gt; - An opinionated framework for building production-ready Spring applications. It favors convention over configuration and is designed to get you up and running as quickly as possible.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://projects.spring.io/spring-data-redis&#34; target=&#34;_blank&#34;&gt;Spring Data Redis&lt;/a&gt; - Spring Data Redis provides easy configuration and access to Redis from Spring applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://redis.io&#34; target=&#34;_blank&#34;&gt;Redis&lt;/a&gt; - Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.docker.com&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt; - Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nginx.com&#34; target=&#34;_blank&#34;&gt;NGINX&lt;/a&gt; - NGINX is High Performance Load Balancer, Web Server, &amp;amp; Reverse Proxy.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kubernetes.io&#34; target=&#34;_blank&#34;&gt;Kubernetes&lt;/a&gt; - Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
