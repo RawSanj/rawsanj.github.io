@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/rawsanj
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://rawsanj.dev
+  * I am rawsanj (https://keybase.io/rawsanj) on keybase.
+  * I have a public key ASDP4qIEhmy6kLun17J5ZbTjt0dyfO7t8Dxc0OhhFIFJGgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120cfe2a204866cba90bba7d7b27965b4e3b747727ceeedf03c5cd0e8611481491a0a",
+      "host": "keybase.io",
+      "kid": "0120cfe2a204866cba90bba7d7b27965b4e3b747727ceeedf03c5cd0e8611481491a0a",
+      "uid": "020fef3d204c1aeac268da8ddbcc6a19",
+      "username": "rawsanj"
+    },
+    "merkle_root": {
+      "ctime": 1552671257,
+      "hash": "9dd4aeb33ba15449a3b454b84bcedc3b44bc9e817ab7aeef4b47a828e2330892c06e0e9e0adf33ab82b8b104a69ffdd3af705de823faa542b965a2d904050b3a",
+      "hash_meta": "f5ad28b1cf39c3ab3d8c98f62b71cf1e055cb07649432dfc521e1b3991119a17",
+      "seqno": 4957203
+    },
+    "service": {
+      "entropy": "HZ+OEgr4BBGwUry2E79ZtU6X",
+      "hostname": "rawsanj.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.1.2"
+  },
+  "ctime": 1552671272,
+  "expire_in": 504576000,
+  "prev": "c7928fcabcce0f5e62ab108b597582f22606ba59173c56856c202f9f155796f1",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgz+KiBIZsupC7p9eyeWW047dHcnzu7fA8XNDoYRSBSRoKp3BheWxvYWTESpcCCsQgx5KPyrzOD15iqxCLWXWC8iYGulkXPFaFbCAvnxVXlvHEIAo6F1y17QRY5KJFtiVd/GoAbX01U3Ge3hEjeXcNiPbuAgHCo3NpZ8RAxd3sJRKKS4OMPFVCP53DrSCKjptIEILl6nbenRUtHpKPCoIlIZFhsTTo7rhy9GXemM1LWXSfeJ+7delrUrFACqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDPW/eNNoxtwdIlxxu6i91evHNwXBSQGEX5rXi43+l/1o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rawsanj
+
+==================================================================
