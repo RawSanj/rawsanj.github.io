@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ngnix on Cloud Native Things</title>
-    <link>https://rawsanj.github.io/tags/ngnix/</link>
-    <description>Recent content in ngnix on Cloud Native Things</description>
+    <title>ngnix on Coding Cloud</title>
+    <link>https://rawsanj.dev/tags/ngnix/</link>
+    <description>Recent content in ngnix on Coding Cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
     <lastBuildDate>Mon, 18 Mar 2019 01:09:30 +0530</lastBuildDate>
     
-	<atom:link href="https://rawsanj.github.io/tags/ngnix/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rawsanj.dev/tags/ngnix/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Spring Redis Websocket</title>
-      <link>https://rawsanj.github.io/project/spring-redis-websocket/</link>
+      <link>https://rawsanj.dev/project/spring-redis-websocket/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
       
-      <guid>https://rawsanj.github.io/project/spring-redis-websocket/</guid>
-      <description>Multi-instance WebSocket messaging demo using Spring Boot and Redis Pub/Sub Scalable Spring Boot Chat Application to demonstrate use of Redis - Pub/Sub for WebSocket using STOMP protocol, without using any external Message Broker like RabbitMQ to sync messages between different instances.
-Deploy to Play with Docker Ctrl + Click the below button to deploy multiple instances of the spring-redis-websocket load balanced by NGINX:
-
-Technology &amp;amp; Projects used spring-redis-websocket uses a number of open source projects:</description>
+      <guid>https://rawsanj.dev/project/spring-redis-websocket/</guid>
+      <description>Multi-instance WebSocket messaging Chat App demo using Spring Boot and Redis Pub/Sub</description>
     </item>
     
   </channel>

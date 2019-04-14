@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Cloud Native Things</title>
-    <link>https://rawsanj.github.io/post/</link>
-    <description>Recent content in Posts on Cloud Native Things</description>
+    <title>Posts on Coding Cloud</title>
+    <link>https://rawsanj.dev/post/</link>
+    <description>Recent content in Posts on Coding Cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
     
-	<atom:link href="https://rawsanj.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rawsanj.dev/post/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

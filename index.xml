@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cloud Native Things on Cloud Native Things</title>
-    <link>https://rawsanj.github.io/</link>
-    <description>Recent content in Cloud Native Things on Cloud Native Things</description>
+    <title>Coding Cloud on Coding Cloud</title>
+    <link>https://rawsanj.dev/</link>
+    <description>Recent content in Coding Cloud on Coding Cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
@@ -12,10 +11,10 @@
     
     <item>
       <title>Spring Redis Websocket</title>
-      <link>https://rawsanj.github.io/project/spring-redis-websocket/</link>
+      <link>https://rawsanj.dev/project/spring-redis-websocket/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
       
-      <guid>https://rawsanj.github.io/project/spring-redis-websocket/</guid>
+      <guid>https://rawsanj.dev/project/spring-redis-websocket/</guid>
       <description>
 
 &lt;h2 id=&#34;multi-instance-websocket-messaging-demo-using-spring-boot-and-redis-pub-sub&#34;&gt;Multi-instance WebSocket messaging demo using Spring Boot and Redis Pub/Sub&lt;/h2&gt;

@@ -1,142 +1,141 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on Cloud Native Things</title>
-    <link>https://rawsanj.github.io/home/</link>
-    <description>Recent content in Homes on Cloud Native Things</description>
+    <title>Homes on Coding Cloud</title>
+    <link>https://rawsanj.dev/home/</link>
+    <description>Recent content in Homes on Coding Cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
     
-	<atom:link href="https://rawsanj.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rawsanj.dev/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://rawsanj.github.io/home/slider/</link>
+      <link>https://rawsanj.dev/home/slider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/slider/</guid>
+      <guid>https://rawsanj.dev/home/slider/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Academic</title>
-      <link>https://rawsanj.github.io/home/hero/</link>
+      <link>https://rawsanj.dev/home/hero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/hero/</guid>
+      <guid>https://rawsanj.dev/home/hero/</guid>
       <description>The Best Way to Create the Website You Want from Markdown (or RStudio/Jupyter)
 Build Anything with Widgets
 Star</description>
     </item>
     
     <item>
-      <title>Biography</title>
-      <link>https://rawsanj.github.io/home/about/</link>
+      <title>About Me</title>
+      <link>https://rawsanj.dev/home/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/about/</guid>
+      <guid>https://rawsanj.dev/home/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Skills</title>
-      <link>https://rawsanj.github.io/home/skills/</link>
+      <link>https://rawsanj.dev/home/skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/skills/</guid>
+      <guid>https://rawsanj.dev/home/skills/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Experience</title>
-      <link>https://rawsanj.github.io/home/experience/</link>
+      <link>https://rawsanj.dev/home/experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/experience/</guid>
+      <guid>https://rawsanj.dev/home/experience/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Accomplish&amp;shy;ments</title>
-      <link>https://rawsanj.github.io/home/accomplishments/</link>
+      <link>https://rawsanj.dev/home/accomplishments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/accomplishments/</guid>
+      <guid>https://rawsanj.dev/home/accomplishments/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Posts</title>
-      <link>https://rawsanj.github.io/home/posts/</link>
+      <link>https://rawsanj.dev/home/posts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/posts/</guid>
+      <guid>https://rawsanj.dev/home/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github Projects</title>
-      <link>https://rawsanj.github.io/home/projects/</link>
+      <link>https://rawsanj.dev/home/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/projects/</guid>
+      <guid>https://rawsanj.dev/home/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>People</title>
-      <link>https://rawsanj.github.io/home/people/</link>
+      <link>https://rawsanj.dev/home/people/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/people/</guid>
+      <guid>https://rawsanj.dev/home/people/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>https://rawsanj.github.io/home/talks/</link>
+      <link>https://rawsanj.dev/home/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/talks/</guid>
+      <guid>https://rawsanj.dev/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Featured Publications</title>
-      <link>https://rawsanj.github.io/home/featured/</link>
+      <link>https://rawsanj.dev/home/featured/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/featured/</guid>
+      <guid>https://rawsanj.dev/home/featured/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Publications</title>
-      <link>https://rawsanj.github.io/home/publications/</link>
+      <link>https://rawsanj.dev/home/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/publications/</guid>
-      <description> Quickly discover relevant content by filtering publications.
-  </description>
+      <guid>https://rawsanj.dev/home/publications/</guid>
+      <description> Quickly discover relevant content by [filtering publications](https://rawsanj.dev/publication/).   </description>
     </item>
     
     <item>
       <title>Popular Topics</title>
-      <link>https://rawsanj.github.io/home/tags/</link>
+      <link>https://rawsanj.dev/home/tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/tags/</guid>
+      <guid>https://rawsanj.dev/home/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://rawsanj.github.io/home/contact/</link>
+      <link>https://rawsanj.dev/home/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rawsanj.github.io/home/contact/</guid>
+      <guid>https://rawsanj.dev/home/contact/</guid>
       <description></description>
     </item>
     

@@ -1,94 +1,95 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Cloud Native Things</title>
-    <link>https://rawsanj.github.io/tags/</link>
-    <description>Recent content in Tags on Cloud Native Things</description>
+    <title>Tags on Coding Cloud</title>
+    <link>https://rawsanj.dev/tags/</link>
+    <description>Recent content in Tags on Coding Cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
+    <lastBuildDate>Mon, 18 Mar 2019 01:09:30 +0530</lastBuildDate>
     
-	<atom:link href="https://rawsanj.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rawsanj.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>docker</title>
-      <link>https://rawsanj.github.io/tags/docker/</link>
+      <link>https://rawsanj.dev/tags/docker/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
       
-      <guid>https://rawsanj.github.io/tags/docker/</guid>
+      <guid>https://rawsanj.dev/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker-compose</title>
-      <link>https://rawsanj.github.io/tags/docker-compose/</link>
+      <link>https://rawsanj.dev/tags/docker-compose/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
       
-      <guid>https://rawsanj.github.io/tags/docker-compose/</guid>
+      <guid>https://rawsanj.dev/tags/docker-compose/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kubernetes</title>
-      <link>https://rawsanj.github.io/tags/kubernetes/</link>
+      <link>https://rawsanj.dev/tags/kubernetes/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
       
-      <guid>https://rawsanj.github.io/tags/kubernetes/</guid>
+      <guid>https://rawsanj.dev/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ngnix</title>
-      <link>https://rawsanj.github.io/tags/ngnix/</link>
+      <link>https://rawsanj.dev/tags/ngnix/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
       
-      <guid>https://rawsanj.github.io/tags/ngnix/</guid>
+      <guid>https://rawsanj.dev/tags/ngnix/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pub-sub</title>
-      <link>https://rawsanj.github.io/tags/pub-sub/</link>
+      <link>https://rawsanj.dev/tags/pub-sub/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
       
-      <guid>https://rawsanj.github.io/tags/pub-sub/</guid>
+      <guid>https://rawsanj.dev/tags/pub-sub/</guid>
       <description></description>
     </item>
     
     <item>
       <title>redis</title>
-      <link>https://rawsanj.github.io/tags/redis/</link>
+      <link>https://rawsanj.dev/tags/redis/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
       
-      <guid>https://rawsanj.github.io/tags/redis/</guid>
+      <guid>https://rawsanj.dev/tags/redis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>spring-boot</title>
-      <link>https://rawsanj.github.io/tags/spring-boot/</link>
+      <link>https://rawsanj.dev/tags/spring-boot/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
       
-      <guid>https://rawsanj.github.io/tags/spring-boot/</guid>
+      <guid>https://rawsanj.dev/tags/spring-boot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>spring-data-redis</title>
-      <link>https://rawsanj.github.io/tags/spring-data-redis/</link>
+      <link>https://rawsanj.dev/tags/spring-data-redis/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
       
-      <guid>https://rawsanj.github.io/tags/spring-data-redis/</guid>
+      <guid>https://rawsanj.dev/tags/spring-data-redis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>websocket</title>
-      <link>https://rawsanj.github.io/tags/websocket/</link>
+      <link>https://rawsanj.dev/tags/websocket/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
       
-      <guid>https://rawsanj.github.io/tags/websocket/</guid>
+      <guid>https://rawsanj.dev/tags/websocket/</guid>
       <description></description>
     </item>
     

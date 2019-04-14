@@ -1,49 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
     <url>
     
-      <loc>https://rawsanj.github.io/project/spring-redis-websocket/</loc>
-      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.github.io/author/rawsanj/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.github.io/author/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.github.io/authors/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.github.io/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.github.io/</loc>
+      <loc>https://rawsanj.dev/</loc>
       <lastmod>2019-03-18T01:09:30+05:30</lastmod>
       <priority>0</priority>
     </url>
@@ -52,14 +12,7 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/post/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.github.io/project/</loc>
+      <loc>https://rawsanj.dev/project/</loc>
       <lastmod>2019-03-18T01:09:30+05:30</lastmod>
       <priority>0</priority>
     </url>
@@ -68,30 +21,15 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/publication_types/</loc>
-      <priority>0</priority>
+      <loc>https://rawsanj.dev/project/spring-redis-websocket/</loc>
+      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
     </url>
     
   
     
     <url>
     
-      <loc>https://rawsanj.github.io/publication/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.github.io/tags/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.github.io/tags/docker/</loc>
+      <loc>https://rawsanj.dev/tags/</loc>
       <lastmod>2019-03-18T01:09:30+05:30</lastmod>
       <priority>0</priority>
     </url>
@@ -100,7 +38,7 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/tags/docker-compose/</loc>
+      <loc>https://rawsanj.dev/tags/docker/</loc>
       <lastmod>2019-03-18T01:09:30+05:30</lastmod>
       <priority>0</priority>
     </url>
@@ -109,7 +47,7 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/tags/kubernetes/</loc>
+      <loc>https://rawsanj.dev/tags/docker-compose/</loc>
       <lastmod>2019-03-18T01:09:30+05:30</lastmod>
       <priority>0</priority>
     </url>
@@ -118,7 +56,7 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/tags/ngnix/</loc>
+      <loc>https://rawsanj.dev/tags/kubernetes/</loc>
       <lastmod>2019-03-18T01:09:30+05:30</lastmod>
       <priority>0</priority>
     </url>
@@ -127,7 +65,7 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/tags/pub-sub/</loc>
+      <loc>https://rawsanj.dev/tags/ngnix/</loc>
       <lastmod>2019-03-18T01:09:30+05:30</lastmod>
       <priority>0</priority>
     </url>
@@ -136,15 +74,7 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/authors/rawsanj/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.github.io/tags/redis/</loc>
+      <loc>https://rawsanj.dev/tags/pub-sub/</loc>
       <lastmod>2019-03-18T01:09:30+05:30</lastmod>
       <priority>0</priority>
     </url>
@@ -153,7 +83,7 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/tags/spring-boot/</loc>
+      <loc>https://rawsanj.dev/tags/redis/</loc>
       <lastmod>2019-03-18T01:09:30+05:30</lastmod>
       <priority>0</priority>
     </url>
@@ -162,7 +92,7 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/tags/spring-data-redis/</loc>
+      <loc>https://rawsanj.dev/tags/spring-boot/</loc>
       <lastmod>2019-03-18T01:09:30+05:30</lastmod>
       <priority>0</priority>
     </url>
@@ -171,8 +101,78 @@
     
     <url>
     
-      <loc>https://rawsanj.github.io/tags/websocket/</loc>
+      <loc>https://rawsanj.dev/tags/spring-data-redis/</loc>
       <lastmod>2019-03-18T01:09:30+05:30</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://rawsanj.dev/tags/websocket/</loc>
+      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://rawsanj.dev/author/rawsanj/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://rawsanj.dev/authors/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://rawsanj.dev/author/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://rawsanj.dev/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://rawsanj.dev/post/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://rawsanj.dev/publication_types/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://rawsanj.dev/publication/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://rawsanj.dev/authors/rawsanj/</loc>
       <priority>0</priority>
     </url>
     
