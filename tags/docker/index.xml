@@ -21,5 +21,23 @@
       <description>Multi-instance WebSocket messaging Chat App demo using Spring Boot and Redis Pub/Sub</description>
     </item>
     
+    <item>
+      <title>Docker Deep Dive</title>
+      <link>https://rawsanj.dev/talk/docker-deep-dive/</link>
+      <pubDate>Mon, 14 Aug 2017 18:00:25 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/talk/docker-deep-dive/</guid>
+      <description>Docker Deep Dive for Java Developers</description>
+    </item>
+    
+    <item>
+      <title>Intro to Kubernetes</title>
+      <link>https://rawsanj.dev/talk/intro-to-kubernetes/</link>
+      <pubDate>Tue, 14 Mar 2017 18:00:25 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/talk/intro-to-kubernetes/</guid>
+      <description>Kubernetes for Java Developers</description>
+    </item>
+    
   </channel>
 </rss>

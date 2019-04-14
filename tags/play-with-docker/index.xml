@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Talks on Coding Cloud</title>
-    <link>https://rawsanj.dev/talk/</link>
-    <description>Recent content in Talks on Coding Cloud</description>
+    <title>Play-with-Docker on Coding Cloud</title>
+    <link>https://rawsanj.dev/tags/play-with-docker/</link>
+    <description>Recent content in Play-with-Docker on Coding Cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
     <lastBuildDate>Mon, 14 Aug 2017 18:00:25 +0530</lastBuildDate>
     
-	<atom:link href="https://rawsanj.dev/talk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rawsanj.dev/tags/play-with-docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>https://rawsanj.dev/talk/docker-deep-dive/</guid>
       <description>Docker Deep Dive for Java Developers</description>
-    </item>
-    
-    <item>
-      <title>Intro to Kubernetes</title>
-      <link>https://rawsanj.dev/talk/intro-to-kubernetes/</link>
-      <pubDate>Tue, 14 Mar 2017 18:00:25 +0530</pubDate>
-      
-      <guid>https://rawsanj.dev/talk/intro-to-kubernetes/</guid>
-      <description>Kubernetes for Java Developers</description>
     </item>
     
   </channel>

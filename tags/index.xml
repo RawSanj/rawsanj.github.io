@@ -93,5 +93,68 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Container</title>
+      <link>https://rawsanj.dev/tags/container/</link>
+      <pubDate>Mon, 14 Aug 2017 18:00:25 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/tags/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LXC</title>
+      <link>https://rawsanj.dev/tags/lxc/</link>
+      <pubDate>Mon, 14 Aug 2017 18:00:25 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/tags/lxc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://rawsanj.dev/tags/linux/</link>
+      <pubDate>Mon, 14 Aug 2017 18:00:25 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Play-with-Docker</title>
+      <link>https://rawsanj.dev/tags/play-with-docker/</link>
+      <pubDate>Mon, 14 Aug 2017 18:00:25 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/tags/play-with-docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CI/CD</title>
+      <link>https://rawsanj.dev/tags/ci/cd/</link>
+      <pubDate>Tue, 14 Mar 2017 18:00:25 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/tags/ci/cd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fabric8</title>
+      <link>https://rawsanj.dev/tags/fabric8/</link>
+      <pubDate>Tue, 14 Mar 2017 18:00:25 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/tags/fabric8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://rawsanj.dev/tags/spring/</link>
+      <pubDate>Tue, 14 Mar 2017 18:00:25 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/tags/spring/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -30,10 +28,10 @@
   
     
   
-  <meta name="description" content="Coding Cloud by @RawSanj. Java, Spring, AWS, Kubernetes, Kotlin, Node.js.">
+  <meta name="description" content="Kubernetes for Java Developers">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://rawsanj.dev/tags/kubernetes/">
+  <link rel="alternate" hreflang="en-us" href="https://rawsanj.dev/talk/intro-to-kubernetes/">
 
   
 
@@ -114,15 +112,15 @@
   
 
   
-  <link rel="alternate" href="https://rawsanj.dev/tags/kubernetes/index.xml" type="application/rss+xml" title="Coding Cloud">
-  <link rel="feed" href="https://rawsanj.dev/tags/kubernetes/index.xml" type="application/rss+xml" title="Coding Cloud">
+  <link rel="alternate" href="https://rawsanj.dev/index.xml" type="application/rss+xml" title="Coding Cloud">
+  <link rel="feed" href="https://rawsanj.dev/index.xml" type="application/rss+xml" title="Coding Cloud">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://rawsanj.dev/tags/kubernetes/">
+  <link rel="canonical" href="https://rawsanj.dev/talk/intro-to-kubernetes/">
 
   
   
@@ -136,12 +134,14 @@
   <meta property="twitter:creator" content="@Raw_Sanj">
   
   <meta property="og:site_name" content="Coding Cloud">
-  <meta property="og:url" content="https://rawsanj.dev/tags/kubernetes/">
-  <meta property="og:title" content="kubernetes | Coding Cloud">
-  <meta property="og:description" content="Coding Cloud by @RawSanj. Java, Spring, AWS, Kubernetes, Kotlin, Node.js."><meta property="og:image" content="https://rawsanj.dev/img/icon-192.png">
+  <meta property="og:url" content="https://rawsanj.dev/talk/intro-to-kubernetes/">
+  <meta property="og:title" content="Intro to Kubernetes | Coding Cloud">
+  <meta property="og:description" content="Kubernetes for Java Developers"><meta property="og:image" content="https://rawsanj.dev/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-03-18T01:09:30&#43;05:30">
+  <meta property="article:published_time" content="2017-03-14T18:00:25&#43;05:30">
+  
+  <meta property="article:modified_time" content="2017-03-14T18:00:25&#43;05:30">
   
 
   
@@ -174,7 +174,7 @@
 
   
 
-  <title>kubernetes | Coding Cloud</title>
+  <title>Intro to Kubernetes | Coding Cloud</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
@@ -330,8 +330,9 @@
   </div>
 </nav>
 
+<div class="pub" itemscope itemtype="http://schema.org/Event">
 
-
+  
 
 
 
@@ -347,47 +348,325 @@
   
 
   
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Intro to Kubernetes</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2017-03-14 18:00:25 &#43;0530 IST" itemprop="datePublished">
+<meta content="2017-03-14 18:00:25 &#43;0530 IST" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/talk/intro-to-kubernetes/#disqus_thread"></a>
+  
+
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Intro%20to%20Kubernetes&amp;url=https%3a%2f%2frawsanj.dev%2ftalk%2fintro-to-kubernetes%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frawsanj.dev%2ftalk%2fintro-to-kubernetes%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frawsanj.dev%2ftalk%2fintro-to-kubernetes%2f&amp;title=Intro%20to%20Kubernetes"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frawsanj.dev%2ftalk%2fintro-to-kubernetes%2f&amp;title=Intro%20to%20Kubernetes"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Intro%20to%20Kubernetes&amp;body=https%3a%2f%2frawsanj.dev%2ftalk%2fintro-to-kubernetes%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/project/spring-redis-websocket/">
+    Project
+  </a>
+  
+
+
+
+
+
   
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">kubernetes</h1>
+<a class="btn btn-outline-primary my-1 mr-1" href="/decks/Fabric8.html" target="_blank" rel="noopener">
+  Slides
+</a>
 
-  
+
+
+
+
+
+
+</div>
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
-  <div>
-    <h2><a href="/project/spring-redis-websocket/">Spring Redis Websocket</a></h2>
+    
+      <h3>Abstract</h3>
+      <p class="pub-abstract" itemprop="text">Introduction to Kubernetes</p>
+    
+
+    
+
+    
+
+    <div class="space-below"></div>
+
     <div class="article-style">
       
-      Multi-instance WebSocket messaging Chat App demo using Spring Boot and Redis Pub/Sub
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/talk/intro-to-kubernetes/">Intro to Kubernetes</a></h2>
-    <div class="article-style">
-      
-      Kubernetes for Java Developers
-      
-    </div>
-  </div>
-  
 
-  
+<h3 id="kubernetes-for-java-developers">Kubernetes for Java Developers</h3>
 
+<ol>
+<li>Quick Intro to Docker</li>
+<li>Intro to Kubernetes Concepts</li>
+<li>Fabric8 - PaaS for K8s</li>
+<li>CI/CD in K8s using Fabric8</li>
+<li><a href="https://labs.play-with-k8s.com" target="_blank">Play with Kubernetes</a> online</li>
+<li>Shout-out to <a href="https://stackpoint.io" target="_blank">Stackpoint.io</a> for making super easy to deploy Kubernetes back in 2016</li>
+</ol>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/kubernetes/">Kubernetes</a>
+  
+  <a class="badge badge-light" href="/tags/docker/">Docker</a>
+  
+  <a class="badge badge-light" href="/tags/fabric8/">Fabric8</a>
+  
+  <a class="badge badge-light" href="/tags/spring/">Spring</a>
+  
+  <a class="badge badge-light" href="/tags/ci/cd/">CI/CD</a>
+  
 </div>
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="https://s.gravatar.com/avatar/d17658a1737ae85b30c3655cf5436a16?s=200')" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/rawsanj">Sanjay Rawat</a></h5>
+    <h6 class="card-subtitle">Cloud Developer</h6>
+    <p class="card-text" itemprop="description">I&rsquo;m interested in all Cloud Tech - AWS, Serverless, Docker, Kubernetes. Mostly write Java, Spring, Kotlin and Node.js code.</p>
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/RawSanj" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/Raw_Sanj" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.linkedin.com/in/rawsanj" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile" target="_blank" rel="noopener">
+          <i class="fab fa-stack-overflow"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/#contact" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+  </div>
+</div>
+
+
+
 <div class="container">
   <footer class="site-footer">
   
@@ -538,6 +817,4 @@
 
   </body>
 </html>
-
-
 
