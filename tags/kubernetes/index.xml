@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kubernetes on Coding Cloud</title>
+    <title>Kubernetes on Coding Cloud</title>
     <link>https://rawsanj.dev/tags/kubernetes/</link>
-    <description>Recent content in kubernetes on Coding Cloud</description>
+    <description>Recent content in Kubernetes on Coding Cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
@@ -19,6 +19,33 @@
       
       <guid>https://rawsanj.dev/project/spring-redis-websocket/</guid>
       <description>Multi-instance WebSocket messaging Chat App demo using Spring Boot and Redis Pub/Sub</description>
+    </item>
+    
+    <item>
+      <title>Spring Cloud Task as K8s Cronjob</title>
+      <link>https://rawsanj.dev/project/spring-cloud-task-as-k8s-cronjob/</link>
+      <pubDate>Mon, 17 Sep 2018 01:06:28 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/project/spring-cloud-task-as-k8s-cronjob/</guid>
+      <description>Spring Cloud Task Application running as CronJob in Kubernetes - Cron UI: &lt;a href=&#34;https://github.com/RawSanj/spring-cronjob-currency&#34; target=&#34;_blank&#34;&gt;spring-cronjob-currency&lt;/a&gt;</description>
+    </item>
+    
+    <item>
+      <title>Aws Service Broker</title>
+      <link>https://rawsanj.dev/project/aws-service-broker/</link>
+      <pubDate>Sun, 03 Jun 2018 00:04:34 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/project/aws-service-broker/</guid>
+      <description>AWS Open Service Broker - Offering RDS and S3 Service</description>
+    </item>
+    
+    <item>
+      <title>Boot Kubeless</title>
+      <link>https://rawsanj.dev/project/boot-kubeless/</link>
+      <pubDate>Sat, 03 Feb 2018 00:24:05 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/project/boot-kubeless/</guid>
+      <description>Spring Boot project for Custom Kubeless Runtime</description>
     </item>
     
     <item>

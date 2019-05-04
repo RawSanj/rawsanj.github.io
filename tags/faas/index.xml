@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>faas on Coding Cloud</title>
+    <link>https://rawsanj.dev/tags/faas/</link>
+    <description>Recent content in faas on Coding Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
+    <lastBuildDate>Sat, 03 Feb 2018 00:24:05 +0530</lastBuildDate>
+    
+	<atom:link href="https://rawsanj.dev/tags/faas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Boot Kubeless</title>
+      <link>https://rawsanj.dev/project/boot-kubeless/</link>
+      <pubDate>Sat, 03 Feb 2018 00:24:05 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/project/boot-kubeless/</guid>
+      <description>Spring Boot project for Custom Kubeless Runtime</description>
+    </item>
+    
+  </channel>
+</rss>

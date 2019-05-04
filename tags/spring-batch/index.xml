@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spring-batch on Coding Cloud</title>
+    <link>https://rawsanj.dev/tags/spring-batch/</link>
+    <description>Recent content in spring-batch on Coding Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
+    <lastBuildDate>Thu, 08 Dec 2016 00:43:11 +0530</lastBuildDate>
+    
+	<atom:link href="https://rawsanj.dev/tags/spring-batch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Rest Batch</title>
+      <link>https://rawsanj.dev/project/spring-rest-batch/</link>
+      <pubDate>Thu, 08 Dec 2016 00:43:11 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/project/spring-rest-batch/</guid>
+      <description>Spring Boot-Batch project to read Movies from &lt;a href=&#34;https://developers.themoviedb.org/3&#34; target=&#34;_blank&#34;&gt;TheMovieDB&lt;/a&gt; REST API and store into database.</description>
+    </item>
+    
+  </channel>
+</rss>

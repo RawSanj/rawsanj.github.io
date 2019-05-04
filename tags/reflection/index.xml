@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reflection on Coding Cloud</title>
+    <link>https://rawsanj.dev/tags/reflection/</link>
+    <description>Recent content in reflection on Coding Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
+    <lastBuildDate>Sat, 04 May 2019 23:19:33 +0530</lastBuildDate>
+    
+	<atom:link href="https://rawsanj.dev/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aws Lambda Filter Chain</title>
+      <link>https://rawsanj.dev/project/aws-lambda-filter-chain/</link>
+      <pubDate>Sat, 04 May 2019 23:19:33 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/project/aws-lambda-filter-chain/</guid>
+      <description>AWS Lambda Filter Chain provides a way to add filters similar to javax.servlet.Filter to the AWS Lambda Functions handling requests from API Gateway</description>
+    </item>
+    
+  </channel>
+</rss>

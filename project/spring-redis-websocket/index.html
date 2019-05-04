@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.55.1" />
+  <meta name="generator" content="Hugo 0.55.5" />
 
   
 
@@ -91,6 +91,16 @@
   
 
   <link rel="stylesheet" href="/styles.css">
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.b4a0f43f28a1834936f304768fd79195.css">
   
 
   
@@ -514,26 +524,75 @@
 
 <h2 id="multi-instance-websocket-messaging-demo-using-spring-boot-and-redis-pub-sub">Multi-instance WebSocket messaging demo using Spring Boot and Redis Pub/Sub</h2>
 
-<p>Scalable Spring Boot Chat Application to demonstrate use of <a href="https://redis.io" target="_blank">Redis</a> - <a href="https://redis.io/topics/pubsub" target="_blank">Pub/Sub</a> for <a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#websocket-stomp" target="_blank">WebSocket using STOMP</a> protocol, without using any external Message Broker like RabbitMQ to sync messages between different instances.</p>
+<p>Scalable Spring Boot Chat Application to demonstrate use of [Redis] - [Pub/Sub] for [WebSocket using STOMP] protocol, without using any external Message Broker like RabbitMQ to sync messages between different instances.</p>
 
-<h3 id="deploy-to-play-with-docker">Deploy to <a href="https://labs.play-with-docker.com" target="_blank">Play with Docker</a></h3>
+<h3 id="deploy-to-play-with-docker">Deploy to [Play with Docker]</h3>
 
 <p>Ctrl + Click the below button to deploy multiple instances of the spring-redis-websocket load balanced by NGINX:</p>
 
 <p><a href="https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/RawSanj/spring-redis-websocket/master/src/main/docker/docker-compose.yml#" target="_blank"><img src="deploy-to-pwd.png" alt="Deploy to PWD" /></a></p>
 
-<h3 id="technology-projects-used">Technology &amp; Projects used</h3>
+<h3 id="installation-and-configuration">Installation and Configuration</h3>
 
-<p><strong>spring-redis-websocket</strong> uses a number of open source projects:</p>
+<h5 id="pre-requisite">Pre-requisite:</h5>
 
-<ul>
-<li><a href="https://projects.spring.io/spring-boot/" target="_blank">Spring Boot</a> - An opinionated framework for building production-ready Spring applications. It favors convention over configuration and is designed to get you up and running as quickly as possible.</li>
-<li><a href="https://projects.spring.io/spring-data-redis" target="_blank">Spring Data Redis</a> - Spring Data Redis provides easy configuration and access to Redis from Spring applications.</li>
-<li><a href="https://redis.io" target="_blank">Redis</a> - Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.</li>
-<li><a href="https://www.docker.com" target="_blank">Docker</a> - Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications.</li>
-<li><a href="https://www.nginx.com" target="_blank">NGINX</a> - NGINX is High Performance Load Balancer, Web Server, &amp; Reverse Proxy.</li>
-<li><a href="https://kubernetes.io" target="_blank">Kubernetes</a> - Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.</li>
-</ul>
+<p>Install and run [Redis] locally or on Docker.</p>
+
+<p>To run Redis in Docker:</p>
+
+<pre><code class="language-sh">$ docker run -d -p 6379:6379 -e REDIS_PASSWORD=SuperSecretRedisPassword bitnami/redis
+</code></pre>
+
+<h5 id="clone-repo">Clone repo:</h5>
+
+<pre><code class="language-sh">$ git clone https://github.com/RawSanj/spring-redis-websocket.git
+</code></pre>
+
+<h4 id="build-and-run-the-applications">Build and Run the applications:</h4>
+
+<p>Build and run the <strong>spring-redis-websocket</strong> application:</p>
+
+<pre><code class="language-sh">$ cd spring-redis-websocket
+
+$ mvn clean package
+
+$ mvn spring-boot:run
+</code></pre>
+
+<h3 id="run-in-docker">Run in Docker</h3>
+
+<h4 id="build-and-run-the-spring-redis-websocket-locally-in-docker">Build and run the <em>spring-redis-websocket</em> locally in Docker:</h4>
+
+<p>Build the JAR file:</p>
+
+<pre><code class="language-sh">$ mvn clean package
+</code></pre>
+
+<p>Build docker image:</p>
+
+<pre><code class="language-sh">$ mvn docker:build
+</code></pre>
+
+<p>Run docker image:</p>
+
+<pre><code class="language-sh">$ docker run -d -p 8080:8080 \
+$ rawsanj/spring-redis-websocket
+</code></pre>
+
+<h4 id="run-multiple-instance-using-docker-compose-locally">Run multiple instance using docker-compose locally</h4>
+
+<p>Run multiple instances of <em>spring-redis-websocket</em> locally load balanced via Ngnix connected to redis container in Docker:</p>
+
+<pre><code class="language-sh">$ cd src/main/docker
+$ docker-compose up
+</code></pre>
+
+<h3 id="run-in-kubernetes">Run in Kubernetes</h3>
+
+<h4 id="assuming-you-have-a-kubernetes-cluster-up-and-running-locally">Assuming you have a Kubernetes Cluster up and running locally:</h4>
+
+<pre><code class="language-sh">$ kubectl apply -f src/main/k8s
+</code></pre>
 
     </div>
 
@@ -559,6 +618,8 @@
   <a class="badge badge-light" href="/tags/kubernetes/">kubernetes</a>
   
   <a class="badge badge-light" href="/tags/ngnix/">ngnix</a>
+  
+  <a class="badge badge-light" href="/tags/java/">java</a>
   
 </div>
 
@@ -987,6 +1048,10 @@
       
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
         
       
 

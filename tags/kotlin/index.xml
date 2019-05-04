@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kotlin on Coding Cloud</title>
+    <link>https://rawsanj.dev/tags/kotlin/</link>
+    <description>Recent content in kotlin on Coding Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
+    <lastBuildDate>Sun, 03 Jun 2018 00:04:34 +0530</lastBuildDate>
+    
+	<atom:link href="https://rawsanj.dev/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aws Service Broker</title>
+      <link>https://rawsanj.dev/project/aws-service-broker/</link>
+      <pubDate>Sun, 03 Jun 2018 00:04:34 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/project/aws-service-broker/</guid>
+      <description>AWS Open Service Broker - Offering RDS and S3 Service</description>
+    </item>
+    
+  </channel>
+</rss>

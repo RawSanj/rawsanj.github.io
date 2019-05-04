@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>smtp-settings on Coding Cloud</title>
+    <link>https://rawsanj.dev/tags/smtp-settings/</link>
+    <description>Recent content in smtp-settings on Coding Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
+    <lastBuildDate>Thu, 19 Oct 2017 00:19:22 +0530</lastBuildDate>
+    
+	<atom:link href="https://rawsanj.dev/tags/smtp-settings/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java Mail Clients</title>
+      <link>https://rawsanj.dev/project/java-mail-clients/</link>
+      <pubDate>Thu, 19 Oct 2017 00:19:22 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/project/java-mail-clients/</guid>
+      <description>Send Java Email from GMail, Outlook, Yahoo and Zoho. Demo App to test jHipster tip for Email</description>
+    </item>
+    
+  </channel>
+</rss>
