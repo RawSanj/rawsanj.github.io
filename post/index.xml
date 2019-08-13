@@ -7,9 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
+    <lastBuildDate>Sun, 28 Apr 2019 00:28:16 +0530</lastBuildDate>
     
 	<atom:link href="https://rawsanj.dev/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Aws Lambda Filter Chain</title>
+      <link>https://rawsanj.dev/post/aws-lambda-filter-chain/</link>
+      <pubDate>Sun, 28 Apr 2019 00:28:16 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/post/aws-lambda-filter-chain/</guid>
+      <description>Filter Chain for Lambda with minimal Reflection</description>
+    </item>
     
   </channel>
 </rss>

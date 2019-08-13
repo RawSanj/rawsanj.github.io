@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Aws Lambda Filter Chain</title>
+      <link>https://rawsanj.dev/post/aws-lambda-filter-chain/</link>
+      <pubDate>Sun, 28 Apr 2019 00:28:16 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/post/aws-lambda-filter-chain/</guid>
+      <description>Filter Chain for Lambda with minimal Reflection</description>
+    </item>
+    
+    <item>
       <title>Spring Redis Websocket</title>
       <link>https://rawsanj.dev/project/spring-redis-websocket/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>

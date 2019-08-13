@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS on Coding Cloud</title>
+    <link>https://rawsanj.dev/categories/aws/</link>
+    <description>Recent content in AWS on Coding Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
+    <lastBuildDate>Sun, 28 Apr 2019 00:28:16 +0530</lastBuildDate>
+    
+	<atom:link href="https://rawsanj.dev/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aws Lambda Filter Chain</title>
+      <link>https://rawsanj.dev/post/aws-lambda-filter-chain/</link>
+      <pubDate>Sun, 28 Apr 2019 00:28:16 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/post/aws-lambda-filter-chain/</guid>
+      <description>Filter Chain for Lambda with minimal Reflection</description>
+    </item>
+    
+  </channel>
+</rss>

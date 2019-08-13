@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.55.5" />
+  <meta name="generator" content="Hugo 0.56.3" />
 
   
 
@@ -72,10 +72,7 @@
     
       
       
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
       
     
 
@@ -537,22 +534,23 @@ $ cd aws-service-broker
 <ul>
 <li>Create a new IAM user with Programmatic access (i.e. enable access key ID and secret access key for the AWS API) and attach following policies: AmazonRDSFullAccess, AmazonS3FullAccess and IAMFullAccess.</li>
 <li>Add the above noted AWS Access key, Secret key and export them as environment variable (AWS_ACCESS_KEY, AWS_SECRET_KEY and AWS_DEFAULT_REGION).</li>
-<li>Also Export Application Secret keys as environment variables.
-```sh
-$ // Export AWS Keys
+
+<li><p>Also Export Application Secret keys as environment variables.</p>
+
+<pre><code class="language-sh">$ // Export AWS Keys
 $ export AWS_ACCESS_KEY=[YOUR_AWS_ACCESS_KEY]
 $ export AWS_SECRET_KEY=[YOUR_AWS_SECRET_KEY]
-$ export AWS_DEFAULT_REGION=[YOUR_AWS_DEFAULT_REGION]</li>
+$ export AWS_DEFAULT_REGION=[YOUR_AWS_DEFAULT_REGION]
+
+$ // Export Application Secret Keys
+$ export BROKER_APP_ADMIN_USERNAME=admin
+$ export BROKER_APP_ADMIN_PASSWORD=p@$$w0rd
+</code></pre></li>
 </ul>
 
-<p>$ // Export Application Secret Keys
-$ export BROKER_APP_ADMIN_USERNAME=admin
-$ export BROKER_APP_ADMIN_PASSWORD=p@$$w0rd</p>
+<h4 id="build-and-test">Build and Test</h4>
 
-<pre><code>
-#### Build and Test
-```sh
-$ mvn clean package
+<pre><code class="language-sh">$ mvn clean package
 </code></pre>
 
 <h4 id="run-the-application">Run the application:</h4>
@@ -875,7 +873,7 @@ $ mvn clean package
     
     
     
-    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
+    <script src="/js/academic.min.1846cc5c27f3006b56814095ec02281f.js"></script>
 
   </body>
 </html>

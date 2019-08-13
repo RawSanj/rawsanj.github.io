@@ -50,6 +50,54 @@ $ curl -X POST http://localhost:3000/user -H &#39;Accept: application/json&#39; 
     </item>
     
     <item>
+      <title>Aws Lambda Filter Chain</title>
+      <link>https://rawsanj.dev/post/aws-lambda-filter-chain/</link>
+      <pubDate>Sun, 28 Apr 2019 00:28:16 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/post/aws-lambda-filter-chain/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;javax.servlet.Filter&lt;/strong&gt; provides a convenient way to pre-process and post-process a request and is mostly used to perform filtering tasks such as conversion, logging, compression, encryption and decryption,
+input validation, etc.
+Since AWS Lambda function isn&amp;rsquo;t a Servlet container i.e. doesn&amp;rsquo;t work with Servlet Specification we can&amp;rsquo;t use any &lt;strong&gt;javax.servlet.Filter&lt;/strong&gt;.  It would be cool if we can have the same &lt;em&gt;Filter&lt;/em&gt; like feature for AWS Lambdas.&lt;/p&gt;
+
+&lt;p&gt;In this post, we will look at how to create a simple Java framework which adds the ability to intercept AWS Lambda requests just like conventions used by Servlet Filters.&lt;/p&gt;
+
+&lt;p&gt;Learning from &lt;a href=&#34;https://spring.io/projects/spring-boot&#34; target=&#34;_blank&#34;&gt;Spring Boot&lt;/a&gt;, we&amp;rsquo;ll follow convention over configuration and we will make this framework easy to use and reduce boiler-plate code.
+So we will create an interface &lt;code&gt;Filter&lt;/code&gt; similar to &lt;code&gt;javax.servlet.Filter&lt;/code&gt; except it accepts &lt;code&gt;APIGatewayProxyRequestEvent&lt;/code&gt; and &lt;code&gt;APIGatewayProxyResponseEvent&lt;/code&gt;
+instead of &lt;code&gt;ServletRequest&lt;/code&gt; and &lt;code&gt;ServletResponse&lt;/code&gt; respectively.&lt;/p&gt;
+
+&lt;p&gt;We will also create &lt;code&gt;@FunctionFilter&lt;/code&gt; annotation to annotate the &lt;code&gt;Filter&lt;/code&gt; classes so that the framework automatically detects it by reading the classes marked &lt;code&gt;@FunctionFilter&lt;/code&gt;  and applies it in the Order specified by the &lt;strong&gt;order&lt;/strong&gt; attribute.&lt;/p&gt;
+
+&lt;p&gt;Taking inspiration from &lt;a href=&#34;https://micronaut.io/&#34; target=&#34;_blank&#34;&gt;Micronaut&lt;/a&gt;, one of the coolest and fastest growing frameworks for creating micro-services and serverless functions, to make things interesting we&amp;rsquo;ll use &lt;strong&gt;Annotation Processor&lt;/strong&gt; to reduce the use of reflection.
+Although it might not add any significant benefit in our case since this is a small and simple framework, but it would help understand AOT (Ahead of Time Compilation) and set a path towards the adoption of matured feature-rich framework like Micronaut for serverless workloads where the cold start is a big concern.&lt;/p&gt;
+
+&lt;p&gt;Before we start, do read this introductory blog on &lt;a href=&#34;https://medium.com/@emmasuzuki/annotation-processor-101-your-first-custom-annotation-a3db9ae48046&#34; target=&#34;_blank&#34;&gt;Annotation Processor&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We can then write lambda functions with filter with easy - see below example:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;LambdaFunc.png&#34; alt=&#34;Lambda Function&#34; /&gt;
+&lt;img src=&#34;LogFilter.png&#34; alt=&#34;Log Filter&#34; /&gt;
+&lt;img src=&#34;ValidateFilter.png&#34; alt=&#34;Validation Filter&#34; /&gt;
+&lt;img src=&#34;Response.png&#34; alt=&#34;Lambda Response&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll start by creating the &lt;code&gt;@FunctionFilter&lt;/code&gt; annotation targeting &lt;code&gt;class&lt;/code&gt; only and provide the default value of 0 to the &lt;code&gt;order&lt;/code&gt; attribute. The &lt;code&gt;order&lt;/code&gt; attribute will define the order in which the &lt;code&gt;Filter&lt;/code&gt;s are applied.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;  @Target(ElementType.TYPE)
+  @Retention(RetentionPolicy.CLASS)
+  public @interface FunctionFilter {
+    int order() default 0;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Define the &lt;code&gt;Filter&lt;/code&gt; interface with AWS API Gateway Proxy events as request and response:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;  public interface Filter {
+    void doFilter(APIGatewayProxyRequestEvent request, APIGatewayProxyResponseEvent response, FilterChain chain);
+  }
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Spring Redis Websocket</title>
       <link>https://rawsanj.dev/project/spring-redis-websocket/</link>
       <pubDate>Mon, 18 Mar 2019 01:09:30 +0530</pubDate>
@@ -229,22 +277,23 @@ $ cd aws-service-broker
 &lt;ul&gt;
 &lt;li&gt;Create a new IAM user with Programmatic access (i.e. enable access key ID and secret access key for the AWS API) and attach following policies: AmazonRDSFullAccess, AmazonS3FullAccess and IAMFullAccess.&lt;/li&gt;
 &lt;li&gt;Add the above noted AWS Access key, Secret key and export them as environment variable (AWS_ACCESS_KEY, AWS_SECRET_KEY and AWS_DEFAULT_REGION).&lt;/li&gt;
-&lt;li&gt;Also Export Application Secret keys as environment variables.
-```sh
-$ // Export AWS Keys
+
+&lt;li&gt;&lt;p&gt;Also Export Application Secret keys as environment variables.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ // Export AWS Keys
 $ export AWS_ACCESS_KEY=[YOUR_AWS_ACCESS_KEY]
 $ export AWS_SECRET_KEY=[YOUR_AWS_SECRET_KEY]
-$ export AWS_DEFAULT_REGION=[YOUR_AWS_DEFAULT_REGION]&lt;/li&gt;
+$ export AWS_DEFAULT_REGION=[YOUR_AWS_DEFAULT_REGION]
+
+$ // Export Application Secret Keys
+$ export BROKER_APP_ADMIN_USERNAME=admin
+$ export BROKER_APP_ADMIN_PASSWORD=p@$$w0rd
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;$ // Export Application Secret Keys
-$ export BROKER_APP_ADMIN_USERNAME=admin
-$ export BROKER_APP_ADMIN_PASSWORD=p@$$w0rd&lt;/p&gt;
+&lt;h4 id=&#34;build-and-test&#34;&gt;Build and Test&lt;/h4&gt;
 
-&lt;pre&gt;&lt;code&gt;
-#### Build and Test
-```sh
-$ mvn clean package
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn clean package
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&#34;run-the-application&#34;&gt;Run the application:&lt;/h4&gt;
@@ -719,15 +768,13 @@ $ kubectl logs boot-kubeless-kafka-68b.... // Above pod name.
 &lt;li&gt;&lt;p&gt;Clone this repository by running below command:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/SpringRestBatch.git
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Register @ &lt;a href=&#34;https://www.themoviedb.org/documentation/api&#34; target=&#34;_blank&#34;&gt;https://www.themoviedb.org/documentation/api&lt;/a&gt; and get your API key. Update the &lt;code&gt;REST_API_URL_WITH_KEY&lt;/code&gt; key in &lt;code&gt;src/main/resources/application.properties&lt;/code&gt; file with your obtained key.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Start your local PostgreSQL database, configure the database properties in &lt;code&gt;src/main/resources/application.properties&lt;/code&gt; file.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Run this application using embedded Tomcat and PostgreSql DB Server:&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;Run this application using embedded Tomcat and PostgreSql DB Server:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mvn spring-boot:run
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;

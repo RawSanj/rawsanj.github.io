@@ -21,5 +21,14 @@
       <description>AWS Lambda Filter Chain provides a way to add filters similar to javax.servlet.Filter to the AWS Lambda Functions handling requests from API Gateway</description>
     </item>
     
+    <item>
+      <title>Aws Lambda Filter Chain</title>
+      <link>https://rawsanj.dev/post/aws-lambda-filter-chain/</link>
+      <pubDate>Sun, 28 Apr 2019 00:28:16 +0530</pubDate>
+      
+      <guid>https://rawsanj.dev/post/aws-lambda-filter-chain/</guid>
+      <description>Filter Chain for Lambda with minimal Reflection</description>
+    </item>
+    
   </channel>
 </rss>
