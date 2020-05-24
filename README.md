@@ -14,7 +14,7 @@ A Big Thanks to the below Projects / Technologies:
 
 MIT
 
-Copyright (c) 2019. Sanjay Rawat
+Copyright (c) 2020. Sanjay Rawat
 
 [//]: #
 

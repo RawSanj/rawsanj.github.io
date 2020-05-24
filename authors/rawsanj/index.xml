@@ -6,7 +6,7 @@
     <description>Recent content in rawsanj on Coding Cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2019. Sanjay Rawat</copyright>
+    <copyright>&amp;copy; 2020. Sanjay Rawat</copyright>
     
 	<atom:link href="https://rawsanj.dev/authors/rawsanj/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,8 +17,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://rawsanj.dev/author/rawsanj/</guid>
-      <description>I&amp;rsquo;m a Full-Stack Cloud Developer at Capgemini. My interests include Microservices, Serverless Architecture, Containers and I love building cool software and systems using Java, Kotlin, Node.js.
-I am an AWS Certified Solutions Architect - Professional and I&amp;rsquo;ve completed the Pivotal Platform Acceleration Labs program.
+      <description>I&amp;rsquo;m a Full-Stack Cloud Developer, currently working in JPMorgan Chase. My interests include Microservices, Server-less Architecture, Containers and I love building cool software and systems using Java, Kotlin, Node.js.
+I am AWS Certified Solutions Architect - Professional and I&amp;rsquo;ve completed the Pivotal Platform Acceleration Labs program.
 In this space, I intend to share my knowledge, Github projects and experience on all things cloud.</description>
     </item>
     
