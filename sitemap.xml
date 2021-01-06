@@ -4,7 +4,7 @@
     <url>
     
       <loc>https://rawsanj.dev/project/aws-lambda-filter-chain/</loc>
-      <lastmod>2019-05-04T23:19:33+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
     </url>
     
   
@@ -12,7 +12,7 @@
     <url>
     
       <loc>https://rawsanj.dev/</loc>
-      <lastmod>2019-05-04T23:19:33+05:30</lastmod>
+      <lastmod>2020-05-24T18:50:47+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -21,7 +21,7 @@
     <url>
     
       <loc>https://rawsanj.dev/project/</loc>
-      <lastmod>2019-05-04T23:19:33+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -30,7 +30,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/</loc>
-      <lastmod>2019-05-04T23:19:33+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -39,7 +39,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/annotation-processing/</loc>
-      <lastmod>2019-05-04T23:19:33+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -48,7 +48,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/aws/</loc>
-      <lastmod>2019-05-04T23:19:33+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -57,7 +57,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/java/</loc>
-      <lastmod>2019-05-04T23:19:33+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -66,7 +66,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/lambda/</loc>
-      <lastmod>2019-05-04T23:19:33+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -75,16 +75,8 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/reflection/</loc>
-      <lastmod>2019-05-04T23:19:33+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.dev/project/spring-redis-websocket/</loc>
-      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
     </url>
     
   
@@ -92,16 +84,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/docker/</loc>
-      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.dev/tags/docker-compose/</loc>
-      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -110,7 +93,33 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/kubernetes/</loc>
-      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://rawsanj.dev/project/spring-redis-websocket/</loc>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://rawsanj.dev/tags/spring-boot/</loc>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://rawsanj.dev/tags/docker-compose/</loc>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -119,7 +128,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/ngnix/</loc>
-      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -128,7 +137,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/pub-sub/</loc>
-      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -137,16 +146,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/redis/</loc>
-      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://rawsanj.dev/tags/spring-boot/</loc>
-      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -155,7 +155,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/spring-data-redis/</loc>
-      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -164,7 +164,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/websocket/</loc>
-      <lastmod>2019-03-18T01:09:30+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -173,7 +173,7 @@
     <url>
     
       <loc>https://rawsanj.dev/project/spring-cloud-task-as-k8s-cronjob/</loc>
-      <lastmod>2018-09-17T01:06:28+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
     </url>
     
   
@@ -181,7 +181,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/cronjob/</loc>
-      <lastmod>2018-09-17T01:06:28+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -190,7 +190,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/spring-cloud-task/</loc>
-      <lastmod>2018-09-17T01:06:28+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -199,7 +199,7 @@
     <url>
     
       <loc>https://rawsanj.dev/project/aws-service-broker/</loc>
-      <lastmod>2018-06-03T00:04:34+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
     </url>
     
   
@@ -207,7 +207,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/cloudfoundry/</loc>
-      <lastmod>2018-06-03T00:04:34+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -216,7 +216,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/kotlin/</loc>
-      <lastmod>2018-06-03T00:04:34+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -225,7 +225,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/open-service-broker/</loc>
-      <lastmod>2018-06-03T00:04:34+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -234,7 +234,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/rds-database/</loc>
-      <lastmod>2018-06-03T00:04:34+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -243,7 +243,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/s3-bucket/</loc>
-      <lastmod>2018-06-03T00:04:34+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -252,7 +252,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/spring-cloud/</loc>
-      <lastmod>2018-06-03T00:04:34+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -261,7 +261,7 @@
     <url>
     
       <loc>https://rawsanj.dev/project/aws-s3-file-system/</loc>
-      <lastmod>2018-04-29T00:49:02+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
     </url>
     
   
@@ -269,7 +269,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/aws-s3/</loc>
-      <lastmod>2018-04-29T00:49:02+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -278,7 +278,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/bootswatch/</loc>
-      <lastmod>2018-04-29T00:49:02+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -287,7 +287,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/rest-api/</loc>
-      <lastmod>2018-04-29T00:49:02+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -296,7 +296,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/spring-cloud-aws/</loc>
-      <lastmod>2018-04-29T00:49:02+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -305,7 +305,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/thymeleaf/</loc>
-      <lastmod>2018-04-29T00:49:02+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -314,7 +314,7 @@
     <url>
     
       <loc>https://rawsanj.dev/project/boot-kubeless/</loc>
-      <lastmod>2018-02-03T00:24:05+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
     </url>
     
   
@@ -322,7 +322,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/faas/</loc>
-      <lastmod>2018-02-03T00:24:05+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -331,7 +331,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/kafka/</loc>
-      <lastmod>2018-02-03T00:24:05+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -340,7 +340,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/kubeless/</loc>
-      <lastmod>2018-02-03T00:24:05+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -349,7 +349,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/spring-kafka/</loc>
-      <lastmod>2018-02-03T00:24:05+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -358,7 +358,7 @@
     <url>
     
       <loc>https://rawsanj.dev/project/spring-twitter-stream/</loc>
-      <lastmod>2018-01-03T23:51:52+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
     </url>
     
   
@@ -366,7 +366,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/d3js/</loc>
-      <lastmod>2018-01-03T23:51:52+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -375,7 +375,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/spring-social/</loc>
-      <lastmod>2018-01-03T23:51:52+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -384,7 +384,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/spring-twitter-stream/</loc>
-      <lastmod>2018-01-03T23:51:52+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -393,7 +393,7 @@
     <url>
     
       <loc>https://rawsanj.dev/project/java-mail-clients/</loc>
-      <lastmod>2017-10-19T00:19:22+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
     </url>
     
   
@@ -401,7 +401,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/gmail-smtp/</loc>
-      <lastmod>2017-10-19T00:19:22+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -410,7 +410,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/javamail-api/</loc>
-      <lastmod>2017-10-19T00:19:22+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -419,7 +419,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/jhipster/</loc>
-      <lastmod>2017-10-19T00:19:22+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -428,7 +428,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/outlook-smtp/</loc>
-      <lastmod>2017-10-19T00:19:22+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -437,7 +437,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/smtp-settings/</loc>
-      <lastmod>2017-10-19T00:19:22+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -446,7 +446,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/yahoo-smtp/</loc>
-      <lastmod>2017-10-19T00:19:22+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -455,7 +455,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/zoho-smtp/</loc>
-      <lastmod>2017-10-19T00:19:22+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -464,7 +464,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/container/</loc>
-      <lastmod>2017-08-14T18:00:25+05:30</lastmod>
+      <lastmod>2019-04-14T21:53:47+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -473,7 +473,7 @@
     <url>
     
       <loc>https://rawsanj.dev/talk/docker-deep-dive/</loc>
-      <lastmod>2017-08-14T18:00:25+05:30</lastmod>
+      <lastmod>2019-04-14T21:53:47+05:30</lastmod>
     </url>
     
   
@@ -481,7 +481,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/lxc/</loc>
-      <lastmod>2017-08-14T18:00:25+05:30</lastmod>
+      <lastmod>2019-04-14T21:53:47+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -490,7 +490,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/linux/</loc>
-      <lastmod>2017-08-14T18:00:25+05:30</lastmod>
+      <lastmod>2019-04-14T21:53:47+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -499,7 +499,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/play-with-docker/</loc>
-      <lastmod>2017-08-14T18:00:25+05:30</lastmod>
+      <lastmod>2019-04-14T21:53:47+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -508,7 +508,7 @@
     <url>
     
       <loc>https://rawsanj.dev/talk/</loc>
-      <lastmod>2017-08-14T18:00:25+05:30</lastmod>
+      <lastmod>2019-04-14T21:53:47+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -517,7 +517,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/ci/cd/</loc>
-      <lastmod>2017-03-14T18:00:25+05:30</lastmod>
+      <lastmod>2019-04-14T21:53:47+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -526,7 +526,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/fabric8/</loc>
-      <lastmod>2017-03-14T18:00:25+05:30</lastmod>
+      <lastmod>2019-04-14T21:53:47+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -535,7 +535,7 @@
     <url>
     
       <loc>https://rawsanj.dev/talk/intro-to-kubernetes/</loc>
-      <lastmod>2017-03-14T18:00:25+05:30</lastmod>
+      <lastmod>2019-04-14T21:53:47+05:30</lastmod>
     </url>
     
   
@@ -543,7 +543,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/spring/</loc>
-      <lastmod>2017-03-14T18:00:25+05:30</lastmod>
+      <lastmod>2019-04-14T21:53:47+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -552,7 +552,7 @@
     <url>
     
       <loc>https://rawsanj.dev/project/spring-rest-batch/</loc>
-      <lastmod>2016-12-08T00:43:11+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
     </url>
     
   
@@ -560,7 +560,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/spring-batch/</loc>
-      <lastmod>2016-12-08T00:43:11+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -569,7 +569,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/spring-data-jpa/</loc>
-      <lastmod>2016-12-08T00:43:11+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -578,7 +578,7 @@
     <url>
     
       <loc>https://rawsanj.dev/tags/themoviedb/</loc>
-      <lastmod>2016-12-08T00:43:11+05:30</lastmod>
+      <lastmod>2019-08-13T19:04:19+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -594,6 +594,7 @@
     <url>
     
       <loc>https://rawsanj.dev/authors/</loc>
+      <lastmod>2020-05-24T18:50:47+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -640,6 +641,7 @@
     <url>
     
       <loc>https://rawsanj.dev/authors/rawsanj/</loc>
+      <lastmod>2020-05-24T18:50:47+05:30</lastmod>
       <priority>0</priority>
     </url>
     

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.56.3" />
+  <meta name="generator" content="Hugo 0.55.0" />
 
   
 
@@ -148,7 +148,7 @@
   
   <meta property="article:published_time" content="2018-06-03T00:04:34&#43;05:30">
   
-  <meta property="article:modified_time" content="2018-06-03T00:04:34&#43;05:30">
+  <meta property="article:modified_time" content="2019-08-13T19:04:19&#43;05:30">
   
 
   
@@ -369,7 +369,7 @@
 
 
 <meta content="2018-06-03 00:04:34 &#43;0530 IST" itemprop="datePublished">
-<meta content="2018-06-03 00:04:34 &#43;0530 IST" itemprop="dateModified">
+<meta content="2019-08-13 19:04:19 &#43;0530 IST" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -381,8 +381,10 @@
     
     
       
+          Last updated on
+      
     
-    <time>Jun 3, 2018</time>
+    <time>Aug 13, 2019</time>
   </span>
   
 
@@ -534,23 +536,22 @@ $ cd aws-service-broker
 <ul>
 <li>Create a new IAM user with Programmatic access (i.e. enable access key ID and secret access key for the AWS API) and attach following policies: AmazonRDSFullAccess, AmazonS3FullAccess and IAMFullAccess.</li>
 <li>Add the above noted AWS Access key, Secret key and export them as environment variable (AWS_ACCESS_KEY, AWS_SECRET_KEY and AWS_DEFAULT_REGION).</li>
-
-<li><p>Also Export Application Secret keys as environment variables.</p>
-
-<pre><code class="language-sh">$ // Export AWS Keys
+<li>Also Export Application Secret keys as environment variables.
+```sh
+$ // Export AWS Keys
 $ export AWS_ACCESS_KEY=[YOUR_AWS_ACCESS_KEY]
 $ export AWS_SECRET_KEY=[YOUR_AWS_SECRET_KEY]
-$ export AWS_DEFAULT_REGION=[YOUR_AWS_DEFAULT_REGION]
-
-$ // Export Application Secret Keys
-$ export BROKER_APP_ADMIN_USERNAME=admin
-$ export BROKER_APP_ADMIN_PASSWORD=p@$$w0rd
-</code></pre></li>
+$ export AWS_DEFAULT_REGION=[YOUR_AWS_DEFAULT_REGION]</li>
 </ul>
 
-<h4 id="build-and-test">Build and Test</h4>
+<p>$ // Export Application Secret Keys
+$ export BROKER_APP_ADMIN_USERNAME=admin
+$ export BROKER_APP_ADMIN_PASSWORD=p@$$w0rd</p>
 
-<pre><code class="language-sh">$ mvn clean package
+<pre><code>
+#### Build and Test
+```sh
+$ mvn clean package
 </code></pre>
 
 <h4 id="run-the-application">Run the application:</h4>
@@ -873,7 +874,7 @@ $ export BROKER_APP_ADMIN_PASSWORD=p@$$w0rd
     
     
     
-    <script src="/js/academic.min.1846cc5c27f3006b56814095ec02281f.js"></script>
+    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
 
   </body>
 </html>

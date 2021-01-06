@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>spring-boot on Coding Cloud</title>
+    <title>Spring-Boot on Coding Cloud</title>
     <link>https://rawsanj.dev/tags/spring-boot/</link>
-    <description>Recent content in spring-boot on Coding Cloud</description>
+    <description>Recent content in Spring-Boot on Coding Cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. Sanjay Rawat</copyright>

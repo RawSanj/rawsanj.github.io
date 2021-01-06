@@ -229,23 +229,22 @@ $ cd aws-service-broker
 &lt;ul&gt;
 &lt;li&gt;Create a new IAM user with Programmatic access (i.e. enable access key ID and secret access key for the AWS API) and attach following policies: AmazonRDSFullAccess, AmazonS3FullAccess and IAMFullAccess.&lt;/li&gt;
 &lt;li&gt;Add the above noted AWS Access key, Secret key and export them as environment variable (AWS_ACCESS_KEY, AWS_SECRET_KEY and AWS_DEFAULT_REGION).&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Also Export Application Secret keys as environment variables.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ // Export AWS Keys
+&lt;li&gt;Also Export Application Secret keys as environment variables.
+```sh
+$ // Export AWS Keys
 $ export AWS_ACCESS_KEY=[YOUR_AWS_ACCESS_KEY]
 $ export AWS_SECRET_KEY=[YOUR_AWS_SECRET_KEY]
-$ export AWS_DEFAULT_REGION=[YOUR_AWS_DEFAULT_REGION]
-
-$ // Export Application Secret Keys
-$ export BROKER_APP_ADMIN_USERNAME=admin
-$ export BROKER_APP_ADMIN_PASSWORD=p@$$w0rd
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+$ export AWS_DEFAULT_REGION=[YOUR_AWS_DEFAULT_REGION]&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;build-and-test&#34;&gt;Build and Test&lt;/h4&gt;
+&lt;p&gt;$ // Export Application Secret Keys
+$ export BROKER_APP_ADMIN_USERNAME=admin
+$ export BROKER_APP_ADMIN_PASSWORD=p@$$w0rd&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn clean package
+&lt;pre&gt;&lt;code&gt;
+#### Build and Test
+```sh
+$ mvn clean package
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&#34;run-the-application&#34;&gt;Run the application:&lt;/h4&gt;
@@ -717,20 +716,20 @@ $ kubectl logs boot-kubeless-kafka-68b.... // Above pod name.
 &lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Clone this repository by running below command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/SpringRestBatch.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;Clone this repository by running below command:
+&lt;code&gt;sh
+$ git clone https://github.com/RawSanj/SpringRestBatch.git
+&lt;/code&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Register @ &lt;a href=&#34;https://www.themoviedb.org/documentation/api&#34; target=&#34;_blank&#34;&gt;https://www.themoviedb.org/documentation/api&lt;/a&gt; and get your API key. Update the &lt;code&gt;REST_API_URL_WITH_KEY&lt;/code&gt; key in &lt;code&gt;src/main/resources/application.properties&lt;/code&gt; file with your obtained key.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Start your local PostgreSQL database, configure the database properties in &lt;code&gt;src/main/resources/application.properties&lt;/code&gt; file.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Run this application using embedded Tomcat and PostgreSql DB Server:&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Run this application using embedded Tomcat and PostgreSql DB Server:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mvn spring-boot:run
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
