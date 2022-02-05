@@ -7,7 +7,7 @@
     <description>spring-boot</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Sun, 17 Mar 2019 19:39:30 +0000</lastBuildDate>
     <image>
-      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://rawsanj.dev/media/icon_hu40be7a442f4132e79fbcdc152b49bfa5_12137_512x512_fill_lanczos_center_3.png</url>
       <title>spring-boot</title>
       <link>https://rawsanj.dev/tag/spring-boot/</link>
     </image>
@@ -17,10 +17,48 @@
       <link>https://rawsanj.dev/project/spring-redis-websocket/</link>
       <pubDate>Sun, 17 Mar 2019 19:39:30 +0000</pubDate>
       <guid>https://rawsanj.dev/project/spring-redis-websocket/</guid>
-      <description>&lt;h2 id=&#34;multi-instance-websocket-messaging-demo-using-spring-boot-and-redis-pubsub&#34;&gt;Multi-instance WebSocket messaging demo using Spring Boot and Redis Pub/Sub&lt;/h2&gt;
-&lt;p&gt;Scalable Spring Boot Chat Application to demonstrate use of [Redis] - [Pub/Sub] for [WebSocket using STOMP] protocol, without using any external Message Broker like RabbitMQ to sync messages between different instances.&lt;/p&gt;
-&lt;h3 id=&#34;deploy-to-play-with-docker&#34;&gt;Deploy to [Play with Docker]&lt;/h3&gt;
-&lt;p&gt;Ctrl + Click the below button to deploy multiple instances of the spring-redis-websocket load balanced by NGINX:&lt;/p&gt;
+      <description>&lt;h2 id=&#34;multi-instance-reactive-chat-app-using-spring-boot-webflux-and-redis-pubsub&#34;&gt;Multi-instance Reactive Chat App using Spring Boot WebFlux and Redis Pub/Sub&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;Scalable Java 11 Spring Boot WebFlux Chat Application to demonstrate use of Reactive Redis &lt;a href=&#34;https://redis.io/topics/pubsub&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pub/Sub&lt;/a&gt; using
+Reactive &lt;a href=&#34;https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html#webflux-websockethandler&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WebSocket Handler&lt;/a&gt;, without using any external Message Broker like RabbitMQ to sync messages between different
+instances.&lt;/p&gt;
+&lt;p&gt;Both JVM based application and &lt;a href=&#34;https://www.graalvm.org/reference-manual/native-image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Graal Native Image&lt;/a&gt; is supported.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://heroku.com/deploy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://www.herokucdn.com/deploy/button.png#floatleft&#34; alt=&#34;Deploy to Heroku&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The older non-reactive servlet based spring-redis-websocket application can be found in below links:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/RawSanj/spring-redis-websocket/tree/spring-boot-web-2.3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring-Boot 2.3: Java-11 version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/RawSanj/spring-redis-websocket/tree/spring-boot-1.5.x&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring-Boot 1.5: Java-8 version&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The reactive spring-boot 2.4.6 based spring-redis-websocket application can be found in below:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/RawSanj/spring-redis-websocket/tree/spring-boot-webflux-graal-native-2.4.6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring-Boot 2.4.6: Java-11 Reactive JVM &amp;amp; Graal Native version&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;deploy-to-play-with-docker&#34;&gt;Deploy to Play-with-Docker&lt;/h3&gt;
+&lt;p&gt;Ctrl + Click this button to deploy multiple instances of the spring-redis-websocket load balanced by NGINX:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/RawSanj/spring-redis-websocket/master/src/main/docker/docker-compose.yml#&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
 
 
@@ -39,26 +77,31 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Deploy to PWD&#34; srcset=&#34;
-               /project/spring-redis-websocket/deploy-to-pwd_hu008d5de6dd1a0a7b95353f5a4604d4a5_9378_fa3fd86feda1fb864d2fbc4a93c3a6d3.webp 400w,
-               /project/spring-redis-websocket/deploy-to-pwd_hu008d5de6dd1a0a7b95353f5a4604d4a5_9378_759422ce4b0f78637201bb10743788d4.webp 760w,
-               /project/spring-redis-websocket/deploy-to-pwd_hu008d5de6dd1a0a7b95353f5a4604d4a5_9378_1200x1200_fit_q90_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://rawsanj.dev/project/spring-redis-websocket/deploy-to-pwd_hu008d5de6dd1a0a7b95353f5a4604d4a5_9378_fa3fd86feda1fb864d2fbc4a93c3a6d3.webp&#34;
-               width=&#34;279&#34;
-               height=&#34;53&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;deploy-to-pwd.png#floatleft&#34; alt=&#34;Deploy to PWD&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;installation-and-configuration&#34;&gt;Installation and Configuration&lt;/h3&gt;
-&lt;h5 id=&#34;pre-requisite&#34;&gt;Pre-requisite:&lt;/h5&gt;
-&lt;p&gt;Install and run [Redis] locally or on Docker.&lt;/p&gt;
+&lt;h5 id=&#34;pre-requisite-for-java-image&#34;&gt;Pre-requisite for Java Image:&lt;/h5&gt;
+&lt;p&gt;Install and run &lt;a href=&#34;https://redis.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Redis&lt;/a&gt; locally or on Docker.&lt;/p&gt;
 &lt;p&gt;To run Redis in Docker:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 6379:6379 -e REDIS_PASSWORD=SuperSecretRedisPassword bitnami/redis
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 6379:6379 -e REDIS_PASSWORD=SuperSecretRedisPassword bitnami/redis:6.0.9
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;pre-requisite-for-graal-native-image&#34;&gt;Pre-requisite for Graal Native Image:&lt;/h5&gt;
+&lt;p&gt;This application uses Spring Data Redis APIs which doesn&amp;rsquo;t have default Graal hints/config and graal-native image fails to run with errors.&lt;/p&gt;
+&lt;p&gt;Hence, this application is configured to use GraalVM native image tracing agent allows intercepting reflection, resources or proxy usage on the JVM by running simple Integration Tests which requires Redis.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To run integration test which uses &lt;a href=&#34;https://www.testcontainers.org/supported_docker_environment&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Redis TestContainers&lt;/a&gt; so &lt;a href=&#34;https://www.docker.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Docker&lt;/a&gt; should be configured properly to run &lt;a href=&#34;https://www.testcontainers.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Testcontainers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;You also need to install &lt;a href=&#34;https://github.com/graalvm/graalvm-ce-builds/releases/tag/vm-21.0.0.2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GraalVM JDK&lt;/a&gt; and &lt;a href=&#34;https://www.graalvm.org/reference-manual/native-image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;native-image&lt;/a&gt; component:
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sdk install java 21.1.0.r11-grl       # Using [SDKMAN](https://sdkman.io/jdks) install GraalVM distribution of JDK
+
+$ gu install native-image 		# Then install [native-image](https://www.graalvm.org/reference-manual/native-image) component
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h5 id=&#34;clone-repo&#34;&gt;Clone repo:&lt;/h5&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/spring-redis-websocket.git
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;build-and-run-the-applications&#34;&gt;Build and Run the applications:&lt;/h4&gt;
+&lt;h4 id=&#34;build-and-run-the-application&#34;&gt;Build and Run the application:&lt;/h4&gt;
 &lt;p&gt;Build and run the &lt;strong&gt;spring-redis-websocket&lt;/strong&gt; application:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd spring-redis-websocket
 
@@ -66,27 +109,103 @@ $ mvn clean package
 
 $ mvn spring-boot:run
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build-graal-native-image-of-the-application&#34;&gt;Build Graal Native Image of the application:&lt;/h4&gt;
+&lt;p&gt;Build and run the &lt;strong&gt;spring-redis-websocket&lt;/strong&gt; native image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd spring-redis-websocket
+
+$ mvn -Pnative clean package -DskipNativeImage=false
+
+$ target/spring-redis-websocket # run the executable binary
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Above steps are applicable for Linux only and creates linux executable binary. To create Windows executable there are few additional set-ups required, follow this &lt;a href=&#34;https://www.graalvm.org/docs/getting-started/windows&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Steps&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;run-in-docker&#34;&gt;Run in Docker&lt;/h3&gt;
 &lt;h4 id=&#34;build-and-run-the-spring-redis-websocket-locally-in-docker&#34;&gt;Build and run the &lt;em&gt;spring-redis-websocket&lt;/em&gt; locally in Docker:&lt;/h4&gt;
 &lt;p&gt;Build the JAR file:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn clean package
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Build docker image:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn docker:build
+&lt;p&gt;Build Docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn clean spring-boot:build-image
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Build Graal Native Docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn -Pnative clean spring-boot:build-image
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Run docker image:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 8080:8080 \
-$ rawsanj/spring-redis-websocket
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 8080:8080 rawsanj/spring-redis-websocket:2.5.2-webflux # JVM based Docker Image
+
+$ docker run -d -p 8080:8080 rawsanj/spring-redis-websocket:2.5.2-native  # Graal Native Image based Docker Image
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;run-multiple-instance-using-docker-compose-locally&#34;&gt;Run multiple instance using docker-compose locally&lt;/h4&gt;
-&lt;p&gt;Run multiple instances of &lt;em&gt;spring-redis-websocket&lt;/em&gt; locally load balanced via Ngnix connected to redis container in Docker:&lt;/p&gt;
+&lt;h4 id=&#34;run-multiple-instances-using-docker-compose-locally&#34;&gt;Run multiple instances using docker-compose locally&lt;/h4&gt;
+&lt;p&gt;Run multiple instances of &lt;em&gt;spring-redis-websocket&lt;/em&gt; locally load balanced via Ngnix connected to redis container in
+Docker:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd src/main/docker
 $ docker-compose up
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;or-try-play-with-docker-to-quickly-setup-docker-and-run-in-browser&#34;&gt;Or try &lt;a href=&#34;https://labs.play-with-docker.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Play with Docker&lt;/a&gt; to quickly setup Docker and run in browser:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Click Create Instance to quickly setup Docker host.&lt;/li&gt;
+&lt;li&gt;Install git by running:
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ apk add git --no-cache
+&lt;/code&gt;&lt;/pre&gt;
+``&lt;/li&gt;
+&lt;li&gt;Clone the repository:
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/spring-redis-websocket.git
+&lt;/code&gt;&lt;/pre&gt;
+``&lt;/li&gt;
+&lt;li&gt;Run multiple instances of &lt;em&gt;spring-redis-websocket&lt;/em&gt;:
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd spring-redis-websocket/src/main/docker
+$ docker-compose up
+&lt;/code&gt;&lt;/pre&gt;
+``&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h3 id=&#34;run-in-kubernetes&#34;&gt;Run in Kubernetes&lt;/h3&gt;
 &lt;h4 id=&#34;assuming-you-have-a-kubernetes-cluster-up-and-running-locally&#34;&gt;Assuming you have a Kubernetes Cluster up and running locally:&lt;/h4&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubectl apply -f src/main/k8s
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;or-try-play-with-kubernetes-to-quickly-setup-a-k8s-cluster&#34;&gt;Or try &lt;a href=&#34;https://labs.play-with-k8s.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Play with Kubernetes&lt;/a&gt; to quickly setup a K8S cluster:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Follow the instructions to create Kuberenetes cluster.&lt;/li&gt;
+&lt;li&gt;Install git by running:
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ yum install git -y
+&lt;/code&gt;&lt;/pre&gt;
+``&lt;/li&gt;
+&lt;li&gt;Clone the repository:
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/spring-redis-websocket.git
+&lt;/code&gt;&lt;/pre&gt;
+``&lt;/li&gt;
+&lt;li&gt;Run multiple instances of &lt;em&gt;spring-redis-websocket&lt;/em&gt; load balanced by native Kubernetes Service. All instances
+connected to a single &lt;a href=&#34;https://redis.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Redis&lt;/a&gt; pod.
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd spring-redis-websocket
+$ kubectl apply -f src/main/k8s
+&lt;/code&gt;&lt;/pre&gt;
+``&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;tech&#34;&gt;Tech&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;spring-redis-websocket&lt;/strong&gt; uses a number of open source projects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://projects.spring.io/spring-boot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Boot&lt;/a&gt; - An opinionated framework for building production-ready Spring applications. It favors convention over
+configuration and is designed to get you up and running as quickly as possible.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://projects.spring.io/spring-data-redis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Data Redis&lt;/a&gt; - Spring Data Redis provides easy configuration and access to Redis from Spring applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.graalvm.org/reference-manual/native-image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Graal Native Image&lt;/a&gt; - Native Image is a technology to ahead-of-time compile Java code to a standalone executable,
+called a native image.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://redis.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Redis&lt;/a&gt; - Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and
+message broker.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.testcontainers.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Testcontainers&lt;/a&gt; - Testcontainers is a Java library that supports JUnit tests, providing lightweight, throwaway
+instances of common databases or anything else that can run in a Docker container.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://getbootstrap.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bootstrap&lt;/a&gt; - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Custom Bootstrap theme
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bootswatch.com/sketchy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bootswatch Sketch&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.docker.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Docker&lt;/a&gt; - Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nginx.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NGINX&lt;/a&gt; - NGINX is High Performance Load Balancer, Web Server, &amp;amp; Reverse Proxy.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kubernetes.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kubernetes&lt;/a&gt; - Kubernetes is an open-source system for automating deployment, scaling, and management of containerized
+applications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;Apache License 2.0&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2022 Sanjay Rawat&lt;/p&gt;
 </description>
     </item>
     
