@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spring-batch | Coding Cloud</title>
+    <link>https://rawsanj.dev/tag/spring-batch/</link>
+      <atom:link href="https://rawsanj.dev/tag/spring-batch/index.xml" rel="self" type="application/rss+xml" />
+    <description>spring-batch</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Wed, 07 Dec 2016 19:13:11 +0000</lastBuildDate>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>spring-batch</title>
+      <link>https://rawsanj.dev/tag/spring-batch/</link>
+    </image>
+    
+    <item>
+      <title>Spring Rest Batch</title>
+      <link>https://rawsanj.dev/project/spring-rest-batch/</link>
+      <pubDate>Wed, 07 Dec 2016 19:13:11 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/spring-rest-batch/</guid>
+      <description>&lt;h3 id=&#34;spring-boot---batch-project-to-read-movies-from-themoviedbhttpsdevelopersthemoviedborg3-rest-api&#34;&gt;Spring Boot - Batch project to read Movies from &lt;a href=&#34;https://developers.themoviedb.org/3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TheMovieDB&lt;/a&gt; REST API.&lt;/h3&gt;
+&lt;h3 id=&#34;tech&#34;&gt;Tech&lt;/h3&gt;
+&lt;p&gt;SpringRestBatch uses a number of open source projects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://projects.spring.io/spring-boot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Boot&lt;/a&gt; - Takes an opinionated view of building production-ready Spring applications. Spring Boot favors convention over configuration and is designed to get you up and running as quickly as possible.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://projects.spring.io/spring-data-jpa&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Data JPA&lt;/a&gt; - Spring Data JPA, part of the larger Spring Data family, makes it easy to easily implement JPA based repositories.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://projects.spring.io/spring-batch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Batch&lt;/a&gt; - A lightweight, comprehensive batch framework designed to enable the development of robust batch applications vital for the daily operations of enterprise systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Clone this repository by running below command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/SpringRestBatch.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Register @ &lt;a href=&#34;https://www.themoviedb.org/documentation/api&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.themoviedb.org/documentation/api&lt;/a&gt; and get your API key. Update the &lt;code&gt;REST_API_URL_WITH_KEY&lt;/code&gt; key in &lt;code&gt;src/main/resources/application.properties&lt;/code&gt; file with your obtained key.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start your local PostgreSQL database, configure the database properties in &lt;code&gt;src/main/resources/application.properties&lt;/code&gt; file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run this application using embedded Tomcat and PostgreSql DB Server:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mvn spring-boot:run
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

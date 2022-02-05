@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cronjob | Coding Cloud</title>
+    <link>https://rawsanj.dev/tag/cronjob/</link>
+      <atom:link href="https://rawsanj.dev/tag/cronjob/index.xml" rel="self" type="application/rss+xml" />
+    <description>cronjob</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Sun, 16 Sep 2018 19:36:28 +0000</lastBuildDate>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>cronjob</title>
+      <link>https://rawsanj.dev/tag/cronjob/</link>
+    </image>
+    
+    <item>
+      <title>Spring Cloud Task as K8s Cronjob</title>
+      <link>https://rawsanj.dev/project/spring-cloud-task-as-k8s-cronjob/</link>
+      <pubDate>Sun, 16 Sep 2018 19:36:28 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/spring-cloud-task-as-k8s-cronjob/</guid>
+      <description>&lt;h2 id=&#34;spring-cloud-task-application-running-as-cronjob-in-kubernetes&#34;&gt;&lt;a href=&#34;https://spring.io/projects/spring-cloud-task&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Cloud Task&lt;/a&gt; Application running as &lt;a href=&#34;https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CronJob&lt;/a&gt; in Kubernetes&lt;/h2&gt;
+&lt;p&gt;A Spring Cloud Task Application which runs as CronJob in Kubernetes every minute to fetch BitCoin rates, saves the rates in Mysql and notifies Users if/when the threshold is reached.&lt;/p&gt;
+&lt;h3 id=&#34;installation-and-configuration&#34;&gt;Installation and Configuration&lt;/h3&gt;
+&lt;h5 id=&#34;pre-requisite&#34;&gt;Pre-requisite:&lt;/h5&gt;
+&lt;p&gt;MySql Server is up and running and application is configured the MySql credentials&lt;/p&gt;
+&lt;h5 id=&#34;clone-repo&#34;&gt;Clone repo:&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/spring-cloud-task-as-k8s-cronjob.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build-and-run-the-applications&#34;&gt;Build and Run the applications:&lt;/h4&gt;
+&lt;p&gt;Build and run the &lt;strong&gt;spring-cloud-task-as-k8s-cronjob&lt;/strong&gt; application:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd spring-cloud-task-as-k8s-cronjob
+
+$ mvn clean package
+
+$ mvn spring-boot:run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-in-kubernetes&#34;&gt;Run in Kubernetes&lt;/h3&gt;
+&lt;h4 id=&#34;assuming-you-have-a-kubernetes-cluster-up-and-running-and-kubectl-is-configured-run&#34;&gt;Assuming you have a Kubernetes Cluster up and running and kubectl is configured, run:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubectl apply -f src/main/k8s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;or-try-play-with-kubernetes-to-quickly-setup-a-k8s-cluster&#34;&gt;Or try &lt;a href=&#34;https://labs.play-with-k8s.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Play with Kubernetes&lt;/a&gt; to quickly setup a K8S cluster:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Follow the instructions to create Kubernetes cluster.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install git by running:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ yum install git -y&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone the repository:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ git clone https://github.com/RawSanj/spring-cloud-task-as-k8s-cronjob.git&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update Kubernetes Secrets under &lt;code&gt;src/main/k8s/cronjob.yaml&lt;/code&gt; file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;em&gt;spring-cloud-task-as-k8s-cronjob&lt;/em&gt; as Kubernetes CronJob. CronJob Pods connects to MySql server and stores Bitcoin rates every minute.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ cd spring-cloud-task-as-k8s-cronjob&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ kubectl apply -f src/main/k8s&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone and deploy the UI Application - &lt;a href=&#34;https://github.com/RawSanj/spring-cronjob-currency&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;spring-cronjob-currency&lt;/a&gt; by running &lt;code&gt;kubectl apply -f src/main/k8s&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

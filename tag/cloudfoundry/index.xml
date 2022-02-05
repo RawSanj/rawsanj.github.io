@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloudfoundry | Coding Cloud</title>
+    <link>https://rawsanj.dev/tag/cloudfoundry/</link>
+      <atom:link href="https://rawsanj.dev/tag/cloudfoundry/index.xml" rel="self" type="application/rss+xml" />
+    <description>cloudfoundry</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Sat, 02 Jun 2018 18:34:34 +0000</lastBuildDate>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>cloudfoundry</title>
+      <link>https://rawsanj.dev/tag/cloudfoundry/</link>
+    </image>
+    
+    <item>
+      <title>Aws Service Broker</title>
+      <link>https://rawsanj.dev/project/aws-service-broker/</link>
+      <pubDate>Sat, 02 Jun 2018 18:34:34 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/aws-service-broker/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;aws-service-broker&lt;/strong&gt; is &lt;a href=&#34;https://www.openservicebrokerapi.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Open Service Broker&lt;/a&gt; compatible API server that provisions managed services in AWS.&lt;/p&gt;
+&lt;h3 id=&#34;supported-aws-services&#34;&gt;Supported AWS Services&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/rds&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon Relational Database Service (RDS)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/s3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon Simple Sorage Service (S3)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;build-test-and-run&#34;&gt;Build, Test and Run&lt;/h3&gt;
+&lt;h4 id=&#34;setup&#34;&gt;Setup&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/aws-service-broker.git
+
+$ cd aws-service-broker
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;configuration&#34;&gt;Configuration:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a new IAM user with Programmatic access (i.e. enable access key ID and secret access key for the AWS API) and attach following policies: AmazonRDSFullAccess, AmazonS3FullAccess and IAMFullAccess.&lt;/li&gt;
+&lt;li&gt;Add the above noted AWS Access key, Secret key and export them as environment variable (AWS_ACCESS_KEY, AWS_SECRET_KEY and AWS_DEFAULT_REGION).&lt;/li&gt;
+&lt;li&gt;Also Export Application Secret keys as environment variables.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ // Export AWS Keys
+$ export AWS_ACCESS_KEY=[YOUR_AWS_ACCESS_KEY]
+$ export AWS_SECRET_KEY=[YOUR_AWS_SECRET_KEY]
+$ export AWS_DEFAULT_REGION=[YOUR_AWS_DEFAULT_REGION]
+
+$ // Export Application Secret Keys
+$ export BROKER_APP_ADMIN_USERNAME=admin
+$ export BROKER_APP_ADMIN_PASSWORD=p@$$w0rd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build-and-test&#34;&gt;Build and Test&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn clean package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;run-the-application&#34;&gt;Run the application:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ java -jar aws-service-broker-[version]-exec.jar
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

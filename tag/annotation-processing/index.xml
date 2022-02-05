@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>annotation processing | Coding Cloud</title>
+    <link>https://rawsanj.dev/tag/annotation-processing/</link>
+      <atom:link href="https://rawsanj.dev/tag/annotation-processing/index.xml" rel="self" type="application/rss+xml" />
+    <description>annotation processing</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Sat, 04 May 2019 17:49:33 +0000</lastBuildDate>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>annotation processing</title>
+      <link>https://rawsanj.dev/tag/annotation-processing/</link>
+    </image>
+    
+    <item>
+      <title>Aws Lambda Filter Chain</title>
+      <link>https://rawsanj.dev/project/aws-lambda-filter-chain/</link>
+      <pubDate>Sat, 04 May 2019 17:49:33 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/aws-lambda-filter-chain/</guid>
+      <description>&lt;p&gt;AWS Lambda Filter Chain provides a way to add filters similar to &lt;code&gt;javax.servlet.Filter&lt;/code&gt; to the AWS Lambda Functions handling requests from API Gateway&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;h4 id=&#34;clone-the-github-repository&#34;&gt;Clone the Github repository&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/aws-lambda-filter-chain.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build-library-and-sample-api-gateway-lambda-function&#34;&gt;Build library and sample API Gateway Lambda Function&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ ./build.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build--run-sample-api-gateway-lambda-function-locally&#34;&gt;Build &amp;amp; Run sample API Gateway Lambda Function locally&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ ./build.sh runLocally
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;
+Install &lt;a href=&#34;https://github.com/awslabs/aws-sam-cli&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AWS SAM CLI&lt;/a&gt; and &lt;a href=&#34;https://hub.docker.com/search/?type=edition&amp;amp;offering=community&amp;amp;operating_system=linux%2Cwindows&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Docker&lt;/a&gt; to run aws lambda functions locally.&lt;/p&gt;
+&lt;h4 id=&#34;test-the-sample-lambda-function-locally&#34;&gt;Test the sample lambda function locally&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ // Get All User
+$ curl  http://127.0.0.1:3000/user
+$ // Post User
+$ curl -X POST http://localhost:3000/user -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{&amp;quot;userName&amp;quot;: &amp;quot;john&amp;quot;,&amp;quot;fullName&amp;quot;: &amp;quot;John Doe&amp;quot;,&amp;quot;age&amp;quot;: 29,&amp;quot;company&amp;quot;: &amp;quot;Example&amp;quot;}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

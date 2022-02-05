@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kubernetes | Coding Cloud</title>
+    <link>https://rawsanj.dev/tag/kubernetes/</link>
+      <atom:link href="https://rawsanj.dev/tag/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <description>kubernetes</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Sun, 17 Mar 2019 19:39:30 +0000</lastBuildDate>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>kubernetes</title>
+      <link>https://rawsanj.dev/tag/kubernetes/</link>
+    </image>
+    
+    <item>
+      <title>Spring Redis Websocket</title>
+      <link>https://rawsanj.dev/project/spring-redis-websocket/</link>
+      <pubDate>Sun, 17 Mar 2019 19:39:30 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/spring-redis-websocket/</guid>
+      <description>&lt;h2 id=&#34;multi-instance-websocket-messaging-demo-using-spring-boot-and-redis-pubsub&#34;&gt;Multi-instance WebSocket messaging demo using Spring Boot and Redis Pub/Sub&lt;/h2&gt;
+&lt;p&gt;Scalable Spring Boot Chat Application to demonstrate use of [Redis] - [Pub/Sub] for [WebSocket using STOMP] protocol, without using any external Message Broker like RabbitMQ to sync messages between different instances.&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-play-with-docker&#34;&gt;Deploy to [Play with Docker]&lt;/h3&gt;
+&lt;p&gt;Ctrl + Click the below button to deploy multiple instances of the spring-redis-websocket load balanced by NGINX:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/RawSanj/spring-redis-websocket/master/src/main/docker/docker-compose.yml#&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Deploy to PWD&#34; srcset=&#34;
+               /project/spring-redis-websocket/deploy-to-pwd_hu008d5de6dd1a0a7b95353f5a4604d4a5_9378_fa3fd86feda1fb864d2fbc4a93c3a6d3.webp 400w,
+               /project/spring-redis-websocket/deploy-to-pwd_hu008d5de6dd1a0a7b95353f5a4604d4a5_9378_759422ce4b0f78637201bb10743788d4.webp 760w,
+               /project/spring-redis-websocket/deploy-to-pwd_hu008d5de6dd1a0a7b95353f5a4604d4a5_9378_1200x1200_fit_q90_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://rawsanj.dev/project/spring-redis-websocket/deploy-to-pwd_hu008d5de6dd1a0a7b95353f5a4604d4a5_9378_fa3fd86feda1fb864d2fbc4a93c3a6d3.webp&#34;
+               width=&#34;279&#34;
+               height=&#34;53&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;installation-and-configuration&#34;&gt;Installation and Configuration&lt;/h3&gt;
+&lt;h5 id=&#34;pre-requisite&#34;&gt;Pre-requisite:&lt;/h5&gt;
+&lt;p&gt;Install and run [Redis] locally or on Docker.&lt;/p&gt;
+&lt;p&gt;To run Redis in Docker:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 6379:6379 -e REDIS_PASSWORD=SuperSecretRedisPassword bitnami/redis
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;clone-repo&#34;&gt;Clone repo:&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/spring-redis-websocket.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build-and-run-the-applications&#34;&gt;Build and Run the applications:&lt;/h4&gt;
+&lt;p&gt;Build and run the &lt;strong&gt;spring-redis-websocket&lt;/strong&gt; application:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd spring-redis-websocket
+
+$ mvn clean package
+
+$ mvn spring-boot:run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-in-docker&#34;&gt;Run in Docker&lt;/h3&gt;
+&lt;h4 id=&#34;build-and-run-the-spring-redis-websocket-locally-in-docker&#34;&gt;Build and run the &lt;em&gt;spring-redis-websocket&lt;/em&gt; locally in Docker:&lt;/h4&gt;
+&lt;p&gt;Build the JAR file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn clean package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Build docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn docker:build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 8080:8080 \
+$ rawsanj/spring-redis-websocket
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;run-multiple-instance-using-docker-compose-locally&#34;&gt;Run multiple instance using docker-compose locally&lt;/h4&gt;
+&lt;p&gt;Run multiple instances of &lt;em&gt;spring-redis-websocket&lt;/em&gt; locally load balanced via Ngnix connected to redis container in Docker:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd src/main/docker
+$ docker-compose up
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-in-kubernetes&#34;&gt;Run in Kubernetes&lt;/h3&gt;
+&lt;h4 id=&#34;assuming-you-have-a-kubernetes-cluster-up-and-running-locally&#34;&gt;Assuming you have a Kubernetes Cluster up and running locally:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubectl apply -f src/main/k8s
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spring Cloud Task as K8s Cronjob</title>
+      <link>https://rawsanj.dev/project/spring-cloud-task-as-k8s-cronjob/</link>
+      <pubDate>Sun, 16 Sep 2018 19:36:28 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/spring-cloud-task-as-k8s-cronjob/</guid>
+      <description>&lt;h2 id=&#34;spring-cloud-task-application-running-as-cronjob-in-kubernetes&#34;&gt;&lt;a href=&#34;https://spring.io/projects/spring-cloud-task&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Cloud Task&lt;/a&gt; Application running as &lt;a href=&#34;https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CronJob&lt;/a&gt; in Kubernetes&lt;/h2&gt;
+&lt;p&gt;A Spring Cloud Task Application which runs as CronJob in Kubernetes every minute to fetch BitCoin rates, saves the rates in Mysql and notifies Users if/when the threshold is reached.&lt;/p&gt;
+&lt;h3 id=&#34;installation-and-configuration&#34;&gt;Installation and Configuration&lt;/h3&gt;
+&lt;h5 id=&#34;pre-requisite&#34;&gt;Pre-requisite:&lt;/h5&gt;
+&lt;p&gt;MySql Server is up and running and application is configured the MySql credentials&lt;/p&gt;
+&lt;h5 id=&#34;clone-repo&#34;&gt;Clone repo:&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/spring-cloud-task-as-k8s-cronjob.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build-and-run-the-applications&#34;&gt;Build and Run the applications:&lt;/h4&gt;
+&lt;p&gt;Build and run the &lt;strong&gt;spring-cloud-task-as-k8s-cronjob&lt;/strong&gt; application:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd spring-cloud-task-as-k8s-cronjob
+
+$ mvn clean package
+
+$ mvn spring-boot:run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-in-kubernetes&#34;&gt;Run in Kubernetes&lt;/h3&gt;
+&lt;h4 id=&#34;assuming-you-have-a-kubernetes-cluster-up-and-running-and-kubectl-is-configured-run&#34;&gt;Assuming you have a Kubernetes Cluster up and running and kubectl is configured, run:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubectl apply -f src/main/k8s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;or-try-play-with-kubernetes-to-quickly-setup-a-k8s-cluster&#34;&gt;Or try &lt;a href=&#34;https://labs.play-with-k8s.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Play with Kubernetes&lt;/a&gt; to quickly setup a K8S cluster:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Follow the instructions to create Kubernetes cluster.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install git by running:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ yum install git -y&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone the repository:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ git clone https://github.com/RawSanj/spring-cloud-task-as-k8s-cronjob.git&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update Kubernetes Secrets under &lt;code&gt;src/main/k8s/cronjob.yaml&lt;/code&gt; file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;em&gt;spring-cloud-task-as-k8s-cronjob&lt;/em&gt; as Kubernetes CronJob. CronJob Pods connects to MySql server and stores Bitcoin rates every minute.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ cd spring-cloud-task-as-k8s-cronjob&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ kubectl apply -f src/main/k8s&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone and deploy the UI Application - &lt;a href=&#34;https://github.com/RawSanj/spring-cronjob-currency&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;spring-cronjob-currency&lt;/a&gt; by running &lt;code&gt;kubectl apply -f src/main/k8s&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Aws Service Broker</title>
+      <link>https://rawsanj.dev/project/aws-service-broker/</link>
+      <pubDate>Sat, 02 Jun 2018 18:34:34 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/aws-service-broker/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;aws-service-broker&lt;/strong&gt; is &lt;a href=&#34;https://www.openservicebrokerapi.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Open Service Broker&lt;/a&gt; compatible API server that provisions managed services in AWS.&lt;/p&gt;
+&lt;h3 id=&#34;supported-aws-services&#34;&gt;Supported AWS Services&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/rds&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon Relational Database Service (RDS)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/s3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon Simple Sorage Service (S3)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;build-test-and-run&#34;&gt;Build, Test and Run&lt;/h3&gt;
+&lt;h4 id=&#34;setup&#34;&gt;Setup&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/aws-service-broker.git
+
+$ cd aws-service-broker
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;configuration&#34;&gt;Configuration:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a new IAM user with Programmatic access (i.e. enable access key ID and secret access key for the AWS API) and attach following policies: AmazonRDSFullAccess, AmazonS3FullAccess and IAMFullAccess.&lt;/li&gt;
+&lt;li&gt;Add the above noted AWS Access key, Secret key and export them as environment variable (AWS_ACCESS_KEY, AWS_SECRET_KEY and AWS_DEFAULT_REGION).&lt;/li&gt;
+&lt;li&gt;Also Export Application Secret keys as environment variables.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ // Export AWS Keys
+$ export AWS_ACCESS_KEY=[YOUR_AWS_ACCESS_KEY]
+$ export AWS_SECRET_KEY=[YOUR_AWS_SECRET_KEY]
+$ export AWS_DEFAULT_REGION=[YOUR_AWS_DEFAULT_REGION]
+
+$ // Export Application Secret Keys
+$ export BROKER_APP_ADMIN_USERNAME=admin
+$ export BROKER_APP_ADMIN_PASSWORD=p@$$w0rd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build-and-test&#34;&gt;Build and Test&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn clean package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;run-the-application&#34;&gt;Run the application:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ java -jar aws-service-broker-[version]-exec.jar
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Boot Kubeless</title>
+      <link>https://rawsanj.dev/project/boot-kubeless/</link>
+      <pubDate>Fri, 02 Feb 2018 18:54:05 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/boot-kubeless/</guid>
+      <description>&lt;h2 id=&#34;spring-boot-project-for-kubelesshttpskubelessio-custom-runtimehttpsgithubcomkubelesskubelessblobmasterdocsruntimesmdcustom-runtime-alpha&#34;&gt;Spring Boot project for &lt;a href=&#34;https://kubeless.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kubeless&lt;/a&gt; Custom &lt;a href=&#34;https://github.com/kubeless/kubeless/blob/master/docs/runtimes.md#custom-runtime-alpha&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Runtime&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A simple Spring Boot Application to demonstrate how to build and run Custom Java Runtime on &lt;a href=&#34;https://kubeless.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kubeless&lt;/a&gt; for HTTP and Kafka Triggers.&lt;/p&gt;
+&lt;p&gt;It has two applications:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;boot-kubeless-http&lt;/strong&gt;: A simple Spring Boot app for Kubeless HTTP trigger. It provides a &lt;strong&gt;GET&lt;/strong&gt; and &lt;strong&gt;POST&lt;/strong&gt; endpoint to add/list simple domain entity to demonstrate the use of various Spring projects.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;boot-kubeless-kafka&lt;/strong&gt;: A simple Spring Boot app as Kafka Consumer for Kubeless Topic/Kafka trigger.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;tech&#34;&gt;Tech&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;boot-kubeless&lt;/strong&gt; uses a number of open source projects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://projects.spring.io/spring-boot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Boot&lt;/a&gt; - An opinionated framework for building production-ready Spring applications. It favors convention over configuration and is designed to get you up and running as quickly as possible.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kubeless.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kubeless&lt;/a&gt; - The Kubernetes Native Serverless Framework.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://projects.spring.io/spring-data-jpa&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Data JPA&lt;/a&gt; - Spring Data JPA, part of the larger Spring Data family, makes it easy to easily implement JPA based repositories.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Boot Actuator&lt;/a&gt; - Actuator endpoints allow you to monitor and interact with your application.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://spring.io/projects/spring-kafka&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring for Kafka&lt;/a&gt; - The Spring for Apache Kafka project applies core Spring concepts to the development of Kafka-based messaging solutions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;installation-and-configuration&#34;&gt;Installation and Configuration&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/boot-kubeless.git
+
+$ cd boot-kubeless
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build-and-run-the-applications&#34;&gt;Build and Run the applications:&lt;/h4&gt;
+&lt;p&gt;Build and run the &lt;strong&gt;boot-kubeless-http&lt;/strong&gt; application:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd boot-kubeless-http
+
+$ mvn clean package
+
+$ mvn spring-boot:run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Build and run the &lt;strong&gt;boot-kubeless-kafka&lt;/strong&gt; application:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Download and Install &lt;a href=&#34;https://kafka.apache.org/quickstart&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kafka&lt;/a&gt;. Set the Kafka Server Address and Topic name in &lt;code&gt;application.yml&lt;/code&gt; file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd boot-kubeless-kafka
+
+$ mvn clean package
+
+$ mvn spring-boot:run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-in-docker&#34;&gt;Run in Docker&lt;/h3&gt;
+&lt;h4 id=&#34;build-and-run-the-boot-kubeless-http-locally-in-docker&#34;&gt;Build and run the &lt;em&gt;boot-kubeless-http&lt;/em&gt; locally in Docker:&lt;/h4&gt;
+&lt;p&gt;Build the JAR file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd boot-kubeless-http
+
+$ mvn clean package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Build docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn docker:build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 8080:8080 \
+$ rawsanj/boot-kubeless-http
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build-and-run-the-boot-kubeless-kafka-locally-in-docker&#34;&gt;Build and run the &lt;em&gt;boot-kubeless-kafka&lt;/em&gt; locally in Docker:&lt;/h4&gt;
+&lt;p&gt;Build the JAR file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd boot-kubeless-kafka
+$ mvn clean package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Build docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn docker:build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You would need to run Kafka in Docker. Try this &lt;a href=&#34;https://hub.docker.com/r/spotify/kafka&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kafka docker image&lt;/a&gt;.
+Run docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 8080:8080 \
+$ rawsanj/boot-kubeless-kafka --link &amp;lt;Kafka_Container&amp;gt;:alias
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;deploy-on-kubernetes-as-faas-using-kubeless-cli&#34;&gt;Deploy on Kubernetes as FaaS using kubeless cli&lt;/h3&gt;
+&lt;h4 id=&#34;setup-and-install-kubeless&#34;&gt;Setup and Install Kubeless.&lt;/h4&gt;
+&lt;p&gt;Follow the Steps &lt;a href=&#34;https://github.com/kubeless/kubeless#installation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;deploy-the-boot-kubeless-http-as-kubeless-function-with-http-trigger&#34;&gt;Deploy the &lt;em&gt;boot-kubeless-http&lt;/em&gt; as Kubeless Function with HTTP Trigger&lt;/h4&gt;
+&lt;p&gt;Deploy the Spring Boot app &lt;em&gt;boot-kubeless-http&lt;/em&gt; as a Function using docker image available in Docker Hub:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubeless function deploy --runtime-image rawsanj/boot-kubeless-http --trigger-http boot-kubeless-http
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;test-the-function&#34;&gt;Test the function:&lt;/h4&gt;
+&lt;p&gt;Calls the &lt;strong&gt;GET&lt;/strong&gt; method of Spring Boot App&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubeless function call boot-kubeless-http
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Calls the &lt;strong&gt;POST&lt;/strong&gt; method of Spring Boot App&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubeless function call boot-kubeless-http --data &#39;{&amp;quot;language&amp;quot;:&amp;quot;Go&amp;quot;,&amp;quot;rate&amp;quot;:1}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;deploy-the-boot-kubeless-kafka-as-kubeless-function-with-kafkatopic-trigger&#34;&gt;Deploy the &lt;em&gt;boot-kubeless-kafka&lt;/em&gt; as Kubeless Function with Kafka/Topic Trigger&lt;/h4&gt;
+&lt;p&gt;Before deploying the function, lets create kafka topic:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubeless topic create boot-topic
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Deploy the Spring Boot app &lt;em&gt;boot-kubeless-kafka&lt;/em&gt; as a Function using docker image available in Docker Hub:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubeless function deploy boot-kubeless-kafka --runtime-image rawsanj/boot-kubeless-kafka --trigger-topic boot-topic --env KUBELESS_KAFKA_SVC=kafka --env  KUBELESS_KAFKA_NAMESPACE=kubeless
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you have your own Kafka Cluster running on K8S, update the namespace and service name in the environment variables above.&lt;/p&gt;
+&lt;h4 id=&#34;test-the-function-1&#34;&gt;Test the function:&lt;/h4&gt;
+&lt;p&gt;Publish message onto the Kafka topic&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubeless topic publish --topic boot-topic --data &amp;quot;Hello From Kafka&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ssh into &lt;strong&gt;boot-kubeless-kafka&lt;/strong&gt; Pods to check the Messages getting consumed.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubectl get pods | grep boot-kubeless-kafka   // Note the Pod name.
+
+$ kubectl logs boot-kubeless-kafka-68b.... // Above pod name.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;you-can-also-test-the-function-from-kubeless-uihttpsgithubcomkubelesskubeless-ui&#34;&gt;You can also test the Function from &lt;a href=&#34;https://github.com/kubeless/kubeless-ui&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kubeless UI&lt;/a&gt;.&lt;/h4&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Intro to Kubernetes</title>
+      <link>https://rawsanj.dev/talk/intro-to-kubernetes/</link>
+      <pubDate>Tue, 14 Mar 2017 12:30:25 +0000</pubDate>
+      <guid>https://rawsanj.dev/talk/intro-to-kubernetes/</guid>
+      <description>&lt;h3 id=&#34;kubernetes-for-java-developers&#34;&gt;Kubernetes for Java Developers&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Quick Intro to Docker&lt;/li&gt;
+&lt;li&gt;Intro to Kubernetes Concepts&lt;/li&gt;
+&lt;li&gt;Fabric8 - PaaS for K8s&lt;/li&gt;
+&lt;li&gt;CI/CD in K8s using Fabric8&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://labs.play-with-k8s.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Play with Kubernetes&lt;/a&gt; online&lt;/li&gt;
+&lt;li&gt;Shout-out to &lt;a href=&#34;https://stackpoint.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stackpoint.io&lt;/a&gt; for making super easy to deploy Kubernetes back in 2016&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

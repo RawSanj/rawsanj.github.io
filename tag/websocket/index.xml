@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>websocket | Coding Cloud</title>
+    <link>https://rawsanj.dev/tag/websocket/</link>
+      <atom:link href="https://rawsanj.dev/tag/websocket/index.xml" rel="self" type="application/rss+xml" />
+    <description>websocket</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Sun, 17 Mar 2019 19:39:30 +0000</lastBuildDate>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>websocket</title>
+      <link>https://rawsanj.dev/tag/websocket/</link>
+    </image>
+    
+    <item>
+      <title>Spring Redis Websocket</title>
+      <link>https://rawsanj.dev/project/spring-redis-websocket/</link>
+      <pubDate>Sun, 17 Mar 2019 19:39:30 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/spring-redis-websocket/</guid>
+      <description>&lt;h2 id=&#34;multi-instance-websocket-messaging-demo-using-spring-boot-and-redis-pubsub&#34;&gt;Multi-instance WebSocket messaging demo using Spring Boot and Redis Pub/Sub&lt;/h2&gt;
+&lt;p&gt;Scalable Spring Boot Chat Application to demonstrate use of [Redis] - [Pub/Sub] for [WebSocket using STOMP] protocol, without using any external Message Broker like RabbitMQ to sync messages between different instances.&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-play-with-docker&#34;&gt;Deploy to [Play with Docker]&lt;/h3&gt;
+&lt;p&gt;Ctrl + Click the below button to deploy multiple instances of the spring-redis-websocket load balanced by NGINX:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/RawSanj/spring-redis-websocket/master/src/main/docker/docker-compose.yml#&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Deploy to PWD&#34; srcset=&#34;
+               /project/spring-redis-websocket/deploy-to-pwd_hu008d5de6dd1a0a7b95353f5a4604d4a5_9378_fa3fd86feda1fb864d2fbc4a93c3a6d3.webp 400w,
+               /project/spring-redis-websocket/deploy-to-pwd_hu008d5de6dd1a0a7b95353f5a4604d4a5_9378_759422ce4b0f78637201bb10743788d4.webp 760w,
+               /project/spring-redis-websocket/deploy-to-pwd_hu008d5de6dd1a0a7b95353f5a4604d4a5_9378_1200x1200_fit_q90_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://rawsanj.dev/project/spring-redis-websocket/deploy-to-pwd_hu008d5de6dd1a0a7b95353f5a4604d4a5_9378_fa3fd86feda1fb864d2fbc4a93c3a6d3.webp&#34;
+               width=&#34;279&#34;
+               height=&#34;53&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;installation-and-configuration&#34;&gt;Installation and Configuration&lt;/h3&gt;
+&lt;h5 id=&#34;pre-requisite&#34;&gt;Pre-requisite:&lt;/h5&gt;
+&lt;p&gt;Install and run [Redis] locally or on Docker.&lt;/p&gt;
+&lt;p&gt;To run Redis in Docker:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 6379:6379 -e REDIS_PASSWORD=SuperSecretRedisPassword bitnami/redis
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;clone-repo&#34;&gt;Clone repo:&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/spring-redis-websocket.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build-and-run-the-applications&#34;&gt;Build and Run the applications:&lt;/h4&gt;
+&lt;p&gt;Build and run the &lt;strong&gt;spring-redis-websocket&lt;/strong&gt; application:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd spring-redis-websocket
+
+$ mvn clean package
+
+$ mvn spring-boot:run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-in-docker&#34;&gt;Run in Docker&lt;/h3&gt;
+&lt;h4 id=&#34;build-and-run-the-spring-redis-websocket-locally-in-docker&#34;&gt;Build and run the &lt;em&gt;spring-redis-websocket&lt;/em&gt; locally in Docker:&lt;/h4&gt;
+&lt;p&gt;Build the JAR file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn clean package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Build docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn docker:build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 8080:8080 \
+$ rawsanj/spring-redis-websocket
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;run-multiple-instance-using-docker-compose-locally&#34;&gt;Run multiple instance using docker-compose locally&lt;/h4&gt;
+&lt;p&gt;Run multiple instances of &lt;em&gt;spring-redis-websocket&lt;/em&gt; locally load balanced via Ngnix connected to redis container in Docker:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd src/main/docker
+$ docker-compose up
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-in-kubernetes&#34;&gt;Run in Kubernetes&lt;/h3&gt;
+&lt;h4 id=&#34;assuming-you-have-a-kubernetes-cluster-up-and-running-locally&#34;&gt;Assuming you have a Kubernetes Cluster up and running locally:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubectl apply -f src/main/k8s
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

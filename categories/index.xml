@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Coding Cloud</title>
+    <title>Categories | Coding Cloud</title>
     <link>https://rawsanj.dev/categories/</link>
-    <description>Recent content in Categories on Coding Cloud</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2020. Sanjay Rawat</copyright>
-    
-	<atom:link href="https://rawsanj.dev/categories/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://rawsanj.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Categories</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Categories</title>
+      <link>https://rawsanj.dev/categories/</link>
+    </image>
     
   </channel>
 </rss>

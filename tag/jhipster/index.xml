@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jhipster | Coding Cloud</title>
+    <link>https://rawsanj.dev/tag/jhipster/</link>
+      <atom:link href="https://rawsanj.dev/tag/jhipster/index.xml" rel="self" type="application/rss+xml" />
+    <description>jhipster</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Wed, 18 Oct 2017 18:49:22 +0000</lastBuildDate>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>jhipster</title>
+      <link>https://rawsanj.dev/tag/jhipster/</link>
+    </image>
+    
+    <item>
+      <title>Java Mail Clients</title>
+      <link>https://rawsanj.dev/project/java-mail-clients/</link>
+      <pubDate>Wed, 18 Oct 2017 18:49:22 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/java-mail-clients/</guid>
+      <description>&lt;h4 id=&#34;this-demo-is-created-to-test-the-java-mail-clients-to-configure-mailservice-is-jhipster-application-as-suggested-in-jhipster-tip---configuring-email-with---gmail&#34;&gt;This demo is created to test the Java Mail Clients, to configure MailService is &lt;a href=&#34;http://www.jhipster.tech&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jHipster&lt;/a&gt; application as suggested in jHipster Tip - &lt;a href=&#34;http://www.jhipster.tech/tips/011_tip_configuring_email_in_jhipster.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Configuring Email with - Gmail&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&#34;note-for-gmail&#34;&gt;Note (for Gmail)&lt;/h3&gt;
+&lt;p&gt;You must allow your Gmail Account to access less secure apps.&lt;/p&gt;
+&lt;p&gt;Login to Gmail and visit &lt;a href=&#34;https://www.google.com/settings/security/lesssecureapps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&lt;/a&gt; to Turn On Access for less secure apps.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://support.google.com/accounts/answer/6010255&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;More Info here&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/java-mail-clients.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;updated-version-added-support-for-attachments&#34;&gt;Updated Version (added support for Attachments):&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Update &lt;code&gt;ConfigConsts.java&lt;/code&gt; file with &lt;em&gt;to&lt;/em&gt; and &lt;em&gt;from&lt;/em&gt; Email address and password.&lt;/li&gt;
+&lt;li&gt;Select the SMTP Server (GMAIL, YAHOO, OUTLOOK or ZOHO) and update the File path where the attachments are located.&lt;/li&gt;
+&lt;li&gt;Run the &lt;code&gt;SendEmailWithAttachments&lt;/code&gt; class as Java Application.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;older-version&#34;&gt;Older Version:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Change the &lt;code&gt;sendToAddress&lt;/code&gt;, &lt;code&gt;sendFromAddress&lt;/code&gt; and &lt;code&gt;password&lt;/code&gt; in the respective E-Mail client app and run as Java Application.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
+&lt;p&gt;Refer below links for API and SMTP settings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/java/javamail/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JavaMail API&lt;/a&gt; - JavaMail : version-1.5.4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.google.com/a/answer/176600?hl=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMail SMTP&lt;/a&gt; - Gmail SMTP Settings.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.outlook-apps.com/outlook-com-pop-settings/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Outlook SMTP&lt;/a&gt; - Outlook SMTP Settings.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.serversmtp.com/en/smtp-yahoo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yahoo SMTP&lt;/a&gt; - Yahoo SMTP Settings.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zoho.com/mail/help/zoho-smtp.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zoho SMTP&lt;/a&gt; - Zoho SMTP Settings.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

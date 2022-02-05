@@ -3,13 +3,14 @@
   <channel>
     <title>Coding Cloud</title>
     <link>https://rawsanj.dev/author/rawsanj/</link>
-    <description>Recent content on Coding Cloud</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2020. Sanjay Rawat</copyright>
-    
-	<atom:link href="https://rawsanj.dev/author/rawsanj/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://rawsanj.dev/author/rawsanj/index.xml" rel="self" type="application/rss+xml" />
+    <description>Coding Cloud</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Coding Cloud</title>
+      <link>https://rawsanj.dev/author/rawsanj/</link>
+    </image>
     
   </channel>
 </rss>

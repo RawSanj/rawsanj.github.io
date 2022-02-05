@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Play-with-Docker | Coding Cloud</title>
+    <link>https://rawsanj.dev/tag/play-with-docker/</link>
+      <atom:link href="https://rawsanj.dev/tag/play-with-docker/index.xml" rel="self" type="application/rss+xml" />
+    <description>Play-with-Docker</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Mon, 14 Aug 2017 12:30:25 +0000</lastBuildDate>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Play-with-Docker</title>
+      <link>https://rawsanj.dev/tag/play-with-docker/</link>
+    </image>
+    
+    <item>
+      <title>Docker Deep Dive</title>
+      <link>https://rawsanj.dev/talk/docker-deep-dive/</link>
+      <pubDate>Mon, 14 Aug 2017 12:30:25 +0000</pubDate>
+      <guid>https://rawsanj.dev/talk/docker-deep-dive/</guid>
+      <description>&lt;h3 id=&#34;docker-deep-dive-for-java-developers&#34;&gt;Docker Deep Dive for Java Developers&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Deep dive into Docker and Linux Containers&lt;/li&gt;
+&lt;li&gt;Dockerfile&lt;/li&gt;
+&lt;li&gt;Run Docker Containers&lt;/li&gt;
+&lt;li&gt;Run Tomcat inside Docker Container&lt;/li&gt;
+&lt;li&gt;Deploy Spring Boot App in Docker&lt;/li&gt;
+&lt;li&gt;Container Linking and Stateful containers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://play-with-docker.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Play with Docker&lt;/a&gt; online&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

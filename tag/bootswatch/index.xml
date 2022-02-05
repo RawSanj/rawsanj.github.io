@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bootswatch | Coding Cloud</title>
+    <link>https://rawsanj.dev/tag/bootswatch/</link>
+      <atom:link href="https://rawsanj.dev/tag/bootswatch/index.xml" rel="self" type="application/rss+xml" />
+    <description>bootswatch</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Sat, 28 Apr 2018 19:19:02 +0000</lastBuildDate>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>bootswatch</title>
+      <link>https://rawsanj.dev/tag/bootswatch/</link>
+    </image>
+    
+    <item>
+      <title>Aws S3 File System</title>
+      <link>https://rawsanj.dev/project/aws-s3-file-system/</link>
+      <pubDate>Sat, 28 Apr 2018 19:19:02 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/aws-s3-file-system/</guid>
+      <description>&lt;h3 id=&#34;aws-s3-as-file-system-application---spring-cloud-aws---spring--boot---thymeleaf&#34;&gt;AWS S3 as File System Application - Spring Cloud AWS - Spring  Boot - Thymeleaf&lt;/h3&gt;
+&lt;p&gt;This is simple Spring Boot Application to upload/delete/search files in AWS S3 bucket.
+It uses Thymeleaf view tech and Bootstrap for responsive UI.&lt;/p&gt;
+&lt;p&gt;It also provides a REST api for creating Single Page Application using frameworks like Angular or React.&lt;/p&gt;
+&lt;h3 id=&#34;tech&#34;&gt;Tech&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;aws-s3-file-system&lt;/strong&gt; uses a number of open source projects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://projects.spring.io/spring-boot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Boot&lt;/a&gt; - An opinionated framework for building production-ready Spring applications. It favors convention over configuration and is designed to get you up and running as quickly as possible.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.spring.io/spring-cloud-aws&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Cloud AWS&lt;/a&gt; - Spring Cloud for Amazon Web Services, eases the integration with hosted Amazon Web Services. It offers a convenient way to interact with AWS provided services using well-known Spring idioms and APIs.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.thymeleaf.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thymeleaf&lt;/a&gt; - Thymeleaf is a modern server-side Java template engine for both web and standalone environments.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bootswatch.com/paper&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bootswatch&lt;/a&gt; - A Boostrap theme for great UI boilerplate for modern web apps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;installation-and-configuration&#34;&gt;Installation and Configuration&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/aws-s3-file-system.git
+
+$ cd aws-s3-file-system
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Configuration:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a S3 bucket in Amazon Web Services.&lt;/li&gt;
+&lt;li&gt;Create an IAM user with Programmatic access (i.e. enable access key ID and secret access key for the AWS API) and attach only AWS AmazonS3FullAccess policy.&lt;/li&gt;
+&lt;li&gt;Add the above noted AWS Access key, Secret key and S3 Bucket name in &lt;code&gt;/src/main/resources/application.properties&lt;/code&gt; file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Run the application:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn clean package
+
+$ mvn spring-boot:run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-in-docker&#34;&gt;Run in Docker&lt;/h3&gt;
+&lt;h4 id=&#34;build-and-run-locally-in-docker&#34;&gt;Build and run locally in Docker:&lt;/h4&gt;
+&lt;p&gt;Build the WAR file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn clean package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Build docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn docker:build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run docker image by passing credentials in Environment variables:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 8080:8080 \
+$ -e cloud.aws.credentials.accessKey=ACCESS_KEY \
+$ -e cloud.aws.credentials.secretKey=SECRET_KEY \
+$ -e cloud.aws.region.static=REGION \
+$ -e aws.bucket.name=BUCKET_NAME \
+$ rawsanj/aws-s3-file-system
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or Run docker image by updating the env.list file with AWS Credentials:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 8080:8080 --env-file env.list rawsanj/aws-s3-file-system
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;run-on-cloud&#34;&gt;Run on Cloud:&lt;/h4&gt;
+&lt;p&gt;Try &lt;a href=&#34;http://play-with-docker.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://play-with-docker.com&lt;/a&gt; for running docker on browser without any local setup.&lt;/p&gt;
+&lt;p&gt;Run the docker image available in Docker Hub:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 8080:8080 \
+$ -e cloud.aws.credentials.accessKey=ACCESS_KEY \
+$ -e cloud.aws.credentials.secretKey=SECRET_KEY \
+$ -e cloud.aws.region.static=REGION \
+$ -e aws.bucket.name=BUCKET_NAME \
+$ rawsanj/aws-s3-file-system
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

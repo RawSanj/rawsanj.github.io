@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>d3js | Coding Cloud</title>
+    <link>https://rawsanj.dev/tag/d3js/</link>
+      <atom:link href="https://rawsanj.dev/tag/d3js/index.xml" rel="self" type="application/rss+xml" />
+    <description>d3js</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Wed, 03 Jan 2018 18:21:52 +0000</lastBuildDate>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>d3js</title>
+      <link>https://rawsanj.dev/tag/d3js/</link>
+    </image>
+    
+    <item>
+      <title>Spring Twitter Stream</title>
+      <link>https://rawsanj.dev/project/spring-twitter-stream/</link>
+      <pubDate>Wed, 03 Jan 2018 18:21:52 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/spring-twitter-stream/</guid>
+      <description>&lt;p&gt;Spring Boot - Spring Social Twitter - D3.Js webapp for Streaming Live #HashTags and source location of Tweets.&lt;/p&gt;
+&lt;h3 id=&#34;demo&#34;&gt;Demo&lt;/h3&gt;
+&lt;p&gt;Live Demo @ &lt;a href=&#34;https://twitter-stream-cloud.herokuapp.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Heroku&lt;/a&gt; PaaS.&lt;/p&gt;
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+&lt;h4 id=&#34;clone-the-github-repository&#34;&gt;Clone the Github repository&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/Spring-Twitter-Stream.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;twitter-app-and-configuration&#34;&gt;Twitter App and Configuration&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Login to &lt;a href=&#34;https://apps.twitter.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://apps.twitter.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Create a New Application and note down the &lt;em&gt;Consumer Key, Consumer Secret, Access Token and Access Token Secret&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Edit the &lt;code&gt;/src/main/resources/application.properties&lt;/code&gt; and add above noted keys.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;run-the-application&#34;&gt;Run the application&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn spring-boot:run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then navigate to &lt;a href=&#34;http://localhost:8080&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://localhost:8080&lt;/a&gt; in your browser.&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-cloud-foundry&#34;&gt;Deploy to Cloud Foundry&lt;/h3&gt;
+&lt;h4 id=&#34;package-the-application-creates-spring-twitter-stream-010war-file&#34;&gt;Package the application (creates spring-twitter-stream-0.1.0.war file)&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn clean package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;pre-requisite&#34;&gt;Pre-requisite:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Account @ &lt;a href=&#34;http://run.pivotal.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://run.pivotal.io&lt;/a&gt;. $87 Credit Free Account.&lt;/li&gt;
+&lt;li&gt;cf cli is installed - &lt;a href=&#34;http://docs.cloudfoundry.org/cf-cli&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://docs.cloudfoundry.org/cf-cli&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;login-to-pivotal-cloud-foundry&#34;&gt;Login to Pivotal Cloud Foundry&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cf login -a https://api.run.pivotal.io
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;deploy-the-application&#34;&gt;Deploy the application&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cf push spring-twitter-app -p target/spring-twitter-stream-0.1.0.war --random-route
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;deploy-to-heroku&#34;&gt;Deploy to Heroku&lt;/h3&gt;
+&lt;h4 id=&#34;package-the-application-creates-spring-twitter-stream-010war-file-1&#34;&gt;Package the application (creates spring-twitter-stream-0.1.0.war file)&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn clean package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;pre-requisite-1&#34;&gt;Pre-requisite:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Account @ &lt;a href=&#34;https://www.heroku.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.heroku.com&lt;/a&gt;. Free Account.&lt;/li&gt;
+&lt;li&gt;heroku cli is installed - &lt;a href=&#34;https://devcenter.heroku.com/articles/heroku-cli&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://devcenter.heroku.com/articles/heroku-cli&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;login-to-heroku&#34;&gt;Login to Heroku&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ heroku login
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;install-heroku-cli-deploy-plugin&#34;&gt;Install Heroku cli deploy plugin&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ heroku plugins:install heroku-cli-deploy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;create-the-application-in-heroku&#34;&gt;Create the application in Heroku&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ heroku create spring-tweets-app
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;deploy-the-application-1&#34;&gt;Deploy the application&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ heroku war:deploy target/spring-twitter-stream-0.1.0.war --app spring-tweets-app
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

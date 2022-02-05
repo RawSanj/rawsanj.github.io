@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kubeless | Coding Cloud</title>
+    <link>https://rawsanj.dev/tag/kubeless/</link>
+      <atom:link href="https://rawsanj.dev/tag/kubeless/index.xml" rel="self" type="application/rss+xml" />
+    <description>kubeless</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Fri, 02 Feb 2018 18:54:05 +0000</lastBuildDate>
+    <image>
+      <url>https://rawsanj.dev/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>kubeless</title>
+      <link>https://rawsanj.dev/tag/kubeless/</link>
+    </image>
+    
+    <item>
+      <title>Boot Kubeless</title>
+      <link>https://rawsanj.dev/project/boot-kubeless/</link>
+      <pubDate>Fri, 02 Feb 2018 18:54:05 +0000</pubDate>
+      <guid>https://rawsanj.dev/project/boot-kubeless/</guid>
+      <description>&lt;h2 id=&#34;spring-boot-project-for-kubelesshttpskubelessio-custom-runtimehttpsgithubcomkubelesskubelessblobmasterdocsruntimesmdcustom-runtime-alpha&#34;&gt;Spring Boot project for &lt;a href=&#34;https://kubeless.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kubeless&lt;/a&gt; Custom &lt;a href=&#34;https://github.com/kubeless/kubeless/blob/master/docs/runtimes.md#custom-runtime-alpha&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Runtime&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A simple Spring Boot Application to demonstrate how to build and run Custom Java Runtime on &lt;a href=&#34;https://kubeless.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kubeless&lt;/a&gt; for HTTP and Kafka Triggers.&lt;/p&gt;
+&lt;p&gt;It has two applications:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;boot-kubeless-http&lt;/strong&gt;: A simple Spring Boot app for Kubeless HTTP trigger. It provides a &lt;strong&gt;GET&lt;/strong&gt; and &lt;strong&gt;POST&lt;/strong&gt; endpoint to add/list simple domain entity to demonstrate the use of various Spring projects.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;boot-kubeless-kafka&lt;/strong&gt;: A simple Spring Boot app as Kafka Consumer for Kubeless Topic/Kafka trigger.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;tech&#34;&gt;Tech&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;boot-kubeless&lt;/strong&gt; uses a number of open source projects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://projects.spring.io/spring-boot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Boot&lt;/a&gt; - An opinionated framework for building production-ready Spring applications. It favors convention over configuration and is designed to get you up and running as quickly as possible.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kubeless.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kubeless&lt;/a&gt; - The Kubernetes Native Serverless Framework.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://projects.spring.io/spring-data-jpa&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Data JPA&lt;/a&gt; - Spring Data JPA, part of the larger Spring Data family, makes it easy to easily implement JPA based repositories.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring Boot Actuator&lt;/a&gt; - Actuator endpoints allow you to monitor and interact with your application.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://spring.io/projects/spring-kafka&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring for Kafka&lt;/a&gt; - The Spring for Apache Kafka project applies core Spring concepts to the development of Kafka-based messaging solutions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;installation-and-configuration&#34;&gt;Installation and Configuration&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/boot-kubeless.git
+
+$ cd boot-kubeless
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build-and-run-the-applications&#34;&gt;Build and Run the applications:&lt;/h4&gt;
+&lt;p&gt;Build and run the &lt;strong&gt;boot-kubeless-http&lt;/strong&gt; application:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd boot-kubeless-http
+
+$ mvn clean package
+
+$ mvn spring-boot:run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Build and run the &lt;strong&gt;boot-kubeless-kafka&lt;/strong&gt; application:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Download and Install &lt;a href=&#34;https://kafka.apache.org/quickstart&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kafka&lt;/a&gt;. Set the Kafka Server Address and Topic name in &lt;code&gt;application.yml&lt;/code&gt; file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd boot-kubeless-kafka
+
+$ mvn clean package
+
+$ mvn spring-boot:run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-in-docker&#34;&gt;Run in Docker&lt;/h3&gt;
+&lt;h4 id=&#34;build-and-run-the-boot-kubeless-http-locally-in-docker&#34;&gt;Build and run the &lt;em&gt;boot-kubeless-http&lt;/em&gt; locally in Docker:&lt;/h4&gt;
+&lt;p&gt;Build the JAR file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd boot-kubeless-http
+
+$ mvn clean package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Build docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn docker:build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 8080:8080 \
+$ rawsanj/boot-kubeless-http
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;build-and-run-the-boot-kubeless-kafka-locally-in-docker&#34;&gt;Build and run the &lt;em&gt;boot-kubeless-kafka&lt;/em&gt; locally in Docker:&lt;/h4&gt;
+&lt;p&gt;Build the JAR file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd boot-kubeless-kafka
+$ mvn clean package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Build docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mvn docker:build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You would need to run Kafka in Docker. Try this &lt;a href=&#34;https://hub.docker.com/r/spotify/kafka&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kafka docker image&lt;/a&gt;.
+Run docker image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ docker run -d -p 8080:8080 \
+$ rawsanj/boot-kubeless-kafka --link &amp;lt;Kafka_Container&amp;gt;:alias
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;deploy-on-kubernetes-as-faas-using-kubeless-cli&#34;&gt;Deploy on Kubernetes as FaaS using kubeless cli&lt;/h3&gt;
+&lt;h4 id=&#34;setup-and-install-kubeless&#34;&gt;Setup and Install Kubeless.&lt;/h4&gt;
+&lt;p&gt;Follow the Steps &lt;a href=&#34;https://github.com/kubeless/kubeless#installation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;deploy-the-boot-kubeless-http-as-kubeless-function-with-http-trigger&#34;&gt;Deploy the &lt;em&gt;boot-kubeless-http&lt;/em&gt; as Kubeless Function with HTTP Trigger&lt;/h4&gt;
+&lt;p&gt;Deploy the Spring Boot app &lt;em&gt;boot-kubeless-http&lt;/em&gt; as a Function using docker image available in Docker Hub:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubeless function deploy --runtime-image rawsanj/boot-kubeless-http --trigger-http boot-kubeless-http
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;test-the-function&#34;&gt;Test the function:&lt;/h4&gt;
+&lt;p&gt;Calls the &lt;strong&gt;GET&lt;/strong&gt; method of Spring Boot App&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubeless function call boot-kubeless-http
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Calls the &lt;strong&gt;POST&lt;/strong&gt; method of Spring Boot App&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubeless function call boot-kubeless-http --data &#39;{&amp;quot;language&amp;quot;:&amp;quot;Go&amp;quot;,&amp;quot;rate&amp;quot;:1}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;deploy-the-boot-kubeless-kafka-as-kubeless-function-with-kafkatopic-trigger&#34;&gt;Deploy the &lt;em&gt;boot-kubeless-kafka&lt;/em&gt; as Kubeless Function with Kafka/Topic Trigger&lt;/h4&gt;
+&lt;p&gt;Before deploying the function, lets create kafka topic:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubeless topic create boot-topic
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Deploy the Spring Boot app &lt;em&gt;boot-kubeless-kafka&lt;/em&gt; as a Function using docker image available in Docker Hub:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubeless function deploy boot-kubeless-kafka --runtime-image rawsanj/boot-kubeless-kafka --trigger-topic boot-topic --env KUBELESS_KAFKA_SVC=kafka --env  KUBELESS_KAFKA_NAMESPACE=kubeless
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you have your own Kafka Cluster running on K8S, update the namespace and service name in the environment variables above.&lt;/p&gt;
+&lt;h4 id=&#34;test-the-function-1&#34;&gt;Test the function:&lt;/h4&gt;
+&lt;p&gt;Publish message onto the Kafka topic&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubeless topic publish --topic boot-topic --data &amp;quot;Hello From Kafka&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ssh into &lt;strong&gt;boot-kubeless-kafka&lt;/strong&gt; Pods to check the Messages getting consumed.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ kubectl get pods | grep boot-kubeless-kafka   // Note the Pod name.
+
+$ kubectl logs boot-kubeless-kafka-68b.... // Above pod name.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;you-can-also-test-the-function-from-kubeless-uihttpsgithubcomkubelesskubeless-ui&#34;&gt;You can also test the Function from &lt;a href=&#34;https://github.com/kubeless/kubeless-ui&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kubeless UI&lt;/a&gt;.&lt;/h4&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
