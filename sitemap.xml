@@ -42,10 +42,6 @@
   <url>
     <loc>https://rawsanj.dev/tag/websocket/</loc><lastmod>2019-03-17T19:39:30+00:00</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://rawsanj.dev/slides/example/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod></url>
-  <url>
     <loc>https://rawsanj.dev/tag/cronjob/</loc><lastmod>2018-09-16T19:36:28+00:00</lastmod></url>
   <url>
     <loc>https://rawsanj.dev/project/spring-cloud-task-as-k8s-cronjob/</loc><lastmod>2018-09-16T19:36:28+00:00</lastmod></url>
@@ -164,4 +160,6 @@
   <url>
     <loc>https://rawsanj.dev/event/</loc></url>
   <url>
-    <loc>https://rawsanj.dev/category/serverless/</loc></url></urlset>
+    <loc>https://rawsanj.dev/category/serverless/</loc></url>
+  <url>
+    <loc>https://rawsanj.dev/slides/</loc></url></urlset>
