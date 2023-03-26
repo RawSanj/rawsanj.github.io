@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  
+  
+
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.4.0 for Hugo">
+
+  
+  <link rel="manifest" href="/index.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu40be7a442f4132e79fbcdc152b49bfa5_12137_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu40be7a442f4132e79fbcdc152b49bfa5_12137_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://rawsanj.dev/slides/aws-lambda/">
+
+  <title>AWS Lambda Deep Dive | Coding Cloud</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/theme/solarized.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" id="highlight-theme">
+
+  
+  
+  <link rel="stylesheet" href="/css/reveal_custom.min.css">
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Lambda_architecture_logo.svg/1024px-Amazon_Lambda_architecture_logo.svg.png"
+  
+      
+      data-background-repeat="repeat"
+  
+      
+      data-background-size="1024px"
+  >
+
+<h1 id="aws-lambda">AWS Lambda</h1>
+<h1 id="deep-dive">Deep Dive</h1>
+<h3 id="documentationhttpsdocsawsamazoncomlambdalatestdgwelcomehtml"><a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html" target="_blank" rel="noopener">Documentation</a></h3>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="what-is-aws-lambda-function">What is AWS Lambda Function</h3>
+<ul>
+<li>A Compute Service to run code without Provisioning or Managing Servers</li>
+<li>Uses Containerization tech called <a href="https://firecracker-microvm.github.io" target="_blank" rel="noopener">Firecracker</a></li>
+<li>Handles Server &amp; OS Maintenance, Provisioning, Auto-Scaling, Logging</li>
+<li>Code in one of the Languages supported by <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html" target="_blank" rel="noopener">Lambda Runtimes</a></li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="lambda-concepts">Lambda Concepts</h3>
+<ul>
+<li><u>Function</u>: a resource invoked to run your code</li>
+<li><u>Trigger</u>: a resource/config that invokes a Lambda</li>
+<li><u>Event</u>: a JSON-formatted data for a Lambda function to process</li>
+<li><u>Event Source Mapping</u>: a resource that reads items from a stream/queue &amp; invokes a function</li>
+<li><u>Execution Env</u>: provides a secure and isolated Runtime Env for your Lambda function</li>
+<li><u>Runtime</u>: provides a lang-specific Env that runs in an Execution Env</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="what-is-lambda-runtimes">What is Lambda Runtimes</h3>
+<ul>
+<li>Runtime provides a lang-specific env that runs in an execution env</li>
+<li>It relays invocation Events, Context, &amp; Responses between Lambda &amp; the Function</li>
+<li>Use AWS provided Lambda Runtimes or Build your own by implementing <a href="https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html" target="_blank" rel="noopener">Runtime API</a></li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="execution-environment--runtime">Execution Environment &amp; Runtime</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="https://docs.aws.amazon.com/images/lambda/latest/dg/images/telemetry-api-concept-diagram.png" alt="Runtime API" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="https://docs.aws.amazon.com/images/lambda/latest/dg/images/Overview-Successful-Invokes.png" alt="Lambda execution environment lifecycle" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="supported-lambda-runtimes">Supported Lambda Runtimes</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:right"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Node.js</td>
+<td style="text-align:left">v18, v16, v14 &amp; v12*</td>
+</tr>
+<tr>
+<td style="text-align:right">Python</td>
+<td style="text-align:left">v3.9, v3.8, v3.7</td>
+</tr>
+<tr>
+<td style="text-align:right">Java</td>
+<td style="text-align:left">v8, v11</td>
+</tr>
+<tr>
+<td style="text-align:right">C#</td>
+<td style="text-align:left">.NET v5, v6   &amp; .NET Core v3.1</td>
+</tr>
+<tr>
+<td style="text-align:right">Go</td>
+<td style="text-align:left">v1.x</td>
+</tr>
+<tr>
+<td style="text-align:right">Ruby</td>
+<td style="text-align:left">v2.7*</td>
+</tr>
+<tr>
+<td style="text-align:right"><a href="https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html" target="_blank" rel="noopener">Custom Runtime</a></td>
+<td style="text-align:left">- Based on Amazon Linux</td>
+</tr>
+</tbody>
+</table>
+<p><em><a href="https://github.com/micronaut-projects/micronaut-aws/blob/master/function-aws-custom-runtime/src/main/java/io/micronaut/function/aws/runtime/AbstractMicronautLambdaRuntime.java#L347" target="_blank" rel="noopener">Micronaut Custom Runtime Implementation</a></em></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="lambda-function-java">Lambda Function Java</h3>
+<pre><code class="language-java">public class MsgHandler implements RequestHandler&lt;String, String&gt; {
+    public String handleRequest(String input, Context ctx) {
+        context.getLogger().log(&quot;Input: &quot; + input);
+        return &quot;Hello World - &quot; + input;
+    }
+}
+</code></pre>
+<pre><code class="language-java">public class StreamHandler implements RequestStreamHandler {
+    public void handleRequest(InputStream is, OutputStream os, Context ctx) {
+        String input = IOUtils.toString(is, &quot;UTF-8&quot;);
+        os.write((&quot;Hello World - &quot; + input).getBytes());
+    }
+}
+</code></pre>
+<pre><code class="language-java">public class NoInterfaceHandler {
+    public String customHandle(String input, Context context) {
+        context.getLogger().log(&quot;Input: &quot; + input);
+        return &quot;Hello World - &quot; + input;
+    }
+}
+</code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="features">Features</h3>
+<ul>
+<li>Automatically manages the underlying Compute Resources</li>
+<li>Concurrency and Scaling controls</li>
+<li>Pay Per Request Execution is millis</li>
+<li>Multiple Event Sources: API-GW, SQS, S3, DynamoDB, etc.</li>
+<li>Functions defined as Container Images</li>
+<li>Lambda Extensions</li>
+<li>Execute inside Private Subnets inside a VPC</li>
+<li>File Systems Access + EFS</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="limitationshttpsdocsawsamazoncomlambdalatestdggettingstarted-limitshtml"><a href="https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html" target="_blank" rel="noopener">Limitations</a></h3>
+<ul>
+<li>Memory: 128 MB to 10,240 MB</li>
+<li>No Direct Way to assign CPU: 1,769 MB memory is equivalent of one vCPU</li>
+<li>Function Timeouts: 15 minutes</li>
+<li>Invocation Payload: 6 MB (sync) &amp; 256 KB (async)</li>
+<li>File descriptors: 1024</li>
+<li>Execution processes/threads: 1024</li>
+<li>No Async Processing Allowed: Lambda Instance Freezes once request/response is completed</li>
+<li>1 Lambda Instance serves only 1 request at time</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="other-compute-options">Other Compute Options</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Services</th>
+<th style="text-align:left">Comparison with Lambda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">AWS EC2</td>
+<td style="text-align:left">Not Serverless, More RAM/CPU/Storage, Always ON</td>
+</tr>
+<tr>
+<td style="text-align:right">AWS EKS</td>
+<td style="text-align:left">Managed Container Platform on EC2</td>
+</tr>
+<tr>
+<td style="text-align:right">Fargate</td>
+<td style="text-align:left">Serverless Container Platform on EC2</td>
+</tr>
+<tr>
+<td style="text-align:right">Beanstalk</td>
+<td style="text-align:left">AWS Container based PaaS</td>
+</tr>
+<tr>
+<td style="text-align:right">GCP Cloud RUN</td>
+<td style="text-align:left">Based on <a href="https://knative.dev/docs/" target="_blank" rel="noopener">OSS Knative</a> - Charged for Runtime only</td>
+</tr>
+</tbody>
+</table>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="questions">Questions?</h1>
+<p> </p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="40" height="40" alt="Github Icon"/></td>
+<td style="text-align:left"><a target="_blank"  href="http://github.com/rawsanj">@RawSanj</a></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/twitter.svg" width="40" height="40" alt="Twitter Icon"/></td>
+<td style="text-align:left"><a target="_blank"  href="https://twitter.com/raw_sanj">@Raw_Sanj</a></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/stack-overflow.svg" width="40" height="40" alt="StackOverflow Icon"/></td>
+<td style="text-align:left"><a target="_blank" style="color:#ffbc5a;" href="https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile">stack<b>overflow</b></a></td>
+</tr>
+</tbody>
+</table>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/highlight/highlight.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+
+  
+
+  
+  <script src="/js/wowchemy-slides.js"></script>
+
+</body>
+</html>

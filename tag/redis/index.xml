@@ -148,16 +148,16 @@ $ docker-compose up
 &lt;li&gt;Install git by running:
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ apk add git --no-cache
 &lt;/code&gt;&lt;/pre&gt;
-``&lt;/li&gt;
+&lt;/li&gt;
 &lt;li&gt;Clone the repository:
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/spring-redis-websocket.git
 &lt;/code&gt;&lt;/pre&gt;
-``&lt;/li&gt;
+&lt;/li&gt;
 &lt;li&gt;Run multiple instances of &lt;em&gt;spring-redis-websocket&lt;/em&gt;:
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd spring-redis-websocket/src/main/docker
 $ docker-compose up
 &lt;/code&gt;&lt;/pre&gt;
-``&lt;/li&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;run-in-kubernetes&#34;&gt;Run in Kubernetes&lt;/h3&gt;
 &lt;h4 id=&#34;assuming-you-have-a-kubernetes-cluster-up-and-running-locally&#34;&gt;Assuming you have a Kubernetes Cluster up and running locally:&lt;/h4&gt;
@@ -169,17 +169,17 @@ $ docker-compose up
 &lt;li&gt;Install git by running:
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ yum install git -y
 &lt;/code&gt;&lt;/pre&gt;
-``&lt;/li&gt;
+&lt;/li&gt;
 &lt;li&gt;Clone the repository:
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/RawSanj/spring-redis-websocket.git
 &lt;/code&gt;&lt;/pre&gt;
-``&lt;/li&gt;
+&lt;/li&gt;
 &lt;li&gt;Run multiple instances of &lt;em&gt;spring-redis-websocket&lt;/em&gt; load balanced by native Kubernetes Service. All instances
 connected to a single &lt;a href=&#34;https://redis.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Redis&lt;/a&gt; pod.
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd spring-redis-websocket
 $ kubectl apply -f src/main/k8s
 &lt;/code&gt;&lt;/pre&gt;
-``&lt;/li&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;tech&#34;&gt;Tech&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;spring-redis-websocket&lt;/strong&gt; uses a number of open source projects:&lt;/p&gt;

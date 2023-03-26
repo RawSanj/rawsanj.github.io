@@ -148,6 +148,10 @@
   <url>
     <loc>https://rawsanj.dev/author/</loc></url>
   <url>
+    <loc>https://rawsanj.dev/category/aws/</loc></url>
+  <url>
+    <loc>https://rawsanj.dev/slides/aws-lambda/</loc></url>
+  <url>
     <loc>https://rawsanj.dev/categories/</loc></url>
   <url>
     <loc>https://rawsanj.dev/tag/ci/cd/</loc></url>
@@ -158,4 +162,6 @@
   <url>
     <loc>https://rawsanj.dev/publication/</loc></url>
   <url>
-    <loc>https://rawsanj.dev/event/</loc></url></urlset>
+    <loc>https://rawsanj.dev/event/</loc></url>
+  <url>
+    <loc>https://rawsanj.dev/category/serverless/</loc></url></urlset>

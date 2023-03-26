@@ -39,5 +39,243 @@ $ curl -X POST http://localhost:3000/user -H &#39;Accept: application/json&#39; 
 </description>
     </item>
     
+    <item>
+      <title>AWS Lambda Deep Dive</title>
+      <link>https://rawsanj.dev/slides/aws-lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://rawsanj.dev/slides/aws-lambda/</guid>
+      <description>
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Lambda_architecture_logo.svg/1024px-Amazon_Lambda_architecture_logo.svg.png&#34;
+  
+      
+      data-background-repeat=&#34;repeat&#34;
+  
+      
+      data-background-size=&#34;1024px&#34;
+  &gt;
+
+&lt;h1 id=&#34;aws-lambda&#34;&gt;AWS Lambda&lt;/h1&gt;
+&lt;h1 id=&#34;deep-dive&#34;&gt;Deep Dive&lt;/h1&gt;
+&lt;h3 id=&#34;documentationhttpsdocsawsamazoncomlambdalatestdgwelcomehtml&#34;&gt;&lt;a href=&#34;https://docs.aws.amazon.com/lambda/latest/dg/welcome.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;what-is-aws-lambda-function&#34;&gt;What is AWS Lambda Function&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A Compute Service to run code without Provisioning or Managing Servers&lt;/li&gt;
+&lt;li&gt;Uses Containerization tech called &lt;a href=&#34;https://firecracker-microvm.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Firecracker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Handles Server &amp;amp; OS Maintenance, Provisioning, Auto-Scaling, Logging&lt;/li&gt;
+&lt;li&gt;Code in one of the Languages supported by &lt;a href=&#34;https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lambda Runtimes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lambda-concepts&#34;&gt;Lambda Concepts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;Function&lt;/u&gt;: a resource invoked to run your code&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Trigger&lt;/u&gt;: a resource/config that invokes a Lambda&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Event&lt;/u&gt;: a JSON-formatted data for a Lambda function to process&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Event Source Mapping&lt;/u&gt;: a resource that reads items from a stream/queue &amp;amp; invokes a function&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Execution Env&lt;/u&gt;: provides a secure and isolated Runtime Env for your Lambda function&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Runtime&lt;/u&gt;: provides a lang-specific Env that runs in an Execution Env&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;what-is-lambda-runtimes&#34;&gt;What is Lambda Runtimes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Runtime provides a lang-specific env that runs in an execution env&lt;/li&gt;
+&lt;li&gt;It relays invocation Events, Context, &amp;amp; Responses between Lambda &amp;amp; the Function&lt;/li&gt;
+&lt;li&gt;Use AWS provided Lambda Runtimes or Build your own by implementing &lt;a href=&#34;https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Runtime API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;execution-environment--runtime&#34;&gt;Execution Environment &amp;amp; Runtime&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://docs.aws.amazon.com/images/lambda/latest/dg/images/telemetry-api-concept-diagram.png&#34; alt=&#34;Runtime API&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://docs.aws.amazon.com/images/lambda/latest/dg/images/Overview-Successful-Invokes.png&#34; alt=&#34;Lambda execution environment lifecycle&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;supported-lambda-runtimes&#34;&gt;Supported Lambda Runtimes&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;Node.js&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;v18, v16, v14 &amp;amp; v12*&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;Python&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;v3.9, v3.8, v3.7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;Java&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;v8, v11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;C#&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;.NET v5, v6   &amp;amp; .NET Core v3.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;Go&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;v1.x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;Ruby&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;v2.7*&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Custom Runtime&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;- Based on Amazon Linux&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://github.com/micronaut-projects/micronaut-aws/blob/master/function-aws-custom-runtime/src/main/java/io/micronaut/function/aws/runtime/AbstractMicronautLambdaRuntime.java#L347&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Micronaut Custom Runtime Implementation&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lambda-function-java&#34;&gt;Lambda Function Java&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class MsgHandler implements RequestHandler&amp;lt;String, String&amp;gt; {
+    public String handleRequest(String input, Context ctx) {
+        context.getLogger().log(&amp;quot;Input: &amp;quot; + input);
+        return &amp;quot;Hello World - &amp;quot; + input;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class StreamHandler implements RequestStreamHandler {
+    public void handleRequest(InputStream is, OutputStream os, Context ctx) {
+        String input = IOUtils.toString(is, &amp;quot;UTF-8&amp;quot;);
+        os.write((&amp;quot;Hello World - &amp;quot; + input).getBytes());
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class NoInterfaceHandler {
+    public String customHandle(String input, Context context) {
+        context.getLogger().log(&amp;quot;Input: &amp;quot; + input);
+        return &amp;quot;Hello World - &amp;quot; + input;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatically manages the underlying Compute Resources&lt;/li&gt;
+&lt;li&gt;Concurrency and Scaling controls&lt;/li&gt;
+&lt;li&gt;Pay Per Request Execution is millis&lt;/li&gt;
+&lt;li&gt;Multiple Event Sources: API-GW, SQS, S3, DynamoDB, etc.&lt;/li&gt;
+&lt;li&gt;Functions defined as Container Images&lt;/li&gt;
+&lt;li&gt;Lambda Extensions&lt;/li&gt;
+&lt;li&gt;Execute inside Private Subnets inside a VPC&lt;/li&gt;
+&lt;li&gt;File Systems Access + EFS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;limitationshttpsdocsawsamazoncomlambdalatestdggettingstarted-limitshtml&#34;&gt;&lt;a href=&#34;https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Limitations&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Memory: 128 MB to 10,240 MB&lt;/li&gt;
+&lt;li&gt;No Direct Way to assign CPU: 1,769 MB memory is equivalent of one vCPU&lt;/li&gt;
+&lt;li&gt;Function Timeouts: 15 minutes&lt;/li&gt;
+&lt;li&gt;Invocation Payload: 6 MB (sync) &amp;amp; 256 KB (async)&lt;/li&gt;
+&lt;li&gt;File descriptors: 1024&lt;/li&gt;
+&lt;li&gt;Execution processes/threads: 1024&lt;/li&gt;
+&lt;li&gt;No Async Processing Allowed: Lambda Instance Freezes once request/response is completed&lt;/li&gt;
+&lt;li&gt;1 Lambda Instance serves only 1 request at time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;other-compute-options&#34;&gt;Other Compute Options&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Services&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Comparison with Lambda&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;AWS EC2&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Not Serverless, More RAM/CPU/Storage, Always ON&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;AWS EKS&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Managed Container Platform on EC2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;Fargate&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Serverless Container Platform on EC2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;Beanstalk&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;AWS Container based PaaS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;GCP Cloud RUN&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Based on &lt;a href=&#34;https://knative.dev/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OSS Knative&lt;/a&gt; - Charged for Runtime only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg&#34; width=&#34;40&#34; height=&#34;40&#34; alt=&#34;Github Icon&#34;/&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a target=&#34;_blank&#34;  href=&#34;http://github.com/rawsanj&#34;&gt;@RawSanj&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/twitter.svg&#34; width=&#34;40&#34; height=&#34;40&#34; alt=&#34;Twitter Icon&#34;/&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a target=&#34;_blank&#34;  href=&#34;https://twitter.com/raw_sanj&#34;&gt;@Raw_Sanj&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/stack-overflow.svg&#34; width=&#34;40&#34; height=&#34;40&#34; alt=&#34;StackOverflow Icon&#34;/&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a target=&#34;_blank&#34; style=&#34;color:#ffbc5a;&#34; href=&#34;https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile&#34;&gt;stack&lt;b&gt;overflow&lt;/b&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
