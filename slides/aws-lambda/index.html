@@ -130,48 +130,8 @@
     
       
 <h3 id="execution-environment--runtime">Execution Environment &amp; Runtime</h3>
-<p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="https://docs.aws.amazon.com/images/lambda/latest/dg/images/telemetry-api-concept-diagram.png" alt="Runtime API" loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
-<p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="https://docs.aws.amazon.com/images/lambda/latest/dg/images/Overview-Successful-Invokes.png" alt="Lambda execution environment lifecycle" loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
+<img src="https://docs.aws.amazon.com/images/lambda/latest/dg/images/telemetry-api-concept-diagram.png" alt="Lambda Execution Environment" width="80%"/>
+<img src="https://docs.aws.amazon.com/images/lambda/latest/dg/images/Overview-Invoke-with-Error.png" alt="Lambda Execution Environment" width="120%"/>
 
     </section>
     
@@ -293,7 +253,7 @@
 <li>Invocation Payload: 6 MB (sync) &amp; 256 KB (async)</li>
 <li>File descriptors: 1024</li>
 <li>Execution processes/threads: 1024</li>
-<li>No Async Processing Allowed: Lambda Instance Freezes once request/response is completed</li>
+<li>No Async Processing Allowed: Lambda Instance Freezes once invocation is completed</li>
 <li>1 Lambda Instance serves only 1 request at time</li>
 </ul>
 
