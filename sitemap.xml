@@ -148,6 +148,8 @@
   <url>
     <loc>https://rawsanj.dev/slides/aws-lambda/</loc></url>
   <url>
+    <loc>https://rawsanj.dev/slides/aws-sqs-lambda-integration/</loc></url>
+  <url>
     <loc>https://rawsanj.dev/categories/</loc></url>
   <url>
     <loc>https://rawsanj.dev/tag/ci/cd/</loc></url>
@@ -160,6 +162,10 @@
   <url>
     <loc>https://rawsanj.dev/event/</loc></url>
   <url>
+    <loc>https://rawsanj.dev/tag/resiliency/</loc></url>
+  <url>
     <loc>https://rawsanj.dev/category/serverless/</loc></url>
   <url>
-    <loc>https://rawsanj.dev/slides/</loc></url></urlset>
+    <loc>https://rawsanj.dev/slides/</loc></url>
+  <url>
+    <loc>https://rawsanj.dev/tag/sqs/</loc></url></urlset>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  
+  
+
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.4.0 for Hugo">
+
+  
+  <link rel="manifest" href="/index.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu40be7a442f4132e79fbcdc152b49bfa5_12137_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu40be7a442f4132e79fbcdc152b49bfa5_12137_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://rawsanj.dev/slides/aws-sqs-lambda-integration/">
+
+  <title>AWS SQS &#43; Lambda Integration | Coding Cloud</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/theme/solarized.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" id="highlight-theme">
+
+  
+  
+  <link rel="stylesheet" href="/css/reveal_custom.min.css">
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="./SQS_Lambda.svg"
+  
+      
+      data-background-repeat="none"
+  
+      
+      data-background-size="1500px"
+  >
+
+<h1 style="color: #114a5b !important;" id="aws-sqs">AWS SQS</h1>
+<h1 style="color: #114a5b !important;" id="lambda-integration">Lambda Integration</h1>
+<h2 style="color: #114a5b !important;" id="with-resiliency-patterns">with Resiliency Patterns</h2>
+<h3 id="documentationhttpsdocsawsamazoncomawssimplequeueservicelatestsqsdeveloperguidewelcomehtml"><a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html" target="_blank" rel="noopener">Documentation</a></h3>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>Hi there, I&rsquo;m Sanjay 👋!</p>
+<a href="https://www.linkedin.com/in/rawsanj" target="_blank">
+<img alt="LinkedIn Badge" src="https://img.shields.io/badge/-/in/rawsanj-0A66C2?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rawsanj" />
+</a>
+<a href="https://rawsanj.dev" target="_blank">
+<img alt="Website Badge" src="https://img.shields.io/badge/-rawsanj.dev-4CAF50?style=for-the-badge&logo=curl&logoColor=white&link=https://rawsanj.dev" />
+</a>
+<a href="https://twitter.com/Raw_Sanj" target="_blank">
+<img alt="Twitter Badge" src="https://img.shields.io/static/v1?label=&message=@Raw_Sanj&color=E8EAEC&style=for-the-badge&logo=Twitter&logoColor=1DA1F2&link=https://twitter.com/Raw_Sanj"/>
+</a>
+<a href="https://github.com/RawSanj" target="_blank">
+<img alt="Github Badge" src="https://img.shields.io/badge/-/RawSanj-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/RawSanj" />
+</a>
+<a href="https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile" target="_blank">
+<img alt="Stack Overflow" src="https://img.shields.io/badge/Stack%20Overflow-F58025?style=for-the-badge&logo=Stack%20Overflow&logoColor=white&link=https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile" />
+</a>
+<h3 id="about-me">About me</h3>
+<ul style="font-size: 22px">
+  <li>🔭 <strong>Working:</strong> Cloud Developer working on Reactive Spring Boot, Kafka, Cassandra, Microservices, AWS.</li>
+  <li>🖥️ <strong>Interests:</strong> I love building cool software and systems using Spring Boot, Kotlin and Go</li>
+  <li>🌱 <strong>Learning:</strong> Go | Scala | Design Patterns </li>
+  <li>💬 <strong>Ask me about:</strong> Java | Reactive Spring | AWS</li>
+  <li>🧑‍🤝‍🧑 <strong>Collaboration:</strong> I'm looking to collaborate on several projects over here, please check out my GitHub repos</li>
+</ul>
+<br/>
+<h4 id="languages-frameworks-and-platforms">Languages, Frameworks and Platforms</h4>
+<img alt="Java" src="https://img.shields.io/badge/Java-f8981d?style=for-the-badge&logo=openjdk&logoColor=5382a1" />
+<img alt="Spring" src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
+<img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-4d7ddd?&style=for-the-badge&logo=kotlin&logoColor=" />
+<img alt="Project Reactor" src="https://img.shields.io/badge/Project_Reactor-6db33f?style=for-the-badge&logo=ReactiveX&logoColor=white" />
+<img alt="Kafka" src="https://img.shields.io/badge/-Kafka-727272?style=for-the-badge&logo=apachekafka&logoColor" />
+<img alt="Cassandra" src="https://img.shields.io/badge/Cassandra-1287B1?style=for-the-badge&logo=apache%20cassandra&logoColor=d4effc" />
+<img alt="AWS" src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=ff9a00" />
+<img alt="Kubernetes" src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" />
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="what-is-aws-sqs">What is AWS SQS</h3>
+<ul>
+<li>SQS offers a Secure, Durable, and Highly Available Hosted Queue</li>
+<li>Used to integrate and decouple distributed software systems and components</li>
+<li>Standard queues support <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html#standard-queues-at-least-once-delivery" target="_blank" rel="noopener">at-least-once</a> message delivery, and FIFO queues support <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-exactly-once-processing.html" target="_blank" rel="noopener">exactly-once</a> message processing and <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/high-throughput-fifo.html" target="_blank" rel="noopener">high-throughput</a> mode</li>
+<li>Offers <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html" target="_blank" rel="noopener">Dead Letter Queues</a></li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="sqs-concepts-wrt-lambda">SQS Concepts w.r.t Lambda</h3>
+<ul style="font-size: 30px">
+  <li><u>Queue Types</u>: Standard and FIFO</li>
+  <li><u>Visibility timeout</u>: wait time after which message is visible again if not deleted after processing</li>
+  <li><u>Message retention period</u>: 1 minute to 14 days (defaults to 4 days)</li>
+  <li><u>Delivery delay</u>: 0 seconds to 15 minutes</li>
+  <li><u>SQS Event Source Mapping</u>: Lambda Service reads items from a SQS &amp; invokes Lambda Function</li>
+  <li><u>Enable trigger</u>: Enable or disable SQS-Lambda Integration</li>
+  <li><u>Batch size</u>: number of records to send to the function in each batch. Standard: 10,000(max). FIFO: 10(max)</li>
+  <li><u>Batch window</u>: wait time (in second) to gather records before invoking the function, applicable for Standard</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="message-lifecycle">Message Lifecycle</h3>
+<img src="https://docs.aws.amazon.com/images/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/sqs-message-lifecycle-diagram.png" alt="sqs-message-lifecycle" height="70%"/>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="sqs-visibility-timeout">SQS Visibility Timeout</h3>
+<img src="https://docs.aws.amazon.com/images/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/sqs-visibility-timeout-diagram.png" alt="SQS Visibility Timeout" height="50%" width="50%"/>
+<ul style="font-size: 25px">
+  <li>To avoid message loss, it's consumers responsibility to delete the message after processing</li>
+  <li>Message remains in queue after it is received, but SQS sets a visibility timeout to prevent other consumer from processing same message again</li>
+  <li>Default visibility timeout is 30 seconds. Can be set between 0 seconds to 12 hours</li>
+  <li>Can be set a Queue level or dynamically changed per message</li>
+  <li><b>Caution</b>: When using FIFO make sure to use Message GroupId which provides high distribution to avoid blocking processing due to error</li>
+</ul>
+<ul style="font-size: 20px">
+  <strong style="font-size: 20px">Note: </strong>
+  <li>For Standard queues, the visibility timeout isn't a guarantee against receiving a message twice. </li>
+  <li>FIFO queues allow the producer or consumer to attempt multiple retries: producers can retry send using deduplicationId and consumers doesn't receive messages for same message groupId unless deleted or timed-out</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="in-flight-messages--scaling">In-Flight Messages &amp; Scaling</h3>
+<ul style="font-size: 25px">
+  <li>Messages that are received by the consumer but not deleted are known as In-Flight messages</li>
+  <li>For Standard queues: there can be a maximum of approximately 120,000 in flight messages</li>
+  <li>For FIFO queues: there can be a maximum of 20,000 in flight messages</li>
+</ul>
+<div style="border-top: 3px solid #476672; padding: 4px"></div>
+<ul style="font-size: 25px">
+  <li><b>Standard Queues</b>: Lambda uses <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-short-and-long-polling.html" target="_blank">long polling</a> & reads up to 5 batches to invoke your function.</li>
+  <li>Lambda increases the number of processes that reads batches by up to 60 more instances per minute. The max no. of batches that an Event Source Mapping can process simultaneously is 1,000.</li>
+  <li><b>FIFO queues</b>: Lambda sends messages to your function in the order that it receives them and ensures that messages in the same group are delivered to Lambda in order.</li>
+  <li>Lambda sorts the messages into groups and sends only one batch at a time for a group.</li>
+  <li>Your function can scale in concurrency to the number of active message groups.</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="sqs-message-event-in-lambda-function---standard">SQS Message Event in Lambda Function - Standard</h3>
+<pre><code class="language-json">{
+  &quot;Records&quot;: [
+    {
+      &quot;messageId&quot;: &quot;059f36b4-87a3-44ab-83d2-661975830a7d&quot;,
+      &quot;receiptHandle&quot;: &quot;AQEBwJnKyrHigUMZj6rYigCgxlaS3SLy0a...&quot;,
+      &quot;body&quot;: &quot;Test message.&quot;,
+      &quot;attributes&quot;: {
+        &quot;ApproximateReceiveCount&quot;: &quot;1&quot;,
+        &quot;SentTimestamp&quot;: &quot;1545082649183&quot;,
+        &quot;SenderId&quot;: &quot;AIDAIENQZJOLO23YVJ4VO&quot;,
+        &quot;ApproximateFirstReceiveTimestamp&quot;: &quot;1545082649185&quot;
+      },
+      &quot;messageAttributes&quot;: {},
+      &quot;md5OfBody&quot;: &quot;e4e68fb7bd0e697a0ae8f1bb342846b3&quot;,
+      &quot;eventSource&quot;: &quot;aws:sqs&quot;,
+      &quot;eventSourceARN&quot;: &quot;arn:aws:sqs:us-east-2:123456789012:my-queue&quot;,
+      &quot;awsRegion&quot;: &quot;us-east-2&quot;
+    },
+    ...
+  ]
+}
+</code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="sqs-message-event-in-lambda-function---fifo">SQS Message Event in Lambda Function - FIFO</h3>
+<pre><code class="language-json">{
+  &quot;Records&quot;: [
+    {
+      &quot;messageId&quot;: &quot;11d6ee51-4cc7-4302-9e22-7cd8afdaadf5&quot;,
+      &quot;receiptHandle&quot;: &quot;AQEBBX8nesZEXmkhsmZeyIE8iQAMig7qw...&quot;,
+      &quot;body&quot;: &quot;Test message.&quot;,
+      &quot;attributes&quot;: {
+        &quot;ApproximateReceiveCount&quot;: &quot;1&quot;,
+        &quot;SentTimestamp&quot;: &quot;1573251510774&quot;,
+        &quot;SequenceNumber&quot;: &quot;18849496460467696128&quot;,
+        &quot;MessageGroupId&quot;: &quot;1&quot;,
+        &quot;SenderId&quot;: &quot;AIDAIO23YVJENQZJOL4VO&quot;,
+        &quot;MessageDeduplicationId&quot;: &quot;1&quot;,
+        &quot;ApproximateFirstReceiveTimestamp&quot;: &quot;1573251510774&quot;
+      },
+      &quot;messageAttributes&quot;: {},
+      &quot;md5OfBody&quot;: &quot;e4e68fb7bd0e697a0ae8f1bb342846b3&quot;,
+      &quot;eventSource&quot;: &quot;aws:sqs&quot;,
+      &quot;eventSourceARN&quot;: &quot;arn:aws:sqs:us-east-2:123456789012:fifo.fifo&quot;,
+      &quot;awsRegion&quot;: &quot;us-east-2&quot;
+    }
+  ]
+}
+</code></pre>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="sqs-resiliency-pattern-with-lambda">SQS Resiliency Pattern with Lambda</h3>
+<div style="font-size: 25px">Enable Batch Error Reporting by running: </div>
+<pre><code class="language-shell">aws lambda update-event-source-mapping \
+    --uuid &quot;a1b2c3d4-5678-90ab-cdef-123401&quot; \
+    --function-response-types &quot;ReportBatchItemFailures&quot;
+</code></pre>
+<div style="font-size: 25px">Update your Lambda Function code to collect messageId of failed messages: </div>
+<pre><code class="language-json">{
+  &quot;batchItemFailures&quot;: [
+    {
+      &quot;itemIdentifier&quot;: &quot;message-id-1&quot;
+    },
+    {
+      &quot;itemIdentifier&quot;: &quot;message-id-4&quot;
+    }
+  ]
+}
+</code></pre>
+<p><a href="https://medium.com/srcecde/handle-sqs-message-failure-in-batch-with-partial-batch-response-b858ad212573" target="_blank" rel="noopener">Blog Post on Batch Error Reporting</a> by <a href="https://github.com/srcecde" target="_blank" rel="noopener">srcecde</a></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="questions">Questions?</h1>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/highlight/highlight.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+
+  
+
+  
+  <script src="/js/wowchemy-slides.js"></script>
+
+</body>
+</html>
