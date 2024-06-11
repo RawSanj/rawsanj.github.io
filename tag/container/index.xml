@@ -5,7 +5,7 @@
     <link>https://rawsanj.dev/tag/container/</link>
       <atom:link href="https://rawsanj.dev/tag/container/index.xml" rel="self" type="application/rss+xml" />
     <description>container</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022. Sanjay Rawat</copyright><lastBuildDate>Mon, 14 Aug 2017 12:30:25 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024. Sanjay Rawat</copyright><lastBuildDate>Mon, 14 Aug 2017 12:30:25 +0000</lastBuildDate>
     <image>
       <url>https://rawsanj.dev/media/icon_hu40be7a442f4132e79fbcdc152b49bfa5_12137_512x512_fill_lanczos_center_3.png</url>
       <title>container</title>
@@ -427,6 +427,182 @@
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&#34;https://medium.com/srcecde/handle-sqs-message-failure-in-batch-with-partial-batch-response-b858ad212573&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Blog Post on Batch Error Reporting&lt;/a&gt; by &lt;a href=&#34;https://github.com/srcecde&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;srcecde&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;https://quotefancy.com/media/wallpaper/3840x2160/1700728-Linus-Torvalds-Quote-Talk-is-cheap-Show-me-the-code.jpg&#34;
+  
+      
+      data-background-repeat=&#34;none&#34;
+  &gt;
+
+&lt;h1 style=&#34;display: none&#34;&gt;Code&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blazing Fast SQS Listener</title>
+      <link>https://rawsanj.dev/slides/blazing-fast-sqs-listener/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://rawsanj.dev/slides/blazing-fast-sqs-listener/</guid>
+      <description>
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;./SQS_EKS_ECS.svg&#34;
+  
+      
+      data-background-repeat=&#34;none&#34;
+  
+      
+      data-background-size=&#34;1500px&#34;
+  &gt;
+
+&lt;h1 style=&#34;color: #114a5b !important;&#34; id=&#34;bz&#34;&gt;Blazing Fast&lt;/h1&gt;
+&lt;h2 style=&#34;color: #114a5b !important;&#34; id=&#34;cf&#34;&gt;Cost Effective&lt;/h2&gt;
+&lt;h2 style=&#34;color: #114a5b !important;&#34; id=&#34;res&#34;&gt;&amp; Resilient&lt;/h2&gt;
+&lt;h1 style=&#34;color: #114a5b !important;&#34; id=&#34;lis&#34;&gt;AWS SQS Listener&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;Hi there, I&amp;rsquo;m Sanjay 👋!&lt;/p&gt;
+&lt;a href=&#34;https://www.linkedin.com/in/rawsanj&#34; target=&#34;_blank&#34;&gt;
+&lt;img alt=&#34;LinkedIn Badge&#34; src=&#34;https://img.shields.io/badge/-/in/rawsanj-0A66C2?style=for-the-badge&amp;logo=Linkedin&amp;logoColor=white&amp;link=https://www.linkedin.com/in/rawsanj&#34; /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://rawsanj.dev&#34; target=&#34;_blank&#34;&gt;
+&lt;img alt=&#34;Website Badge&#34; src=&#34;https://img.shields.io/badge/-rawsanj.dev-4CAF50?style=for-the-badge&amp;logo=curl&amp;logoColor=white&amp;link=https://rawsanj.dev&#34; /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://twitter.com/Raw_Sanj&#34; target=&#34;_blank&#34;&gt;
+&lt;img alt=&#34;Twitter Badge&#34; src=&#34;https://img.shields.io/static/v1?label=&amp;message=@Raw_Sanj&amp;color=E8EAEC&amp;style=for-the-badge&amp;logo=Twitter&amp;logoColor=1DA1F2&amp;link=https://twitter.com/Raw_Sanj&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://github.com/RawSanj&#34; target=&#34;_blank&#34;&gt;
+&lt;img alt=&#34;Github Badge&#34; src=&#34;https://img.shields.io/badge/-/RawSanj-181717?style=for-the-badge&amp;logo=Github&amp;logoColor=white&amp;link=https://github.com/RawSanj&#34; /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile&#34; target=&#34;_blank&#34;&gt;
+&lt;img alt=&#34;Stack Overflow&#34; src=&#34;https://img.shields.io/badge/Stack%20Overflow-F58025?style=for-the-badge&amp;logo=Stack%20Overflow&amp;logoColor=white&amp;link=https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile&#34; /&gt;
+&lt;/a&gt;
+&lt;h3 id=&#34;about-me&#34;&gt;About me&lt;/h3&gt;
+&lt;ul style=&#34;font-size: 22px&#34;&gt;
+  &lt;li&gt;🔭 &lt;strong&gt;Working:&lt;/strong&gt; Cloud Developer working on Reactive Spring Boot, Kafka, Cassandra, Microservices, AWS.&lt;/li&gt;
+  &lt;li&gt;🖥️ &lt;strong&gt;Interests:&lt;/strong&gt; I love building cool software and systems using Spring Boot, Kotlin and Go&lt;/li&gt;
+  &lt;li&gt;🌱 &lt;strong&gt;Learning:&lt;/strong&gt; Go | Scala | Design Patterns &lt;/li&gt;
+  &lt;li&gt;💬 &lt;strong&gt;Ask me about:&lt;/strong&gt; Java | Reactive Spring | AWS&lt;/li&gt;
+  &lt;li&gt;🧑‍🤝‍🧑 &lt;strong&gt;Collaboration:&lt;/strong&gt; I&#39;m looking to collaborate on several projects over here, please check out my GitHub repos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;h4 id=&#34;languages-frameworks-and-platforms&#34;&gt;Languages, Frameworks and Platforms&lt;/h4&gt;
+&lt;img alt=&#34;Java&#34; src=&#34;https://img.shields.io/badge/Java-f8981d?style=for-the-badge&amp;logo=openjdk&amp;logoColor=5382a1&#34; /&gt;
+&lt;img alt=&#34;Spring&#34; src=&#34;https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&amp;logo=spring&amp;logoColor=white&#34; /&gt;
+&lt;img alt=&#34;Kotlin&#34; src=&#34;https://img.shields.io/badge/Kotlin-4d7ddd?&amp;style=for-the-badge&amp;logo=kotlin&amp;logoColor=&#34; /&gt;
+&lt;img alt=&#34;Project Reactor&#34; src=&#34;https://img.shields.io/badge/Project_Reactor-6db33f?style=for-the-badge&amp;logo=ReactiveX&amp;logoColor=white&#34; /&gt;
+&lt;img alt=&#34;Kafka&#34; src=&#34;https://img.shields.io/badge/-Kafka-727272?style=for-the-badge&amp;logo=apachekafka&amp;logoColor&#34; /&gt;
+&lt;img alt=&#34;Cassandra&#34; src=&#34;https://img.shields.io/badge/Cassandra-1287B1?style=for-the-badge&amp;logo=apache%20cassandra&amp;logoColor=d4effc&#34; /&gt;
+&lt;img alt=&#34;AWS&#34; src=&#34;https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&amp;logo=amazon-aws&amp;logoColor=ff9a00&#34; /&gt;
+&lt;img alt=&#34;Kubernetes&#34; src=&#34;https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&amp;logo=kubernetes&amp;logoColor=white&#34; /&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;what-is-aws-sqs&#34;&gt;What is AWS SQS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;SQS offers a Secure, Durable, and Highly Available Hosted Queue&lt;/li&gt;
+&lt;li&gt;Used to integrate and decouple distributed software systems and components&lt;/li&gt;
+&lt;li&gt;Standard queues support &lt;a href=&#34;https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html#standard-queues-at-least-once-delivery&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;at-least-once&lt;/a&gt; message delivery, and FIFO queues support &lt;a href=&#34;https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-exactly-once-processing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;exactly-once&lt;/a&gt; message processing and &lt;a href=&#34;https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/high-throughput-fifo.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;high-throughput&lt;/a&gt; mode&lt;/li&gt;
+&lt;li&gt;Offers &lt;a href=&#34;https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dead Letter Queues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;sqs-concepts-wrt-lambda&#34;&gt;SQS Concepts w.r.t Lambda&lt;/h3&gt;
+&lt;ul style=&#34;font-size: 30px&#34;&gt;
+  &lt;li&gt;&lt;u&gt;Queue Types&lt;/u&gt;: Standard and FIFO&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;Visibility timeout&lt;/u&gt;: wait time after which message is visible again if not deleted after processing&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;In-Flight messages&lt;/u&gt;: messages that are received by the consumer but not deleted&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;Message retention period&lt;/u&gt;: 1 minute to 14 days (defaults to 4 days)&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;Delivery delay&lt;/u&gt;: 0 seconds to 15 minutes&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;SQS Event Source Mapping&lt;/u&gt;: Lambda Service reads items from a SQS &amp;amp; invokes Lambda Function&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;Enable trigger&lt;/u&gt;: Enable or disable SQS-Lambda Integration&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;Batch size&lt;/u&gt;: number of records to send to the function in each batch. Standard: 10,000(max). FIFO: 10(max)&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;Batch window&lt;/u&gt;: wait time (in second) to gather records before invoking the function, applicable for Standard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;message-lifecycle&#34;&gt;Message Lifecycle&lt;/h3&gt;
+&lt;img src=&#34;https://docs.aws.amazon.com/images/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/sqs-message-lifecycle-diagram.png&#34; alt=&#34;sqs-message-lifecycle&#34; height=&#34;70%&#34;/&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;sqs-visibility-timeout&#34;&gt;SQS Visibility Timeout&lt;/h3&gt;
+&lt;img src=&#34;https://docs.aws.amazon.com/images/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/sqs-visibility-timeout-diagram.png&#34; alt=&#34;SQS Visibility Timeout&#34; height=&#34;50%&#34; width=&#34;50%&#34;/&gt;
+&lt;ul style=&#34;font-size: 25px&#34;&gt;
+  &lt;li&gt;To avoid message loss, it&#39;s consumers responsibility to delete the message after processing&lt;/li&gt;
+  &lt;li&gt;Message remains in queue after it is received, but SQS sets a visibility timeout to prevent other consumer from processing same message again&lt;/li&gt;
+  &lt;li&gt;Default visibility timeout is 30 seconds. Can be set between 0 seconds to 12 hours&lt;/li&gt;
+  &lt;li&gt;Can be set a Queue level or dynamically changed per message&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Caution&lt;/b&gt;: When using FIFO make sure to use Message GroupId which provides high distribution to avoid blocking processing due to error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul style=&#34;font-size: 20px&#34;&gt;
+  &lt;strong style=&#34;font-size: 20px&#34;&gt;Note: &lt;/strong&gt;
+  &lt;li&gt;For Standard queues, the visibility timeout isn&#39;t a guarantee against receiving a message twice. &lt;/li&gt;
+  &lt;li&gt;FIFO queues allow the producer or consumer to attempt multiple retries: producers can retry send using deduplicationId and consumers doesn&#39;t receive messages for same message groupId unless deleted or timed-out&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lambda-scaling&#34;&gt;Lambda Scaling&lt;/h3&gt;
+&lt;ul style=&#34;font-size: 25px&#34;&gt;
+  &lt;li&gt;&lt;b&gt;Standard Queues&lt;/b&gt;: Lambda uses &lt;a href=&#34;https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-short-and-long-polling.html&#34; target=&#34;_blank&#34;&gt;long polling&lt;/a&gt; &amp; reads up to 5 batches to invoke your function.&lt;/li&gt;
+  &lt;li&gt;Lambda increases the number of processes that reads batches by up to 60 more instances per minute. The max no. of batches that an Event Source Mapping can process simultaneously is 1,000.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;FIFO queues&lt;/b&gt;: Lambda sends messages to your function in the order that it receives them and ensures that messages in the same group are delivered to Lambda in order.&lt;/li&gt;
+  &lt;li&gt;Lambda sorts the messages into groups and sends only one batch at a time for a group.&lt;/li&gt;
+  &lt;li&gt;Your function can scale in concurrency to the number of active message groups.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;faster-polling-scale-up-for-aws-lambdahttpsawsamazoncomblogscomputeintroducing-faster-polling-scale-up-for-aws-lambda-functions-configured-with-amazon-sqs&#34;&gt;&lt;a href=&#34;https://aws.amazon.com/blogs/compute/introducing-faster-polling-scale-up-for-aws-lambda-functions-configured-with-amazon-sqs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Faster polling scale-up for AWS Lambda&lt;/a&gt;&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lambda-scaling-1&#34;&gt;Lambda Scaling&lt;/h3&gt;
+&lt;p&gt;Diagram here&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;sqs-message-event-in-lambda-function---standard&#34;&gt;SQS Message Event in Lambda Function - Standard&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+  &amp;quot;Records&amp;quot;: [
+    {
+      &amp;quot;messageId&amp;quot;: &amp;quot;059f36b4-87a3-44ab-83d2-661975830a7d&amp;quot;,
+      &amp;quot;receiptHandle&amp;quot;: &amp;quot;AQEBwJnKyrHigUMZj6rYigCgxlaS3SLy0a...&amp;quot;,
+      &amp;quot;body&amp;quot;: &amp;quot;Test message.&amp;quot;,
+      &amp;quot;attributes&amp;quot;: {
+        &amp;quot;ApproximateReceiveCount&amp;quot;: &amp;quot;1&amp;quot;,
+        &amp;quot;SentTimestamp&amp;quot;: &amp;quot;1545082649183&amp;quot;,
+        &amp;quot;SenderId&amp;quot;: &amp;quot;AIDAIENQZJOLO23YVJ4VO&amp;quot;,
+        &amp;quot;ApproximateFirstReceiveTimestamp&amp;quot;: &amp;quot;1545082649185&amp;quot;
+      },
+      &amp;quot;messageAttributes&amp;quot;: {},
+      &amp;quot;md5OfBody&amp;quot;: &amp;quot;e4e68fb7bd0e697a0ae8f1bb342846b3&amp;quot;,
+      &amp;quot;eventSource&amp;quot;: &amp;quot;aws:sqs&amp;quot;,
+      &amp;quot;eventSourceARN&amp;quot;: &amp;quot;arn:aws:sqs:us-east-2:123456789012:my-queue&amp;quot;,
+      &amp;quot;awsRegion&amp;quot;: &amp;quot;us-east-2&amp;quot;
+    },
+    ...
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;sqs-message-event-in-lambda-function---fifo&#34;&gt;SQS Message Event in Lambda Function - FIFO&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+  &amp;quot;Records&amp;quot;: [
+    {
+      &amp;quot;messageId&amp;quot;: &amp;quot;11d6ee51-4cc7-4302-9e22-7cd8afdaadf5&amp;quot;,
+      &amp;quot;receiptHandle&amp;quot;: &amp;quot;AQEBBX8nesZEXmkhsmZeyIE8iQAMig7qw...&amp;quot;,
+      &amp;quot;body&amp;quot;: &amp;quot;Test message.&amp;quot;,
+      &amp;quot;attributes&amp;quot;: {
+        &amp;quot;ApproximateReceiveCount&amp;quot;: &amp;quot;1&amp;quot;,
+        &amp;quot;SentTimestamp&amp;quot;: &amp;quot;1573251510774&amp;quot;,
+        &amp;quot;SequenceNumber&amp;quot;: &amp;quot;18849496460467696128&amp;quot;,
+        &amp;quot;MessageGroupId&amp;quot;: &amp;quot;1&amp;quot;,
+        &amp;quot;SenderId&amp;quot;: &amp;quot;AIDAIO23YVJENQZJOL4VO&amp;quot;,
+        &amp;quot;MessageDeduplicationId&amp;quot;: &amp;quot;1&amp;quot;,
+        &amp;quot;ApproximateFirstReceiveTimestamp&amp;quot;: &amp;quot;1573251510774&amp;quot;
+      },
+      &amp;quot;messageAttributes&amp;quot;: {},
+      &amp;quot;md5OfBody&amp;quot;: &amp;quot;e4e68fb7bd0e697a0ae8f1bb342846b3&amp;quot;,
+      &amp;quot;eventSource&amp;quot;: &amp;quot;aws:sqs&amp;quot;,
+      &amp;quot;eventSourceARN&amp;quot;: &amp;quot;arn:aws:sqs:us-east-2:123456789012:fifo.fifo&amp;quot;,
+      &amp;quot;awsRegion&amp;quot;: &amp;quot;us-east-2&amp;quot;
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
 
 &lt;section data-noprocess data-shortcode-slide
