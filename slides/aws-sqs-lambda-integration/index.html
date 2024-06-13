@@ -86,31 +86,31 @@
 <img alt="Website Badge" src="https://img.shields.io/badge/-rawsanj.dev-4CAF50?style=for-the-badge&logo=curl&logoColor=white&link=https://rawsanj.dev" />
 </a>
 <a href="https://twitter.com/Raw_Sanj" target="_blank">
-<img alt="Twitter Badge" src="https://img.shields.io/static/v1?label=&message=@Raw_Sanj&color=E8EAEC&style=for-the-badge&logo=Twitter&logoColor=1DA1F2&link=https://twitter.com/Raw_Sanj"/>
+<img alt="Twitter Badge" src="https://img.shields.io/static/v1?label=&message=@Raw_Sanj&color=E8EAEC&style=for-the-badge&logo=X&logoColor=000000&link=https://twitter.com/Raw_Sanj"/>
 </a>
 <a href="https://github.com/RawSanj" target="_blank">
 <img alt="Github Badge" src="https://img.shields.io/badge/-/RawSanj-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/RawSanj" />
 </a>
 <a href="https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile" target="_blank">
-<img alt="Stack Overflow" src="https://img.shields.io/badge/Stack%20Overflow-F58025?style=for-the-badge&logo=Stack%20Overflow&logoColor=white&link=https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile" />
+<img alt="Stack Overflow" src="https://img.shields.io/badge/Stack%20Overflow-F58025?style=for-the-badge&logo=Stack%20Overflow&logoColor=bcbbbb&link=https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile" />
 </a>
 <h3 id="about-me">About me</h3>
 <ul style="font-size: 22px">
-  <li>🔭 <strong>Working:</strong> Cloud Developer working on Reactive Spring Boot, Kafka, Cassandra, Microservices, AWS.</li>
-  <li>🖥️ <strong>Interests:</strong> I love building cool software and systems using Spring Boot, Kotlin and Go</li>
-  <li>🌱 <strong>Learning:</strong> Go | Scala | Design Patterns </li>
-  <li>💬 <strong>Ask me about:</strong> Java | Reactive Spring | AWS</li>
-  <li>🧑‍🤝‍🧑 <strong>Collaboration:</strong> I'm looking to collaborate on several projects over here, please check out my GitHub repos</li>
+  <li>🔭 <strong>Working:</strong> Lead Software Engineer - working on Spring Boot, Reactive Programming, Microservices, Kafka, Cassandra, Kubernetes, AWS.</li>
+  <li>🖥️ <strong>Interests:</strong> I love building cool Software & Systems, Self-Hosting, Gaming</li>
+  <li>🌱 <strong>Learning:</strong> <del>Go</del> | Rust | Scala | Design Patterns </li>
+  <li>💬 <strong>Ask me about:</strong> Java | Reactive Spring | Containers | AWS </li>
+  <li>🧑‍🤝‍🧑 <strong>Collaboration:</strong> Looking to collaborate on several projects over here, check out my GitHub</li>
 </ul>
 <br/>
 <h4 id="languages-frameworks-and-platforms">Languages, Frameworks and Platforms</h4>
-<img alt="Java" src="https://img.shields.io/badge/Java-f8981d?style=for-the-badge&logo=openjdk&logoColor=5382a1" />
+<img alt="Java" src="https://img.shields.io/badge/Java-f0931c?style=for-the-badge&logo=openjdk&logoColor=507e9c" />
 <img alt="Spring" src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
 <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-4d7ddd?&style=for-the-badge&logo=kotlin&logoColor=" />
-<img alt="Project Reactor" src="https://img.shields.io/badge/Project_Reactor-6db33f?style=for-the-badge&logo=ReactiveX&logoColor=white" />
+<img alt="Project Reactor" src="https://img.shields.io/badge/Project_Reactor-6db33f?style=for-the-badge&logo=React&logoColor=white" />
 <img alt="Kafka" src="https://img.shields.io/badge/-Kafka-727272?style=for-the-badge&logo=apachekafka&logoColor" />
 <img alt="Cassandra" src="https://img.shields.io/badge/Cassandra-1287B1?style=for-the-badge&logo=apache%20cassandra&logoColor=d4effc" />
-<img alt="AWS" src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=ff9a00" />
+<img alt="AWS" src="https://img.shields.io/badge/AWS-242e3c?style=for-the-badge&logo=Amazon&logoColor=f79400" />
 <img alt="Kubernetes" src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" />
 
     </section>
@@ -205,7 +205,9 @@
 <div style="border-top: 3px solid #476672; padding: 4px"></div>
 <ul style="font-size: 25px">
   <li><b>Standard Queues</b>: Lambda uses <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-short-and-long-polling.html" target="_blank">long polling</a> & reads up to 5 batches to invoke your function.</li>
-  <li>Lambda increases the number of processes that reads batches by up to 60 more instances per minute. The max no. of batches that an Event Source Mapping can process simultaneously is 1,000.</li>
+  <li>Up until <b>06 Nov 2023</b>, the Lambda was adding up to <b>60 concurrent executions/minute</b>, scaling up to a maximum of <b>1,250</b> concurrent executions in approximately <b>20 minutes</b>.</li>
+  <li>Now Lambda functions can scale up to 5x faster, adding up to <b>300 concurrent executions/minute</b>.</li>
+  <li>Even at peak performance, the Maximum number of messages processed concurrently by Lambda = 10 messages in a batch * 1250 executions = <b>12,500</b></li>
   <li><b>FIFO queues</b>: Lambda sends messages to your function in the order that it receives them and ensures that messages in the same group are delivered to Lambda in order.</li>
   <li>Lambda sorts the messages into groups and sends only one batch at a time for a group.</li>
   <li>Your function can scale in concurrency to the number of active message groups.</li>

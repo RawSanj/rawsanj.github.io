@@ -4,23 +4,39 @@
   
   
   <url>
-    <loc>https://rawsanj.dev/tag/annotation-processing/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
+    <loc>https://rawsanj.dev/tag/aws/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/tag/aws/</loc><lastmod>2023-04-20T13:45:47+05:30</lastmod></url>
+    <loc>https://rawsanj.dev/slides/blazing-fast-sqs-listener/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
+  <url>
+    <loc>https://rawsanj.dev/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
+  <url>
+    <loc>https://rawsanj.dev/tag/container/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
+  <url>
+    <loc>https://rawsanj.dev/tag/java/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
+  <url>
+    <loc>https://rawsanj.dev/tag/reactive/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
+  <url>
+    <loc>https://rawsanj.dev/tag/resiliency/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
+  <url>
+    <loc>https://rawsanj.dev/slides/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
+  <url>
+    <loc>https://rawsanj.dev/tag/sqs/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
+  <url>
+    <loc>https://rawsanj.dev/tags/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
+  <url>
+    <loc>https://rawsanj.dev/slides/aws-sqs-lambda-integration/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
+  <url>
+    <loc>https://rawsanj.dev/tag/lambda/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
+  <url>
+    <loc>https://rawsanj.dev/slides/aws-lambda/</loc><lastmod>2024-06-14T00:32:01+05:30</lastmod></url>
+  <url>
+    <loc>https://rawsanj.dev/tag/annotation-processing/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
   <url>
     <loc>https://rawsanj.dev/project/aws-lambda-filter-chain/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/</loc><lastmod>2023-04-20T13:45:47+05:30</lastmod></url>
-  <url>
-    <loc>https://rawsanj.dev/tag/java/</loc><lastmod>2023-04-20T13:45:47+05:30</lastmod></url>
-  <url>
-    <loc>https://rawsanj.dev/tag/lambda/</loc><lastmod>2023-04-20T13:45:47+05:30</lastmod></url>
-  <url>
-    <loc>https://rawsanj.dev/project/</loc><lastmod>2022-02-06T03:00:58+05:30</lastmod></url>
+    <loc>https://rawsanj.dev/project/</loc><lastmod>2024-06-12T02:58:05+05:30</lastmod></url>
   <url>
     <loc>https://rawsanj.dev/tag/reflection/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
-  <url>
-    <loc>https://rawsanj.dev/tags/</loc><lastmod>2023-04-20T13:45:47+05:30</lastmod></url>
   <url>
     <loc>https://rawsanj.dev/tag/docker/</loc><lastmod>2022-02-06T03:00:58+05:30</lastmod></url>
   <url>
@@ -36,7 +52,7 @@
   <url>
     <loc>https://rawsanj.dev/project/spring-redis-websocket/</loc><lastmod>2022-02-06T03:00:58+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/tag/spring-boot/</loc><lastmod>2022-02-06T03:00:58+05:30</lastmod></url>
+    <loc>https://rawsanj.dev/tag/spring-boot/</loc><lastmod>2024-06-12T02:58:05+05:30</lastmod></url>
   <url>
     <loc>https://rawsanj.dev/tag/spring-data-redis/</loc><lastmod>2022-02-06T03:00:58+05:30</lastmod></url>
   <url>
@@ -58,21 +74,21 @@
   <url>
     <loc>https://rawsanj.dev/tag/rds-database/</loc><lastmod>2022-02-06T02:01:27+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/tag/s3-bucket/</loc><lastmod>2022-02-06T02:01:27+05:30</lastmod></url>
+    <loc>https://rawsanj.dev/tag/s3-bucket/</loc><lastmod>2024-06-12T02:58:05+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/tag/spring-cloud/</loc><lastmod>2022-02-06T02:01:27+05:30</lastmod></url>
+    <loc>https://rawsanj.dev/tag/spring-cloud/</loc><lastmod>2024-06-12T02:58:05+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/project/aws-s3-file-system/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
+    <loc>https://rawsanj.dev/project/aws-s3-file-system/</loc><lastmod>2024-06-12T02:58:05+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/tag/aws-s3/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
+    <loc>https://rawsanj.dev/tag/aws-s3/</loc><lastmod>2024-06-12T02:58:05+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/tag/bootswatch/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
+    <loc>https://rawsanj.dev/tag/bootswatch/</loc><lastmod>2024-06-12T02:58:05+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/tag/rest-api/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
+    <loc>https://rawsanj.dev/tag/rest-api/</loc><lastmod>2024-06-12T02:58:05+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/tag/spring-cloud-aws/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
+    <loc>https://rawsanj.dev/tag/spring-cloud-aws/</loc><lastmod>2024-06-12T02:58:05+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/tag/thymeleaf/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
+    <loc>https://rawsanj.dev/tag/thymeleaf/</loc><lastmod>2024-06-12T02:58:05+05:30</lastmod></url>
   <url>
     <loc>https://rawsanj.dev/project/boot-kubeless/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
   <url>
@@ -108,8 +124,6 @@
   <url>
     <loc>https://rawsanj.dev/tag/zoho-smtp/</loc><lastmod>2022-02-06T02:01:27+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/tag/container/</loc><lastmod>2023-04-20T13:45:47+05:30</lastmod></url>
-  <url>
     <loc>https://rawsanj.dev/talk/docker-deep-dive/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
   <url>
     <loc>https://rawsanj.dev/tag/linux/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
@@ -144,12 +158,6 @@
   <url>
     <loc>https://rawsanj.dev/author/</loc><lastmod>2020-05-24T18:50:47+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/slides/aws-lambda/</loc><lastmod>2023-04-20T13:30:00+05:30</lastmod></url>
-  <url>
-    <loc>https://rawsanj.dev/slides/aws-sqs-lambda-integration/</loc><lastmod>2023-04-20T13:45:47+05:30</lastmod></url>
-  <url>
-    <loc>https://rawsanj.dev/slides/blazing-fast-sqs-listener/</loc></url>
-  <url>
     <loc>https://rawsanj.dev/categories/</loc></url>
   <url>
     <loc>https://rawsanj.dev/tag/ci/cd/</loc></url>
@@ -160,12 +168,4 @@
   <url>
     <loc>https://rawsanj.dev/publication/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
   <url>
-    <loc>https://rawsanj.dev/tag/reactive/</loc></url>
-  <url>
-    <loc>https://rawsanj.dev/event/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url>
-  <url>
-    <loc>https://rawsanj.dev/tag/resiliency/</loc><lastmod>2023-04-20T13:45:47+05:30</lastmod></url>
-  <url>
-    <loc>https://rawsanj.dev/slides/</loc><lastmod>2023-04-20T13:45:47+05:30</lastmod></url>
-  <url>
-    <loc>https://rawsanj.dev/tag/sqs/</loc><lastmod>2023-04-20T13:45:47+05:30</lastmod></url></urlset>
+    <loc>https://rawsanj.dev/event/</loc><lastmod>2022-02-05T23:51:52+05:30</lastmod></url></urlset>

@@ -5,7 +5,7 @@
     <link>https://rawsanj.dev/tag/reactive/</link>
       <atom:link href="https://rawsanj.dev/tag/reactive/index.xml" rel="self" type="application/rss+xml" />
     <description>reactive</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024. Sanjay Rawat</copyright>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024. Sanjay Rawat</copyright><lastBuildDate>Tue, 11 Jun 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://rawsanj.dev/media/icon_hu40be7a442f4132e79fbcdc152b49bfa5_12137_512x512_fill_lanczos_center_3.png</url>
       <title>reactive</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Blazing Fast SQS Listener</title>
       <link>https://rawsanj.dev/slides/blazing-fast-sqs-listener/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://rawsanj.dev/slides/blazing-fast-sqs-listener/</guid>
       <description>
 &lt;section data-noprocess data-shortcode-slide
@@ -43,31 +43,31 @@
 &lt;img alt=&#34;Website Badge&#34; src=&#34;https://img.shields.io/badge/-rawsanj.dev-4CAF50?style=for-the-badge&amp;logo=curl&amp;logoColor=white&amp;link=https://rawsanj.dev&#34; /&gt;
 &lt;/a&gt;
 &lt;a href=&#34;https://twitter.com/Raw_Sanj&#34; target=&#34;_blank&#34;&gt;
-&lt;img alt=&#34;Twitter Badge&#34; src=&#34;https://img.shields.io/static/v1?label=&amp;message=@Raw_Sanj&amp;color=E8EAEC&amp;style=for-the-badge&amp;logo=Twitter&amp;logoColor=1DA1F2&amp;link=https://twitter.com/Raw_Sanj&#34;/&gt;
+&lt;img alt=&#34;Twitter Badge&#34; src=&#34;https://img.shields.io/static/v1?label=&amp;message=@Raw_Sanj&amp;color=E8EAEC&amp;style=for-the-badge&amp;logo=X&amp;logoColor=000000&amp;link=https://twitter.com/Raw_Sanj&#34;/&gt;
 &lt;/a&gt;
 &lt;a href=&#34;https://github.com/RawSanj&#34; target=&#34;_blank&#34;&gt;
 &lt;img alt=&#34;Github Badge&#34; src=&#34;https://img.shields.io/badge/-/RawSanj-181717?style=for-the-badge&amp;logo=Github&amp;logoColor=white&amp;link=https://github.com/RawSanj&#34; /&gt;
 &lt;/a&gt;
 &lt;a href=&#34;https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile&#34; target=&#34;_blank&#34;&gt;
-&lt;img alt=&#34;Stack Overflow&#34; src=&#34;https://img.shields.io/badge/Stack%20Overflow-F58025?style=for-the-badge&amp;logo=Stack%20Overflow&amp;logoColor=white&amp;link=https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile&#34; /&gt;
+&lt;img alt=&#34;Stack Overflow&#34; src=&#34;https://img.shields.io/badge/Stack%20Overflow-F58025?style=for-the-badge&amp;logo=Stack%20Overflow&amp;logoColor=bcbbbb&amp;link=https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile&#34; /&gt;
 &lt;/a&gt;
 &lt;h3 id=&#34;about-me&#34;&gt;About me&lt;/h3&gt;
 &lt;ul style=&#34;font-size: 22px&#34;&gt;
-  &lt;li&gt;🔭 &lt;strong&gt;Working:&lt;/strong&gt; Cloud Developer working on Reactive Spring Boot, Kafka, Cassandra, Microservices, AWS.&lt;/li&gt;
-  &lt;li&gt;🖥️ &lt;strong&gt;Interests:&lt;/strong&gt; I love building cool software and systems using Spring Boot, Kotlin and Go&lt;/li&gt;
-  &lt;li&gt;🌱 &lt;strong&gt;Learning:&lt;/strong&gt; Go | Scala | Design Patterns &lt;/li&gt;
-  &lt;li&gt;💬 &lt;strong&gt;Ask me about:&lt;/strong&gt; Java | Reactive Spring | AWS&lt;/li&gt;
-  &lt;li&gt;🧑‍🤝‍🧑 &lt;strong&gt;Collaboration:&lt;/strong&gt; I&#39;m looking to collaborate on several projects over here, please check out my GitHub repos&lt;/li&gt;
+  &lt;li&gt;🔭 &lt;strong&gt;Working:&lt;/strong&gt; Lead Software Engineer - working on Spring Boot, Reactive Programming, Microservices, Kafka, Cassandra, Kubernetes, AWS.&lt;/li&gt;
+  &lt;li&gt;🖥️ &lt;strong&gt;Interests:&lt;/strong&gt; I love building cool Software &amp; Systems, Self-Hosting, Gaming&lt;/li&gt;
+  &lt;li&gt;🌱 &lt;strong&gt;Learning:&lt;/strong&gt; &lt;del&gt;Go&lt;/del&gt; | Rust | Scala | Design Patterns &lt;/li&gt;
+  &lt;li&gt;💬 &lt;strong&gt;Ask me about:&lt;/strong&gt; Java | Reactive Spring | Containers | AWS &lt;/li&gt;
+  &lt;li&gt;🧑‍🤝‍🧑 &lt;strong&gt;Collaboration:&lt;/strong&gt; Looking to collaborate on several projects over here, check out my GitHub&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br/&gt;
 &lt;h4 id=&#34;languages-frameworks-and-platforms&#34;&gt;Languages, Frameworks and Platforms&lt;/h4&gt;
-&lt;img alt=&#34;Java&#34; src=&#34;https://img.shields.io/badge/Java-f8981d?style=for-the-badge&amp;logo=openjdk&amp;logoColor=5382a1&#34; /&gt;
+&lt;img alt=&#34;Java&#34; src=&#34;https://img.shields.io/badge/Java-f0931c?style=for-the-badge&amp;logo=openjdk&amp;logoColor=507e9c&#34; /&gt;
 &lt;img alt=&#34;Spring&#34; src=&#34;https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&amp;logo=spring&amp;logoColor=white&#34; /&gt;
 &lt;img alt=&#34;Kotlin&#34; src=&#34;https://img.shields.io/badge/Kotlin-4d7ddd?&amp;style=for-the-badge&amp;logo=kotlin&amp;logoColor=&#34; /&gt;
-&lt;img alt=&#34;Project Reactor&#34; src=&#34;https://img.shields.io/badge/Project_Reactor-6db33f?style=for-the-badge&amp;logo=ReactiveX&amp;logoColor=white&#34; /&gt;
+&lt;img alt=&#34;Project Reactor&#34; src=&#34;https://img.shields.io/badge/Project_Reactor-6db33f?style=for-the-badge&amp;logo=React&amp;logoColor=white&#34; /&gt;
 &lt;img alt=&#34;Kafka&#34; src=&#34;https://img.shields.io/badge/-Kafka-727272?style=for-the-badge&amp;logo=apachekafka&amp;logoColor&#34; /&gt;
 &lt;img alt=&#34;Cassandra&#34; src=&#34;https://img.shields.io/badge/Cassandra-1287B1?style=for-the-badge&amp;logo=apache%20cassandra&amp;logoColor=d4effc&#34; /&gt;
-&lt;img alt=&#34;AWS&#34; src=&#34;https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&amp;logo=amazon-aws&amp;logoColor=ff9a00&#34; /&gt;
+&lt;img alt=&#34;AWS&#34; src=&#34;https://img.shields.io/badge/AWS-242e3c?style=for-the-badge&amp;logo=Amazon&amp;logoColor=f79400&#34; /&gt;
 &lt;img alt=&#34;Kubernetes&#34; src=&#34;https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&amp;logo=kubernetes&amp;logoColor=white&#34; /&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;what-is-aws-sqs&#34;&gt;What is AWS SQS&lt;/h3&gt;
@@ -108,69 +108,42 @@
   &lt;li&gt;For Standard queues, the visibility timeout isn&#39;t a guarantee against receiving a message twice. &lt;/li&gt;
   &lt;li&gt;FIFO queues allow the producer or consumer to attempt multiple retries: producers can retry send using deduplicationId and consumers doesn&#39;t receive messages for same message groupId unless deleted or timed-out&lt;/li&gt;
 &lt;/ul&gt;
+---
+&lt;h3 id=&#34;sqs-lambda-integration-architecture&#34;&gt;SQS Lambda Integration Architecture&lt;/h3&gt;
+&lt;img src=&#34;./SQS_Lambda_Architecture.svg&#34; alt=&#34;SQS_Lambda_Architecture&#34;/&gt;
+&lt;ol style=&#34;font-size: 22px&#34;&gt;
+  &lt;li&gt;FIVE Instances Lambda Service polls SQS queue every &lt;a href=&#34;https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html#SQS-ReceiveMessage-request-WaitTimeSeconds&#34; target=&#34;_blank&#34;&gt;WaitTimeSeconds&lt;/a&gt; secs &lt;br&gt;(defaults to 20s). More info  &lt;a href=&#34;https://stackoverflow.com/a/52905561&#34; target=&#34;_blank&#34;&gt;here.&lt;/a&gt;&lt;b&gt;*&lt;/b&gt;&lt;/li&gt;
+  &lt;li&gt;Function code is invoked when &lt;a href=&#34;https://docs.aws.amazon.com/lambda/latest/api/API_CreateEventSourceMapping.html#lambda-CreateEventSourceMapping-request-BatchSize&#34; target=&#34;_blank&#34;&gt;BatchSize&lt;/a&gt; number of messages are accumulated or &lt;a href=&#34;https://docs.aws.amazon.com/lambda/latest/api/API_CreateEventSourceMapping.html#lambda-CreateEventSourceMapping-request-MaximumBatchingWindowInSeconds&#34;&gt;MaximumBatchingWindowInSeconds&lt;/a&gt; are passed after receiving first message. &lt;br&gt;&lt;small&gt; Function invocation is scaled if more messages are available in queue.&lt;/small&gt;&lt;/li&gt;
+  &lt;li&gt;Function responds with List of failed messages (if &lt;a href=&#34;https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html#services-sqs-batchfailurereporting&#34; target=&#34;_blank&#34;&gt;ReportBatchItemFailures&lt;/a&gt; is enabled) or Success/Error.&lt;/li&gt;
+  &lt;li&gt;Lambda Service deletes the successfully processed messages.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p style=&#34;font-size: 22px&#34;&gt; 
+&lt;b&gt;Note: *&lt;/b&gt;There is no clear documentation from AWS regarding SQS polling frequency.
+&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;lambda-scaling&#34;&gt;Lambda Scaling&lt;/h3&gt;
 &lt;ul style=&#34;font-size: 25px&#34;&gt;
   &lt;li&gt;&lt;b&gt;Standard Queues&lt;/b&gt;: Lambda uses &lt;a href=&#34;https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-short-and-long-polling.html&#34; target=&#34;_blank&#34;&gt;long polling&lt;/a&gt; &amp; reads up to 5 batches to invoke your function.&lt;/li&gt;
-  &lt;li&gt;Lambda increases the number of processes that reads batches by up to 60 more instances per minute. The max no. of batches that an Event Source Mapping can process simultaneously is 1,000.&lt;/li&gt;
+  &lt;li&gt;Up until &lt;b&gt;06 Nov 2023&lt;/b&gt;, the Lambda was adding up to &lt;b&gt;60 concurrent executions/minute&lt;/b&gt;, scaling up to a maximum of &lt;b&gt;1,250&lt;/b&gt; concurrent executions in approximately &lt;b&gt;20 minutes&lt;/b&gt;.&lt;/li&gt;
+  &lt;li&gt;Now Lambda functions can scale up to 5x faster, adding up to &lt;b&gt;300 concurrent executions/minute&lt;/b&gt;.&lt;/li&gt;
+  &lt;li&gt;Even at peak performance, the Maximum number of messages processed concurrently by Lambda &lt;b&gt;=&lt;/b&gt; 10 to 10K messages in a batch &lt;b&gt;x&lt;/b&gt; 1250 executions &lt;b&gt;=&lt;/b&gt; &lt;b&gt;12.5K to 12.5M&lt;/b&gt;&lt;/li&gt;
   &lt;li&gt;&lt;b&gt;FIFO queues&lt;/b&gt;: Lambda sends messages to your function in the order that it receives them and ensures that messages in the same group are delivered to Lambda in order.&lt;/li&gt;
   &lt;li&gt;Lambda sorts the messages into groups and sends only one batch at a time for a group.&lt;/li&gt;
   &lt;li&gt;Your function can scale in concurrency to the number of active message groups.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;faster-polling-scale-up-for-aws-lambdahttpsawsamazoncomblogscomputeintroducing-faster-polling-scale-up-for-aws-lambda-functions-configured-with-amazon-sqs&#34;&gt;&lt;a href=&#34;https://aws.amazon.com/blogs/compute/introducing-faster-polling-scale-up-for-aws-lambda-functions-configured-with-amazon-sqs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Faster polling scale-up for AWS Lambda&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;faster-polling-scale-up-for-aws-lambdahttpsawsamazoncomblogscomputeintroducing-faster-polling-scale-up-for-aws-lambda-functions-configured-with-amazon-sqs&#34;&gt;&lt;a href=&#34;https://aws.amazon.com/blogs/compute/introducing-faster-polling-scale-up-for-aws-lambda-functions-configured-with-amazon-sqs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Faster polling scale-up for AWS Lambda&lt;/a&gt;&lt;/h4&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;lambda-scaling-1&#34;&gt;Lambda Scaling&lt;/h3&gt;
-&lt;p&gt;Diagram here&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;sqs-message-event-in-lambda-function---standard&#34;&gt;SQS Message Event in Lambda Function - Standard&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-  &amp;quot;Records&amp;quot;: [
-    {
-      &amp;quot;messageId&amp;quot;: &amp;quot;059f36b4-87a3-44ab-83d2-661975830a7d&amp;quot;,
-      &amp;quot;receiptHandle&amp;quot;: &amp;quot;AQEBwJnKyrHigUMZj6rYigCgxlaS3SLy0a...&amp;quot;,
-      &amp;quot;body&amp;quot;: &amp;quot;Test message.&amp;quot;,
-      &amp;quot;attributes&amp;quot;: {
-        &amp;quot;ApproximateReceiveCount&amp;quot;: &amp;quot;1&amp;quot;,
-        &amp;quot;SentTimestamp&amp;quot;: &amp;quot;1545082649183&amp;quot;,
-        &amp;quot;SenderId&amp;quot;: &amp;quot;AIDAIENQZJOLO23YVJ4VO&amp;quot;,
-        &amp;quot;ApproximateFirstReceiveTimestamp&amp;quot;: &amp;quot;1545082649185&amp;quot;
-      },
-      &amp;quot;messageAttributes&amp;quot;: {},
-      &amp;quot;md5OfBody&amp;quot;: &amp;quot;e4e68fb7bd0e697a0ae8f1bb342846b3&amp;quot;,
-      &amp;quot;eventSource&amp;quot;: &amp;quot;aws:sqs&amp;quot;,
-      &amp;quot;eventSourceARN&amp;quot;: &amp;quot;arn:aws:sqs:us-east-2:123456789012:my-queue&amp;quot;,
-      &amp;quot;awsRegion&amp;quot;: &amp;quot;us-east-2&amp;quot;
-    },
-    ...
-  ]
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;sqs-message-event-in-lambda-function---fifo&#34;&gt;SQS Message Event in Lambda Function - FIFO&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-  &amp;quot;Records&amp;quot;: [
-    {
-      &amp;quot;messageId&amp;quot;: &amp;quot;11d6ee51-4cc7-4302-9e22-7cd8afdaadf5&amp;quot;,
-      &amp;quot;receiptHandle&amp;quot;: &amp;quot;AQEBBX8nesZEXmkhsmZeyIE8iQAMig7qw...&amp;quot;,
-      &amp;quot;body&amp;quot;: &amp;quot;Test message.&amp;quot;,
-      &amp;quot;attributes&amp;quot;: {
-        &amp;quot;ApproximateReceiveCount&amp;quot;: &amp;quot;1&amp;quot;,
-        &amp;quot;SentTimestamp&amp;quot;: &amp;quot;1573251510774&amp;quot;,
-        &amp;quot;SequenceNumber&amp;quot;: &amp;quot;18849496460467696128&amp;quot;,
-        &amp;quot;MessageGroupId&amp;quot;: &amp;quot;1&amp;quot;,
-        &amp;quot;SenderId&amp;quot;: &amp;quot;AIDAIO23YVJENQZJOL4VO&amp;quot;,
-        &amp;quot;MessageDeduplicationId&amp;quot;: &amp;quot;1&amp;quot;,
-        &amp;quot;ApproximateFirstReceiveTimestamp&amp;quot;: &amp;quot;1573251510774&amp;quot;
-      },
-      &amp;quot;messageAttributes&amp;quot;: {},
-      &amp;quot;md5OfBody&amp;quot;: &amp;quot;e4e68fb7bd0e697a0ae8f1bb342846b3&amp;quot;,
-      &amp;quot;eventSource&amp;quot;: &amp;quot;aws:sqs&amp;quot;,
-      &amp;quot;eventSourceARN&amp;quot;: &amp;quot;arn:aws:sqs:us-east-2:123456789012:fifo.fifo&amp;quot;,
-      &amp;quot;awsRegion&amp;quot;: &amp;quot;us-east-2&amp;quot;
-    }
-  ]
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;how-can-we-do-this-ourselves-but-better&#34;&gt;How can we do this ourselves? But Better!&lt;/h3&gt;
+&lt;ol style=&#34;font-size: 30px&#34;&gt;
+  &lt;li&gt;Implement a Dynamic SQS Poller, based on Number of Messages.&lt;/li&gt;
+  &lt;li&gt;Convert Message to POJO &amp; Concurrently Invoke Processing Logic.&lt;/li&gt;
+  &lt;li&gt;For FIFO Queues, make sure to process messages from same GroupId in Sequence, while processing the Groups Concurrently.&lt;/li&gt;
+  &lt;li&gt;Categorize Exceptions into Retryable &amp; Non-Retryable.&lt;/li&gt;
+  &lt;li&gt;Implement Error Handling, Retries and Timeout.&lt;/li&gt;
+  &lt;li&gt;Publish the Failed Messages Directly to the DLQ and Mark it as Processed.&lt;/li&gt;
+  &lt;li&gt;Collect the Processed messages &amp; Delete those in Batch.&lt;/li&gt;
+  &lt;li&gt;Implement Listener Health-check - when Listener stops polling/processing, set the health to DOWN.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;hr&gt;
 
 &lt;section data-noprocess data-shortcode-slide
@@ -185,6 +158,13 @@
 &lt;h1 style=&#34;display: none&#34;&gt;Code&lt;/h1&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src=&#34;slides_qr.png&#34; alt=&#34;slide qr code&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;rawsanj_qr.png&#34; alt=&#34;profile qr code&#34; style=&#34;min-width:105%&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
 </description>
     </item>
     

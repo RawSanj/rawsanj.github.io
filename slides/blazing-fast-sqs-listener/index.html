@@ -86,31 +86,31 @@
 <img alt="Website Badge" src="https://img.shields.io/badge/-rawsanj.dev-4CAF50?style=for-the-badge&logo=curl&logoColor=white&link=https://rawsanj.dev" />
 </a>
 <a href="https://twitter.com/Raw_Sanj" target="_blank">
-<img alt="Twitter Badge" src="https://img.shields.io/static/v1?label=&message=@Raw_Sanj&color=E8EAEC&style=for-the-badge&logo=Twitter&logoColor=1DA1F2&link=https://twitter.com/Raw_Sanj"/>
+<img alt="Twitter Badge" src="https://img.shields.io/static/v1?label=&message=@Raw_Sanj&color=E8EAEC&style=for-the-badge&logo=X&logoColor=000000&link=https://twitter.com/Raw_Sanj"/>
 </a>
 <a href="https://github.com/RawSanj" target="_blank">
 <img alt="Github Badge" src="https://img.shields.io/badge/-/RawSanj-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/RawSanj" />
 </a>
 <a href="https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile" target="_blank">
-<img alt="Stack Overflow" src="https://img.shields.io/badge/Stack%20Overflow-F58025?style=for-the-badge&logo=Stack%20Overflow&logoColor=white&link=https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile" />
+<img alt="Stack Overflow" src="https://img.shields.io/badge/Stack%20Overflow-F58025?style=for-the-badge&logo=Stack%20Overflow&logoColor=bcbbbb&link=https://stackoverflow.com/users/5702727/sanjay-rawat?tab=profile" />
 </a>
 <h3 id="about-me">About me</h3>
 <ul style="font-size: 22px">
-  <li>🔭 <strong>Working:</strong> Cloud Developer working on Reactive Spring Boot, Kafka, Cassandra, Microservices, AWS.</li>
-  <li>🖥️ <strong>Interests:</strong> I love building cool software and systems using Spring Boot, Kotlin and Go</li>
-  <li>🌱 <strong>Learning:</strong> Go | Scala | Design Patterns </li>
-  <li>💬 <strong>Ask me about:</strong> Java | Reactive Spring | AWS</li>
-  <li>🧑‍🤝‍🧑 <strong>Collaboration:</strong> I'm looking to collaborate on several projects over here, please check out my GitHub repos</li>
+  <li>🔭 <strong>Working:</strong> Lead Software Engineer - working on Spring Boot, Reactive Programming, Microservices, Kafka, Cassandra, Kubernetes, AWS.</li>
+  <li>🖥️ <strong>Interests:</strong> I love building cool Software & Systems, Self-Hosting, Gaming</li>
+  <li>🌱 <strong>Learning:</strong> <del>Go</del> | Rust | Scala | Design Patterns </li>
+  <li>💬 <strong>Ask me about:</strong> Java | Reactive Spring | Containers | AWS </li>
+  <li>🧑‍🤝‍🧑 <strong>Collaboration:</strong> Looking to collaborate on several projects over here, check out my GitHub</li>
 </ul>
 <br/>
 <h4 id="languages-frameworks-and-platforms">Languages, Frameworks and Platforms</h4>
-<img alt="Java" src="https://img.shields.io/badge/Java-f8981d?style=for-the-badge&logo=openjdk&logoColor=5382a1" />
+<img alt="Java" src="https://img.shields.io/badge/Java-f0931c?style=for-the-badge&logo=openjdk&logoColor=507e9c" />
 <img alt="Spring" src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
 <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-4d7ddd?&style=for-the-badge&logo=kotlin&logoColor=" />
-<img alt="Project Reactor" src="https://img.shields.io/badge/Project_Reactor-6db33f?style=for-the-badge&logo=ReactiveX&logoColor=white" />
+<img alt="Project Reactor" src="https://img.shields.io/badge/Project_Reactor-6db33f?style=for-the-badge&logo=React&logoColor=white" />
 <img alt="Kafka" src="https://img.shields.io/badge/-Kafka-727272?style=for-the-badge&logo=apachekafka&logoColor" />
 <img alt="Cassandra" src="https://img.shields.io/badge/Cassandra-1287B1?style=for-the-badge&logo=apache%20cassandra&logoColor=d4effc" />
-<img alt="AWS" src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=ff9a00" />
+<img alt="AWS" src="https://img.shields.io/badge/AWS-242e3c?style=for-the-badge&logo=Amazon&logoColor=f79400" />
 <img alt="Kubernetes" src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" />
 
     </section>
@@ -187,6 +187,18 @@
   <li>For Standard queues, the visibility timeout isn't a guarantee against receiving a message twice. </li>
   <li>FIFO queues allow the producer or consumer to attempt multiple retries: producers can retry send using deduplicationId and consumers doesn't receive messages for same message groupId unless deleted or timed-out</li>
 </ul>
+---
+<h3 id="sqs-lambda-integration-architecture">SQS Lambda Integration Architecture</h3>
+<img src="./SQS_Lambda_Architecture.svg" alt="SQS_Lambda_Architecture"/>
+<ol style="font-size: 22px">
+  <li>FIVE Instances Lambda Service polls SQS queue every <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ReceiveMessage.html#SQS-ReceiveMessage-request-WaitTimeSeconds" target="_blank">WaitTimeSeconds</a> secs <br>(defaults to 20s). More info  <a href="https://stackoverflow.com/a/52905561" target="_blank">here.</a><b>*</b></li>
+  <li>Function code is invoked when <a href="https://docs.aws.amazon.com/lambda/latest/api/API_CreateEventSourceMapping.html#lambda-CreateEventSourceMapping-request-BatchSize" target="_blank">BatchSize</a> number of messages are accumulated or <a href="https://docs.aws.amazon.com/lambda/latest/api/API_CreateEventSourceMapping.html#lambda-CreateEventSourceMapping-request-MaximumBatchingWindowInSeconds">MaximumBatchingWindowInSeconds</a> are passed after receiving first message. <br><small> Function invocation is scaled if more messages are available in queue.</small></li>
+  <li>Function responds with List of failed messages (if <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html#services-sqs-batchfailurereporting" target="_blank">ReportBatchItemFailures</a> is enabled) or Success/Error.</li>
+  <li>Lambda Service deletes the successfully processed messages.</li>
+</ol>
+<p style="font-size: 22px"> 
+<b>Note: *</b>There is no clear documentation from AWS regarding SQS polling frequency.
+</p>
 
     </section>
     
@@ -200,12 +212,14 @@
 <h3 id="lambda-scaling">Lambda Scaling</h3>
 <ul style="font-size: 25px">
   <li><b>Standard Queues</b>: Lambda uses <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-short-and-long-polling.html" target="_blank">long polling</a> & reads up to 5 batches to invoke your function.</li>
-  <li>Lambda increases the number of processes that reads batches by up to 60 more instances per minute. The max no. of batches that an Event Source Mapping can process simultaneously is 1,000.</li>
+  <li>Up until <b>06 Nov 2023</b>, the Lambda was adding up to <b>60 concurrent executions/minute</b>, scaling up to a maximum of <b>1,250</b> concurrent executions in approximately <b>20 minutes</b>.</li>
+  <li>Now Lambda functions can scale up to 5x faster, adding up to <b>300 concurrent executions/minute</b>.</li>
+  <li>Even at peak performance, the Maximum number of messages processed concurrently by Lambda <b>=</b> 10 to 10K messages in a batch <b>x</b> 1250 executions <b>=</b> <b>12.5K to 12.5M</b></li>
   <li><b>FIFO queues</b>: Lambda sends messages to your function in the order that it receives them and ensures that messages in the same group are delivered to Lambda in order.</li>
   <li>Lambda sorts the messages into groups and sends only one batch at a time for a group.</li>
   <li>Your function can scale in concurrency to the number of active message groups.</li>
 </ul>
-<h3 id="faster-polling-scale-up-for-aws-lambdahttpsawsamazoncomblogscomputeintroducing-faster-polling-scale-up-for-aws-lambda-functions-configured-with-amazon-sqs"><a href="https://aws.amazon.com/blogs/compute/introducing-faster-polling-scale-up-for-aws-lambda-functions-configured-with-amazon-sqs/" target="_blank" rel="noopener">Faster polling scale-up for AWS Lambda</a></h3>
+<h4 id="faster-polling-scale-up-for-aws-lambdahttpsawsamazoncomblogscomputeintroducing-faster-polling-scale-up-for-aws-lambda-functions-configured-with-amazon-sqs"><a href="https://aws.amazon.com/blogs/compute/introducing-faster-polling-scale-up-for-aws-lambda-functions-configured-with-amazon-sqs/" target="_blank" rel="noopener">Faster polling scale-up for AWS Lambda</a></h4>
 
     </section>
     
@@ -216,76 +230,17 @@
     <section>
     
       
-<h3 id="lambda-scaling-1">Lambda Scaling</h3>
-<p>Diagram here</p>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-<h3 id="sqs-message-event-in-lambda-function---standard">SQS Message Event in Lambda Function - Standard</h3>
-<pre><code class="language-json">{
-  &quot;Records&quot;: [
-    {
-      &quot;messageId&quot;: &quot;059f36b4-87a3-44ab-83d2-661975830a7d&quot;,
-      &quot;receiptHandle&quot;: &quot;AQEBwJnKyrHigUMZj6rYigCgxlaS3SLy0a...&quot;,
-      &quot;body&quot;: &quot;Test message.&quot;,
-      &quot;attributes&quot;: {
-        &quot;ApproximateReceiveCount&quot;: &quot;1&quot;,
-        &quot;SentTimestamp&quot;: &quot;1545082649183&quot;,
-        &quot;SenderId&quot;: &quot;AIDAIENQZJOLO23YVJ4VO&quot;,
-        &quot;ApproximateFirstReceiveTimestamp&quot;: &quot;1545082649185&quot;
-      },
-      &quot;messageAttributes&quot;: {},
-      &quot;md5OfBody&quot;: &quot;e4e68fb7bd0e697a0ae8f1bb342846b3&quot;,
-      &quot;eventSource&quot;: &quot;aws:sqs&quot;,
-      &quot;eventSourceARN&quot;: &quot;arn:aws:sqs:us-east-2:123456789012:my-queue&quot;,
-      &quot;awsRegion&quot;: &quot;us-east-2&quot;
-    },
-    ...
-  ]
-}
-</code></pre>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-<h3 id="sqs-message-event-in-lambda-function---fifo">SQS Message Event in Lambda Function - FIFO</h3>
-<pre><code class="language-json">{
-  &quot;Records&quot;: [
-    {
-      &quot;messageId&quot;: &quot;11d6ee51-4cc7-4302-9e22-7cd8afdaadf5&quot;,
-      &quot;receiptHandle&quot;: &quot;AQEBBX8nesZEXmkhsmZeyIE8iQAMig7qw...&quot;,
-      &quot;body&quot;: &quot;Test message.&quot;,
-      &quot;attributes&quot;: {
-        &quot;ApproximateReceiveCount&quot;: &quot;1&quot;,
-        &quot;SentTimestamp&quot;: &quot;1573251510774&quot;,
-        &quot;SequenceNumber&quot;: &quot;18849496460467696128&quot;,
-        &quot;MessageGroupId&quot;: &quot;1&quot;,
-        &quot;SenderId&quot;: &quot;AIDAIO23YVJENQZJOL4VO&quot;,
-        &quot;MessageDeduplicationId&quot;: &quot;1&quot;,
-        &quot;ApproximateFirstReceiveTimestamp&quot;: &quot;1573251510774&quot;
-      },
-      &quot;messageAttributes&quot;: {},
-      &quot;md5OfBody&quot;: &quot;e4e68fb7bd0e697a0ae8f1bb342846b3&quot;,
-      &quot;eventSource&quot;: &quot;aws:sqs&quot;,
-      &quot;eventSourceARN&quot;: &quot;arn:aws:sqs:us-east-2:123456789012:fifo.fifo&quot;,
-      &quot;awsRegion&quot;: &quot;us-east-2&quot;
-    }
-  ]
-}
-</code></pre>
+<h3 id="how-can-we-do-this-ourselves-but-better">How can we do this ourselves? But Better!</h3>
+<ol style="font-size: 30px">
+  <li>Implement a Dynamic SQS Poller, based on Number of Messages.</li>
+  <li>Convert Message to POJO & Concurrently Invoke Processing Logic.</li>
+  <li>For FIFO Queues, make sure to process messages from same GroupId in Sequence, while processing the Groups Concurrently.</li>
+  <li>Categorize Exceptions into Retryable & Non-Retryable.</li>
+  <li>Implement Error Handling, Retries and Timeout.</li>
+  <li>Publish the Failed Messages Directly to the DLQ and Mark it as Processed.</li>
+  <li>Collect the Processed messages & Delete those in Batch.</li>
+  <li>Implement Listener Health-check - when Listener stops polling/processing, set the health to DOWN.</li>
+</ol>
 
     </section>
     
@@ -316,6 +271,13 @@
     
       
 <h1 id="questions">Questions?</h1>
+<table>
+<tr>
+<td><img src="slides_qr.png" alt="slide qr code"></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><img src="rawsanj_qr.png" alt="profile qr code" style="min-width:105%"></td>
+</tr>
+</table>
 
     </section>
     
