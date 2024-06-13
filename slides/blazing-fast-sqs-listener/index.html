@@ -140,16 +140,16 @@
     
       
 <h3 id="sqs-concepts-wrt-lambda">SQS Concepts w.r.t Lambda</h3>
-<ul style="font-size: 30px">
+<ul style="font-size: 28px">
   <li><u>Queue Types</u>: Standard and FIFO</li>
   <li><u>Visibility timeout</u>: wait time after which message is visible again if not deleted after processing</li>
   <li><u>In-Flight messages</u>: messages that are received by the consumer but not deleted</li>
-  <li><u>Message retention period</u>: 1 minute to 14 days (defaults to 4 days)</li>
-  <li><u>Delivery delay</u>: 0 seconds to 15 minutes</li>
   <li><u>SQS Event Source Mapping</u>: Lambda Service reads items from a SQS &amp; invokes Lambda Function</li>
   <li><u>Enable trigger</u>: Enable or disable SQS-Lambda Integration</li>
   <li><u>Batch size</u>: number of records to send to the function in each batch. Standard: 10,000(max). FIFO: 10(max)</li>
-  <li><u>Batch window</u>: wait time (in second) to gather records before invoking the function, applicable for Standard</li>
+  <li><u>Batch window</u>: wait time (in second) to gather records before invoking the function, applicable for Standard Queue</li>
+  <li><u>Reserved Concurrency</u>: the maximum number of concurrent instances allocated to your function.</li>
+  <li><u>Maximum Concurrency</u>: the number of concurrent instances of the function that an Amazon SQS event source can invoke.</li>
 </ul>
 
     </section>
@@ -187,7 +187,16 @@
   <li>For Standard queues, the visibility timeout isn't a guarantee against receiving a message twice. </li>
   <li>FIFO queues allow the producer or consumer to attempt multiple retries: producers can retry send using deduplicationId and consumers doesn't receive messages for same message groupId unless deleted or timed-out</li>
 </ul>
----
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
 <h3 id="sqs-lambda-integration-architecture">SQS Lambda Integration Architecture</h3>
 <img src="./SQS_Lambda_Architecture.svg" alt="SQS_Lambda_Architecture"/>
 <ol style="font-size: 22px">

@@ -73,16 +73,16 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;sqs-concepts-wrt-lambda&#34;&gt;SQS Concepts w.r.t Lambda&lt;/h3&gt;
-&lt;ul style=&#34;font-size: 30px&#34;&gt;
+&lt;ul style=&#34;font-size: 28px&#34;&gt;
   &lt;li&gt;&lt;u&gt;Queue Types&lt;/u&gt;: Standard and FIFO&lt;/li&gt;
   &lt;li&gt;&lt;u&gt;Visibility timeout&lt;/u&gt;: wait time after which message is visible again if not deleted after processing&lt;/li&gt;
   &lt;li&gt;&lt;u&gt;In-Flight messages&lt;/u&gt;: messages that are received by the consumer but not deleted&lt;/li&gt;
-  &lt;li&gt;&lt;u&gt;Message retention period&lt;/u&gt;: 1 minute to 14 days (defaults to 4 days)&lt;/li&gt;
-  &lt;li&gt;&lt;u&gt;Delivery delay&lt;/u&gt;: 0 seconds to 15 minutes&lt;/li&gt;
   &lt;li&gt;&lt;u&gt;SQS Event Source Mapping&lt;/u&gt;: Lambda Service reads items from a SQS &amp;amp; invokes Lambda Function&lt;/li&gt;
   &lt;li&gt;&lt;u&gt;Enable trigger&lt;/u&gt;: Enable or disable SQS-Lambda Integration&lt;/li&gt;
   &lt;li&gt;&lt;u&gt;Batch size&lt;/u&gt;: number of records to send to the function in each batch. Standard: 10,000(max). FIFO: 10(max)&lt;/li&gt;
-  &lt;li&gt;&lt;u&gt;Batch window&lt;/u&gt;: wait time (in second) to gather records before invoking the function, applicable for Standard&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;Batch window&lt;/u&gt;: wait time (in second) to gather records before invoking the function, applicable for Standard Queue&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;Reserved Concurrency&lt;/u&gt;: the maximum number of concurrent instances allocated to your function.&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;Maximum Concurrency&lt;/u&gt;: the number of concurrent instances of the function that an Amazon SQS event source can invoke.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;message-lifecycle&#34;&gt;Message Lifecycle&lt;/h3&gt;
@@ -102,7 +102,7 @@
   &lt;li&gt;For Standard queues, the visibility timeout isn&#39;t a guarantee against receiving a message twice. &lt;/li&gt;
   &lt;li&gt;FIFO queues allow the producer or consumer to attempt multiple retries: producers can retry send using deduplicationId and consumers doesn&#39;t receive messages for same message groupId unless deleted or timed-out&lt;/li&gt;
 &lt;/ul&gt;
----
+&lt;hr&gt;
 &lt;h3 id=&#34;sqs-lambda-integration-architecture&#34;&gt;SQS Lambda Integration Architecture&lt;/h3&gt;
 &lt;img src=&#34;./SQS_Lambda_Architecture.svg&#34; alt=&#34;SQS_Lambda_Architecture&#34;/&gt;
 &lt;ol style=&#34;font-size: 22px&#34;&gt;
